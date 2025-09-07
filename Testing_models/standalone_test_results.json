@@ -1,0 +1,58 @@
+{
+  "timestamp": "2025-09-06T13:31:57.966711",
+  "sentiment_analysis": {
+    "sentiment_score": 0.3836601307189542,
+    "confidence": 0.8,
+    "interpretation": "\ud83d\udfe2 BULLISH - Central bank buying activity",
+    "recommendation": "MODERATE CONVICTION: Reliable CB indicators"
+  },
+  "signal_breakdown": [
+    {
+      "source": "RBI_Gold_Reserves",
+      "sentiment": 0.4,
+      "confidence": 0.85,
+      "weight": 0.25,
+      "description": "RBI bought 500kg in June 2025"
+    },
+    {
+      "source": "PBOC_Purchases",
+      "sentiment": 0.6,
+      "confidence": 0.8,
+      "weight": 0.2,
+      "description": "9-month buying streak"
+    },
+    {
+      "source": "Indian_ETF_Flows",
+      "sentiment": 0.3,
+      "confidence": 0.8,
+      "weight": 0.2,
+      "description": "$156M inflows in July"
+    },
+    {
+      "source": "Mumbai_Premium",
+      "sentiment": 0.2,
+      "confidence": 0.75,
+      "weight": 0.15,
+      "description": "+$2.5/oz premium"
+    },
+    {
+      "source": "Import_Flows",
+      "sentiment": 0.35,
+      "confidence": 0.8,
+      "weight": 0.15,
+      "description": "+14% YoY growth"
+    }
+  ],
+  "integration": {
+    "quality_grade": "A",
+    "recommended_weight": 0.12,
+    "contribution_to_composite": 0.046039215686274504,
+    "use_in_composite": true
+  },
+  "data_quality": {
+    "sources_available": 5,
+    "sources_total": 7,
+    "coverage_pct": 71.42857142857143,
+    "avg_confidence": 0.8
+  }
+}

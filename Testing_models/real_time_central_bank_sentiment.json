@@ -1,0 +1,15 @@
+{
+  "timestamp": "2025-09-06T12:46:13.718913",
+  "sentiment_score": 0.023119588832673857,
+  "confidence": 0.7,
+  "interpretation": "NEUTRAL - Balanced central bank activity",
+  "indicators": [
+    {
+      "source": "GLD_ETF",
+      "sentiment": 0.02311958883267386,
+      "weight": 0.7,
+      "contribution": 0.0161837121828717,
+      "description": "Institutional gold demand via ETF flows"
+    }
+  ]
+}

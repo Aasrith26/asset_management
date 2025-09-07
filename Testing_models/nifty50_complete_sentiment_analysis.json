@@ -1,0 +1,612 @@
+{
+  "analysis_metadata": {
+    "timestamp": "2025-09-06T17:40:24.412086",
+    "system_version": "2.0_complete_framework",
+    "framework_coverage_pct": 100.0,
+    "analysis_type": "nifty_50_complete_sentiment",
+    "market_focus": "Indian_equity_nifty_50_comprehensive",
+    "execution_time_seconds": 10.273651,
+    "components_analyzed": 5,
+    "successful_components": 5,
+    "data_freshness_assessment": "real_time_to_4hours",
+    "performance_grade": "EXCELLENT",
+    "reliability_achieved": 0.49469805485793145
+  },
+  "composite_results": {
+    "overall_sentiment": -0.038604931808898596,
+    "overall_confidence": 0.49469805485793145,
+    "signal_consistency": 0.7041965193707209,
+    "interpretation": "NEUTRAL_LOW_CONFIDENCE",
+    "quality_grade": "C",
+    "strength_assessment": "VERY_WEAK",
+    "framework_weights_used": {
+      "fii_dii_flows": 0.35,
+      "technical_analysis": 0.3,
+      "market_sentiment_vix": 0.2,
+      "rbi_interest_rates": 0.1,
+      "global_factors": 0.05
+    },
+    "component_contributions": {
+      "fii_dii_flows": -0.029400000000000003,
+      "technical_analysis": 0.026386200112375403,
+      "market_sentiment_vix": -0.05390137355378261,
+      "rbi_interest_rates": 0.0066537177495813934,
+      "global_factors": 0.0042250745097142375
+    },
+    "component_signals": {
+      "fii_dii_flows": {
+        "sentiment": -0.07,
+        "confidence": 0.7,
+        "weight": 0.35,
+        "adjusted_weight": 0.42,
+        "interpretation": "\u26aa NEUTRAL - Balanced institutional activity"
+      },
+      "technical_analysis": {
+        "sentiment": 0.0732950003121539,
+        "confidence": 0.7,
+        "weight": 0.3,
+        "adjusted_weight": 0.36,
+        "interpretation": "\u26aa NEUTRAL - Mixed technical signals"
+      },
+      "market_sentiment_vix": {
+        "sentiment": -0.23183386474745205,
+        "confidence": 0.6625,
+        "weight": 0.2,
+        "adjusted_weight": 0.23250000000000004,
+        "interpretation": "\ud83d\udfe1 CAUTIOUS - Complacency emerging"
+      },
+      "rbi_interest_rates": {
+        "sentiment": 0.05785841521375125,
+        "confidence": 0.65,
+        "weight": 0.1,
+        "adjusted_weight": 0.11499999999999999,
+        "interpretation": "\u26aa NEUTRAL - Balanced policy stance"
+      },
+      "global_factors": {
+        "sentiment": 0.06500114630329595,
+        "confidence": 0.8,
+        "weight": 0.05,
+        "adjusted_weight": 0.065,
+        "interpretation": "\u26aa NEUTRAL - Mixed global signals"
+      }
+    },
+    "coverage_details": {
+      "implemented_components": [
+        "fii_dii_flows",
+        "technical_analysis",
+        "market_sentiment_vix",
+        "rbi_interest_rates",
+        "global_factors"
+      ],
+      "total_weight_covered": 1.0,
+      "missing_components": [],
+      "framework_status": "Complete_Production_Ready"
+    },
+    "advanced_metrics": {
+      "sentiment_momentum": -0.012334909649020837,
+      "risk_assessment": "MODERATE_RISK",
+      "conviction_level": "VERY_LOW"
+    }
+  },
+  "component_details": {
+    "fii_dii_flows": {
+      "component_sentiment": -0.07,
+      "component_confidence": 0.7,
+      "component_weight": 0.35,
+      "sub_indicators": {
+        "estimated_flows": {
+          "fii_flow": -8.0,
+          "dii_flow": 1.0,
+          "net_flow": -7.0,
+          "source": "moneycontrol_estimate"
+        }
+      },
+      "market_context": {
+        "data_source": "Moneycontrol_Scraped",
+        "confidence_note": "Estimated from web scraping"
+      },
+      "execution_time_seconds": 1.109591,
+      "kpi_name": "FII_DII_Flows",
+      "framework_weight": 0.35,
+      "interpretation": "\u26aa NEUTRAL - Balanced institutional activity"
+    },
+    "technical_analysis": {
+      "component_sentiment": 0.0732950003121539,
+      "component_confidence": 0.7,
+      "component_weight": 0.3,
+      "weighted_contribution": 0.02198850009364617,
+      "sub_indicators": {
+        "moving_averages": {
+          "individual_mas": {
+            "ma_20": {
+              "value": 24707.3552734375,
+              "price_vs_ma_pct": 0.13617291770062578,
+              "trend": "above",
+              "ma_slope": 12.905078125000728
+            },
+            "ma_50": {
+              "value": 24963.1062109375,
+              "price_vs_ma_pct": -0.8897378758104489,
+              "trend": "below",
+              "ma_slope": -32.068984374996944
+            },
+            "ma_200": {
+              "value": NaN,
+              "price_vs_ma_pct": NaN,
+              "trend": "below",
+              "ma_slope": NaN
+            }
+          },
+          "trend_score": -0.33333333333333337,
+          "trend_strength": "moderate",
+          "overall_trend": "bearish",
+          "current_price": 24741.0
+        },
+        "rsi_analysis": {
+          "individual_rsi": {
+            "rsi_14": {
+              "value": 53.20813646375011,
+              "level": "neutral",
+              "trend": "falling",
+              "momentum": -3.448265336243928
+            },
+            "rsi_21": {
+              "value": 51.82667819378036,
+              "level": "neutral",
+              "trend": "falling",
+              "momentum": 5.909607140553888
+            }
+          },
+          "primary_rsi": 53.20813646375011,
+          "rsi_signal": "neutral",
+          "overbought_oversold": "normal",
+          "rsi_divergence": "no_divergence"
+        },
+        "macd_analysis": {
+          "macd_line": -52.29826035649239,
+          "signal_line": -60.64263745905918,
+          "histogram": 8.344377102566789,
+          "crossover_status": "bullish",
+          "recent_crossover": "none",
+          "histogram_trend": "increasing",
+          "macd_strength": 8.344377102566789,
+          "zero_line_cross": "below"
+        },
+        "volume_analysis": {
+          "current_volume": 210100.0,
+          "volume_vs_20d_avg": 0.6740671821360967,
+          "volume_vs_50d_avg": 0.7110416201325293,
+          "volume_trend": "low",
+          "price_volume_relationship": "negative",
+          "obv_trend": "rising",
+          "volume_momentum": -0.33110474371219356
+        },
+        "bollinger_bands": {
+          "upper_band": 25120.596462130525,
+          "middle_band": 24707.3552734375,
+          "lower_band": 24294.114084744477,
+          "current_price": 24741.0,
+          "bb_position": 0.5407083411371806,
+          "price_position": "within_bands",
+          "band_width": 3.3450863851647714,
+          "squeeze_status": "squeeze"
+        },
+        "support_resistance": {
+          "nearest_resistance": 25669.349609375,
+          "nearest_support": 24598.599609375,
+          "resistance_distance_pct": 3.752271975162685,
+          "support_distance_pct": 0.5755644097853765,
+          "all_resistance_levels": [
+            25669.349609375,
+            25548.69921875,
+            25255.30078125
+          ],
+          "all_support_levels": [
+            25331.650390625,
+            25001.94921875,
+            24882.30078125
+          ]
+        },
+        "price_patterns": {
+          "trend_pattern": "sideways",
+          "latest_candle": {
+            "type": "bearish",
+            "body_size_pct": 0.31367130467478765,
+            "range_size_pct": 0.8491529757301559,
+            "upper_shadow_pct": 0.05439414079410252,
+            "lower_shadow_pct": 0.4810875302612658,
+            "gap_from_prev": 0.34182825248528065
+          },
+          "momentum_5d_pct": 1.2860863993874567,
+          "momentum_10d_pct": -0.5190956666950172,
+          "volatility_10d": 9.719436131516673
+        }
+      },
+      "market_context": {
+        "current_price": 24741.0,
+        "previous_close": 24734.30078125,
+        "daily_change_pct": 0.02708473067117542,
+        "data_points": 99,
+        "data_source": "Yahoo_Finance_Nifty",
+        "analysis_period_days": 100,
+        "last_update": "2025-09-05 00:00:00"
+      },
+      "scoring_breakdown": {
+        "trend_mas": {
+          "score": -0.33333333333333337,
+          "weight": 0.25,
+          "contribution": -0.08333333333333334
+        },
+        "momentum_rsi": {
+          "score": 0.0,
+          "weight": 0.2,
+          "contribution": 0.0
+        },
+        "trend_macd": {
+          "score": 0.4,
+          "weight": 0.2,
+          "contribution": 0.08000000000000002
+        },
+        "volume_trend": {
+          "score": 0.3,
+          "weight": 0.15,
+          "contribution": 0.045
+        },
+        "bollinger": {
+          "score": 0.016283336454872233,
+          "weight": 0.1,
+          "contribution": 0.0016283336454872234
+        },
+        "support_resistance": {
+          "score": 0.3,
+          "weight": 0.1,
+          "contribution": 0.03
+        }
+      },
+      "technical_summary": {
+        "overall_trend": "bearish",
+        "momentum_status": "neutral",
+        "macd_signal": "bullish",
+        "volume_confirmation": "negative",
+        "volatility_regime": "normal"
+      },
+      "execution_time_seconds": 0.50429,
+      "kpi_name": "Technical_Analysis",
+      "framework_weight": 0.3,
+      "analysis_timestamp": "2025-09-06T17:40:26.026138",
+      "data_quality": "high",
+      "interpretation": "\u26aa NEUTRAL - Mixed technical signals"
+    },
+    "market_sentiment_vix": {
+      "component_sentiment": -0.23183386474745205,
+      "component_confidence": 0.6625,
+      "component_weight": 0.2,
+      "weighted_contribution": -0.04636677294949041,
+      "sub_indicators": {
+        "vix_analysis": {
+          "current_vix": 10.779999732971191,
+          "previous_vix": 10.850000381469727,
+          "vix_change": -0.07000064849853516,
+          "vix_5d_ma": 11.05,
+          "vix_20d_ma": 11.740999937057495,
+          "vix_trend": -0.2700002670288093,
+          "sentiment": -0.49300120527921404,
+          "confidence": 0.85,
+          "vix_regime": "complacency",
+          "interpretation": "VIX at 10.8 - complacency fear level"
+        },
+        "put_call_analysis": {
+          "estimated_put_call_ratio": 1.0251429237422518,
+          "sentiment": 0.0,
+          "confidence": 0.5,
+          "source": "market_volatility_estimate",
+          "interpretation": "Est. PCR ~1.03 - neutral sentiment"
+        },
+        "breadth_analysis": {
+          "positive_sectors": 3,
+          "total_sectors_analyzed": 5,
+          "breadth_ratio": 0.6,
+          "average_sector_return": -0.299384980074972,
+          "sentiment": 0.09607778384197987,
+          "confidence": 0.7,
+          "interpretation": "3/5 sectors positive - narrow market"
+        },
+        "high_low_analysis": {
+          "high_low_signal": 0.0,
+          "sentiment": 0.0,
+          "confidence": 0.6,
+          "indices_analyzed": 2,
+          "interpretation": "Mid-range"
+        }
+      },
+      "market_context": {
+        "market_regime": "complacency",
+        "vix_level": 10.779999732971191,
+        "fear_greed_status": "greed",
+        "components_analyzed": 4,
+        "data_sources": [
+          "India_VIX",
+          "Options_Data",
+          "Market_Breadth"
+        ]
+      },
+      "execution_time_seconds": 1.830738,
+      "kpi_name": "Market_Sentiment_VIX",
+      "framework_weight": 0.2,
+      "analysis_timestamp": "2025-09-06T17:40:27.856925",
+      "data_quality": "high",
+      "interpretation": "\ud83d\udfe1 CAUTIOUS - Complacency emerging"
+    },
+    "rbi_interest_rates": {
+      "component_sentiment": 0.05785841521375125,
+      "component_confidence": 0.65,
+      "component_weight": 0.1,
+      "weighted_contribution": 0.005785841521375125,
+      "sub_indicators": {
+        "repo_rate_analysis": {
+          "current_repo_rate": 6.5,
+          "sentiment": 0.0,
+          "confidence": 0.6,
+          "source": "fallback_current_rate",
+          "interpretation": "Repo rate at 6.5% - neutral",
+          "last_updated": "2025-09-06T17:40:32.241585"
+        },
+        "bond_yield_analysis": {
+          "bond_data": {
+            "us_10y": {
+              "current_yield": 4.085999965667725,
+              "previous_yield": 4.176000118255615,
+              "change_bps": -9.000015258789062,
+              "ticker": "^TNX"
+            }
+          },
+          "primary_10y_yield": 4.085999965667725,
+          "yield_change_bps": -9.000015258789062,
+          "sentiment": 0.15999999999999998,
+          "confidence": 0.75,
+          "interpretation": "10Y yield at 4.09% (-9 bps)"
+        },
+        "policy_meeting_proximity": {
+          "next_meeting_date": "2025-10-08",
+          "days_to_meeting": 31,
+          "sentiment": 0.1,
+          "confidence": 0.6,
+          "interpretation": "Next RBI meeting in ~31 days"
+        },
+        "credit_growth_proxy": {
+          "bank_nifty_return_1m": -1.876444141857282,
+          "nifty_return_1m": -0.5190956666950172,
+          "relative_performance": -1.3573484751622646,
+          "sentiment": -0.13490735462792258,
+          "confidence": 0.65,
+          "interpretation": "Banking sector underperforming by 1.4%"
+        }
+      },
+      "market_context": {
+        "policy_stance": "neutral",
+        "components_analyzed": 4,
+        "data_sources": [
+          "RBI_Policy",
+          "Bond_Markets",
+          "Banking_Sector"
+        ],
+        "update_frequency": "4_hours"
+      },
+      "execution_time_seconds": 4.384745,
+      "kpi_name": "RBI_Interest_Rates_Policy",
+      "framework_weight": 0.1,
+      "analysis_timestamp": "2025-09-06T17:40:32.241743",
+      "data_quality": "high",
+      "interpretation": "\u26aa NEUTRAL - Balanced policy stance"
+    },
+    "global_factors": {
+      "component_sentiment": 0.06500114630329595,
+      "component_confidence": 0.8,
+      "component_weight": 0.05,
+      "weighted_contribution": 0.0032500573151647977,
+      "sub_indicators": {
+        "us_overnight": {
+          "sentiment": -0.13799907867663927,
+          "confidence": 0.85,
+          "individual_markets": {
+            "sp500": {
+              "ticker": "^GSPC",
+              "previous_close": 6502.080078125,
+              "current_close": 6481.5,
+              "overnight_change_pct": -0.3165152978388827
+            },
+            "nasdaq": {
+              "ticker": "^IXIC",
+              "previous_close": 21707.689453125,
+              "current_close": 21700.390625,
+              "overnight_change_pct": -0.033623238165263476
+            },
+            "dow": {
+              "ticker": "^DJI",
+              "previous_close": 45621.2890625,
+              "current_close": 45400.859375,
+              "overnight_change_pct": -0.4831728608063156
+            }
+          },
+          "average_change_pct": -0.2777704656034872,
+          "interpretation": "US markets down 0.28% overnight"
+        },
+        "inr_usd_trend": {
+          "sentiment": -0.15752567589727862,
+          "confidence": 0.8,
+          "current_rate": 0.01134520024061203,
+          "daily_change_pct": -0.07942419549884719,
+          "trend_change_pct": -0.07381295215191179,
+          "interpretation": "INR weakening vs USD"
+        },
+        "asian_correlation": {
+          "sentiment": 0.38967344606829535,
+          "confidence": 0.75,
+          "individual_markets": {
+            "nikkei": {
+              "ticker": "^N225",
+              "change_pct": 1.0297738214836702
+            },
+            "hang_seng": {
+              "ticker": "^HSI",
+              "change_pct": 1.43452546255611
+            },
+            "shanghai": {
+              "ticker": "000001.SS",
+              "change_pct": 1.238435353245388
+            }
+          },
+          "average_change_pct": 1.234244879095056,
+          "markets_analyzed": 3,
+          "interpretation": "Asian markets positive 1.23%"
+        },
+        "crude_oil_impact": {
+          "sentiment": 0.46779708780539364,
+          "confidence": 0.85,
+          "current_price": 61.869998931884766,
+          "daily_change_pct": -2.536232863833515,
+          "trend_change_pct": -2.914754392064807,
+          "interpretation": "Oil down 2.54% (positive for India)"
+        },
+        "dxy_influence": {
+          "sentiment": 0.19408391604671624,
+          "confidence": 0.75,
+          "current_dxy": 97.7699966430664,
+          "daily_change_pct": -0.5897324250668939,
+          "trend_change_pct": -0.40238615504839426,
+          "interpretation": "DXY weaker 0.59%"
+        }
+      },
+      "market_context": {
+        "components_analyzed": 5,
+        "components_failed": 0,
+        "data_sources": [
+          "Yahoo_Finance_Global",
+          "Currency_Markets",
+          "Commodity_Markets"
+        ],
+        "update_frequency": "30_minutes",
+        "global_session": "european_asian_overlap"
+      },
+      "execution_time_seconds": 2.443805,
+      "kpi_name": "Global_Factors",
+      "framework_weight": 0.05,
+      "analysis_timestamp": "2025-09-06T17:40:34.685654",
+      "data_quality": "high",
+      "interpretation": "\u26aa NEUTRAL - Mixed global signals"
+    }
+  },
+  "aggregation_details": {
+    "aggregation_method": "adaptive_weighted_average",
+    "framework_version": "2.0_complete",
+    "outlier_detection_applied": true,
+    "adaptive_weighting_applied": true,
+    "confidence_threshold": 0.75,
+    "min_components_required": 4,
+    "weighting_scheme": {
+      "fii_dii_flows": "35% - Institutional behavior (highest priority)",
+      "technical_analysis": "30% - Price momentum confirmation",
+      "market_sentiment_vix": "20% - Fear/greed behavioral indicators",
+      "rbi_interest_rates": "10% - Monetary policy impact",
+      "global_factors": "5% - External global influences"
+    },
+    "signal_validation": {
+      "cross_validation_enabled": true,
+      "consistency_checking": true,
+      "outlier_detection": true,
+      "confidence_weighting": true,
+      "fallback_handling": "Neutral default with adjusted weight"
+    },
+    "advanced_features": {
+      "signal_momentum_tracking": true,
+      "risk_assessment": true,
+      "conviction_scoring": true,
+      "trading_signal_generation": true
+    }
+  },
+  "data_quality_assessment": {
+    "high_quality_sources_pct": 100.0,
+    "error_components": 0,
+    "successful_components": 5,
+    "average_source_reliability": 0.7025,
+    "average_data_freshness": 0.9400000000000001,
+    "overall_data_grade": "A",
+    "quality_score": 0.8690000000000001,
+    "component_reliability_breakdown": {
+      "fii_dii_flows": 0.7,
+      "technical_analysis": 0.7,
+      "market_sentiment_vix": 0.6625,
+      "rbi_interest_rates": 0.65,
+      "global_factors": 0.8
+    },
+    "data_source_summary": {
+      "real_time_sources": [
+        "Yahoo_Finance",
+        "Currency_Markets",
+        "Global_Markets"
+      ],
+      "scraped_sources": [
+        "Moneycontrol",
+        "Financial_News"
+      ],
+      "estimated_sources": [
+        "VIX_Proxy",
+        "Flow_Estimates"
+      ],
+      "official_sources": [
+        "RBI_Policy",
+        "NSE_Data"
+      ]
+    }
+  },
+  "market_overview": {
+    "analysis_date": "2025-09-06",
+    "analysis_time": "17:40:34 IST",
+    "market_session": "after_market",
+    "nifty_snapshot": {
+      "current_level": 24741.0,
+      "daily_change_pct": 0.02708473067117542,
+      "trend_status": "bearish",
+      "volatility_regime": "normal",
+      "momentum_status": "neutral"
+    },
+    "institutional_activity": {
+      "net_institutional_flow": null,
+      "flow_dominance": null,
+      "flow_momentum": null,
+      "flow_interpretation": "\u26aa NEUTRAL - Balanced institutional activity"
+    },
+    "technical_summary": {},
+    "sentiment_readings": {
+      "vix_level": 10.779999732971191,
+      "fear_greed_status": "greed",
+      "market_regime": "complacency",
+      "sentiment_interpretation": "\ud83d\udfe1 CAUTIOUS - Complacency emerging"
+    },
+    "policy_environment": {
+      "current_repo_rate": 6.5,
+      "policy_stance": "neutral",
+      "policy_interpretation": "\u26aa NEUTRAL - Balanced policy stance"
+    },
+    "global_backdrop": {
+      "us_overnight_performance": -0.2777704656034872,
+      "global_risk_sentiment": "\u26aa NEUTRAL - Mixed global signals",
+      "global_session": "european_asian_overlap"
+    },
+    "key_highlights": [],
+    "risk_alerts": [],
+    "opportunities": []
+  },
+  "trading_signals": {
+    "primary_signal": "HOLD",
+    "signal_strength": "NEUTRAL",
+    "risk_level": "HIGH",
+    "position_size_suggestion": "MINIMAL",
+    "confidence_level": "49%",
+    "signal_consistency": "70%",
+    "recommended_timeframe": "INTRADAY",
+    "key_drivers": [],
+    "risk_factors": [],
+    "signal_timestamp": "2025-09-06T17:40:34.688810"
+  }
+}

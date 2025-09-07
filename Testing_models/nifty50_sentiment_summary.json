@@ -1,0 +1,19 @@
+{
+  "timestamp": "2025-09-06T17:14:23.958101",
+  "overall_sentiment": -0.0038638460097751215,
+  "overall_confidence": 0.7,
+  "interpretation": "NEUTRAL",
+  "quality_grade": "B+",
+  "key_components": {
+    "fii_dii_flows": {
+      "sentiment": -0.07,
+      "confidence": 0.7,
+      "interpretation": "\u26aa NEUTRAL - Balanced institutional activity"
+    },
+    "technical_analysis": {
+      "sentiment": 0.0732950003121539,
+      "confidence": 0.7,
+      "interpretation": "\u26aa NEUTRAL - Mixed technical signals"
+    }
+  }
+}

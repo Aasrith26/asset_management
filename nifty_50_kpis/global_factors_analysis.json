@@ -1,0 +1,60 @@
+{
+  "component_sentiment": 0.0,
+  "component_confidence": 0.3,
+  "component_weight": 0.05,
+  "weighted_contribution": 0.0,
+  "sub_indicators": {
+    "us_overnight": {
+      "sentiment": 0.0,
+      "confidence": 0.3,
+      "error": true,
+      "error_message": "No US market data available",
+      "interpretation": "us_overnight data unavailable"
+    },
+    "inr_usd_trend": {
+      "sentiment": 0.0,
+      "confidence": 0.3,
+      "error": true,
+      "error_message": "No INR/USD data available",
+      "interpretation": "inr_usd data unavailable"
+    },
+    "asian_correlation": {
+      "sentiment": 0.0,
+      "confidence": 0.3,
+      "error": true,
+      "error_message": "No Asian market data available",
+      "interpretation": "asian_markets data unavailable"
+    },
+    "crude_oil_impact": {
+      "sentiment": 0.0,
+      "confidence": 0.3,
+      "error": true,
+      "error_message": "No crude oil data available",
+      "interpretation": "crude_oil data unavailable"
+    },
+    "dxy_influence": {
+      "sentiment": 0.0,
+      "confidence": 0.3,
+      "error": true,
+      "error_message": "No DXY data available",
+      "interpretation": "dxy data unavailable"
+    }
+  },
+  "market_context": {
+    "components_analyzed": 0,
+    "components_failed": 5,
+    "data_sources": [
+      "Yahoo_Finance_Global",
+      "Currency_Markets",
+      "Commodity_Markets"
+    ],
+    "update_frequency": "30_minutes",
+    "global_session": "asian_session"
+  },
+  "execution_time_seconds": 10.696756,
+  "kpi_name": "Global_Factors",
+  "framework_weight": 0.05,
+  "analysis_timestamp": "2025-09-07T11:59:55.866571",
+  "data_quality": "moderate",
+  "interpretation": "\u26aa NEUTRAL - Mixed global signals"
+}

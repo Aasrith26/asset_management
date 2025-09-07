@@ -1,0 +1,21 @@
+{
+  "component_sentiment": -0.07,
+  "component_confidence": 0.7,
+  "component_weight": 0.35,
+  "sub_indicators": {
+    "estimated_flows": {
+      "fii_flow": -8.0,
+      "dii_flow": 1.0,
+      "net_flow": -7.0,
+      "source": "moneycontrol_estimate"
+    }
+  },
+  "market_context": {
+    "data_source": "Moneycontrol_Scraped",
+    "confidence_note": "Estimated from web scraping"
+  },
+  "execution_time_seconds": 1.761752,
+  "kpi_name": "FII_DII_Flows",
+  "framework_weight": 0.35,
+  "interpretation": "\u26aa NEUTRAL - Balanced institutional activity"
+}

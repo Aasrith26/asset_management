@@ -1,0 +1,10 @@
+{
+  "central_bank_sentiment": 0.3274056021041093,
+  "confidence": 0.5783778156293445,
+  "quality_grade": "B+",
+  "recommended_weight": 0.15085714285714286,
+  "timestamp": "2025-09-06T14:02:07.133215",
+  "use_in_composite": true,
+  "data_source_type": "LIVE_REAL_TIME_SOURCES",
+  "real_time_bonus": 0.2571428571428571
+}

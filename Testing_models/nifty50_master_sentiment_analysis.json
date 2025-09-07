@@ -1,0 +1,277 @@
+{
+  "analysis_metadata": {
+    "timestamp": "2025-09-06T17:14:23.958101",
+    "system_version": "1.0_nifty_integrated_poc",
+    "framework_coverage_pct": 65.0,
+    "analysis_type": "nifty_50_sentiment_comprehensive",
+    "market_focus": "Indian_equity_nifty_50",
+    "execution_time_seconds": 1.263234,
+    "components_analyzed": 2,
+    "data_freshness_assessment": "real_time_to_15min",
+    "performance_grade": "EXCELLENT"
+  },
+  "composite_results": {
+    "overall_sentiment": -0.0038638460097751215,
+    "overall_confidence": 0.7,
+    "interpretation": "NEUTRAL",
+    "quality_grade": "B+",
+    "framework_weights_used": {
+      "fii_dii_flows": 0.35,
+      "technical_analysis": 0.3
+    },
+    "component_contributions": {
+      "fii_dii_flows": -0.01715,
+      "technical_analysis": 0.015391950065552319
+    },
+    "coverage_details": {
+      "implemented_components": [
+        "fii_dii_flows",
+        "technical_analysis"
+      ],
+      "total_weight_covered": 0.6499999999999999,
+      "missing_components": [
+        "market_sentiment_vix",
+        "interest_rates_rbi",
+        "global_factors"
+      ],
+      "poc_status": "Phase_1_Complete"
+    }
+  },
+  "component_details": {
+    "fii_dii_flows": {
+      "component_sentiment": -0.07,
+      "component_confidence": 0.7,
+      "component_weight": 0.35,
+      "sub_indicators": {
+        "estimated_flows": {
+          "fii_flow": -8.0,
+          "dii_flow": 1.0,
+          "net_flow": -7.0,
+          "source": "moneycontrol_estimate"
+        }
+      },
+      "market_context": {
+        "data_source": "Moneycontrol_Scraped",
+        "confidence_note": "Estimated from web scraping"
+      },
+      "execution_time_seconds": 0.35753,
+      "kpi_name": "FII_DII_Flows",
+      "framework_weight": 0.35,
+      "interpretation": "\u26aa NEUTRAL - Balanced institutional activity"
+    },
+    "technical_analysis": {
+      "component_sentiment": 0.0732950003121539,
+      "component_confidence": 0.7,
+      "component_weight": 0.3,
+      "weighted_contribution": 0.02198850009364617,
+      "sub_indicators": {
+        "moving_averages": {
+          "individual_mas": {
+            "ma_20": {
+              "value": 24707.3552734375,
+              "price_vs_ma_pct": 0.13617291770062578,
+              "trend": "above",
+              "ma_slope": 12.905078125000728
+            },
+            "ma_50": {
+              "value": 24963.1062109375,
+              "price_vs_ma_pct": -0.8897378758104489,
+              "trend": "below",
+              "ma_slope": -32.068984374996944
+            },
+            "ma_200": {
+              "value": NaN,
+              "price_vs_ma_pct": NaN,
+              "trend": "below",
+              "ma_slope": NaN
+            }
+          },
+          "trend_score": -0.33333333333333337,
+          "trend_strength": "moderate",
+          "overall_trend": "bearish",
+          "current_price": 24741.0
+        },
+        "rsi_analysis": {
+          "individual_rsi": {
+            "rsi_14": {
+              "value": 53.20813646375011,
+              "level": "neutral",
+              "trend": "falling",
+              "momentum": -3.448265336243928
+            },
+            "rsi_21": {
+              "value": 51.82667819378036,
+              "level": "neutral",
+              "trend": "falling",
+              "momentum": 5.909607140553888
+            }
+          },
+          "primary_rsi": 53.20813646375011,
+          "rsi_signal": "neutral",
+          "overbought_oversold": "normal",
+          "rsi_divergence": "no_divergence"
+        },
+        "macd_analysis": {
+          "macd_line": -52.29826035649239,
+          "signal_line": -60.64263745905918,
+          "histogram": 8.344377102566789,
+          "crossover_status": "bullish",
+          "recent_crossover": "none",
+          "histogram_trend": "increasing",
+          "macd_strength": 8.344377102566789,
+          "zero_line_cross": "below"
+        },
+        "volume_analysis": {
+          "current_volume": 210100.0,
+          "volume_vs_20d_avg": 0.6740671821360967,
+          "volume_vs_50d_avg": 0.7110416201325293,
+          "volume_trend": "low",
+          "price_volume_relationship": "negative",
+          "obv_trend": "rising",
+          "volume_momentum": -0.33110474371219356
+        },
+        "bollinger_bands": {
+          "upper_band": 25120.596462130525,
+          "middle_band": 24707.3552734375,
+          "lower_band": 24294.114084744477,
+          "current_price": 24741.0,
+          "bb_position": 0.5407083411371806,
+          "price_position": "within_bands",
+          "band_width": 3.3450863851647714,
+          "squeeze_status": "squeeze"
+        },
+        "support_resistance": {
+          "nearest_resistance": 25669.349609375,
+          "nearest_support": 24598.599609375,
+          "resistance_distance_pct": 3.752271975162685,
+          "support_distance_pct": 0.5755644097853765,
+          "all_resistance_levels": [
+            25669.349609375,
+            25548.69921875,
+            25255.30078125
+          ],
+          "all_support_levels": [
+            25331.650390625,
+            25001.94921875,
+            24882.30078125
+          ]
+        },
+        "price_patterns": {
+          "trend_pattern": "sideways",
+          "latest_candle": {
+            "type": "bearish",
+            "body_size_pct": 0.31367130467478765,
+            "range_size_pct": 0.8491529757301559,
+            "upper_shadow_pct": 0.05439414079410252,
+            "lower_shadow_pct": 0.4810875302612658,
+            "gap_from_prev": 0.34182825248528065
+          },
+          "momentum_5d_pct": 1.2860863993874567,
+          "momentum_10d_pct": -0.5190956666950172,
+          "volatility_10d": 9.719436131516673
+        }
+      },
+      "market_context": {
+        "current_price": 24741.0,
+        "previous_close": 24734.30078125,
+        "daily_change_pct": 0.02708473067117542,
+        "data_points": 99,
+        "data_source": "Yahoo_Finance_Nifty",
+        "analysis_period_days": 100,
+        "last_update": "2025-09-05 00:00:00"
+      },
+      "scoring_breakdown": {
+        "trend_mas": {
+          "score": -0.33333333333333337,
+          "weight": 0.25,
+          "contribution": -0.08333333333333334
+        },
+        "momentum_rsi": {
+          "score": 0.0,
+          "weight": 0.2,
+          "contribution": 0.0
+        },
+        "trend_macd": {
+          "score": 0.4,
+          "weight": 0.2,
+          "contribution": 0.08000000000000002
+        },
+        "volume_trend": {
+          "score": 0.3,
+          "weight": 0.15,
+          "contribution": 0.045
+        },
+        "bollinger": {
+          "score": 0.016283336454872233,
+          "weight": 0.1,
+          "contribution": 0.0016283336454872234
+        },
+        "support_resistance": {
+          "score": 0.3,
+          "weight": 0.1,
+          "contribution": 0.03
+        }
+      },
+      "technical_summary": {
+        "overall_trend": "bearish",
+        "momentum_status": "neutral",
+        "macd_signal": "bullish",
+        "volume_confirmation": "negative",
+        "volatility_regime": "normal"
+      },
+      "execution_time_seconds": 0.905403,
+      "kpi_name": "Technical_Analysis",
+      "framework_weight": 0.3,
+      "analysis_timestamp": "2025-09-06T17:14:25.221304",
+      "data_quality": "high",
+      "interpretation": "\u26aa NEUTRAL - Mixed technical signals"
+    }
+  },
+  "aggregation_details": {
+    "aggregation_method": "weighted_average",
+    "outlier_detection_applied": true,
+    "adaptive_weighting_applied": true,
+    "confidence_threshold": 0.7,
+    "weighting_scheme": {
+      "fii_dii_flows": "35% - Highest priority (institutional behavior)",
+      "technical_analysis": "30% - Price momentum confirmation"
+    },
+    "signal_validation": {
+      "cross_validation_enabled": true,
+      "signal_consistency_check": true,
+      "fallback_handling": "Neutral default with reduced weight"
+    }
+  },
+  "data_quality_assessment": {
+    "high_quality_sources_pct": 100.0,
+    "error_components": 0,
+    "average_source_reliability": 0.7,
+    "data_freshness_status": "acceptable",
+    "overall_data_grade": "A",
+    "component_reliability_breakdown": {
+      "fii_dii_flows": 0.7,
+      "technical_analysis": 0.7
+    }
+  },
+  "market_overview": {
+    "analysis_date": "2025-09-06",
+    "market_session": "after_market",
+    "nifty_snapshot": {
+      "current_level": 24741.0,
+      "daily_change_pct": 0.02708473067117542,
+      "trend_status": "bearish",
+      "volatility_regime": "normal"
+    },
+    "institutional_activity": {
+      "fii_net_flow": null,
+      "dii_net_flow": null,
+      "total_net_flow": null,
+      "flow_dominance": null,
+      "flow_momentum": null
+    },
+    "technical_summary": {},
+    "key_highlights": [
+      "Mixed signals - neutral market sentiment"
+    ]
+  }
+}

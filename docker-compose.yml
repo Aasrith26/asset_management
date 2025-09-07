@@ -1,0 +1,59 @@
+# DOCKER COMPOSE SETUP
+# ====================
+# Complete Docker Compose setup for 4-asset backend with Redis caching
+
+version: '3.8'
+
+services:
+  # Main 4-Asset Backend API
+  sentiment-backend:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - ENVIRONMENT=production
+      - REDIS_URL=redis://redis:6379
+      - TE_API_KEY=${TE_API_KEY:-guest:guest}
+      - ALPHA_VANTAGE_API_KEY=${ALPHA_VANTAGE_API_KEY:-}
+    volumes:
+      - ./analysis_results:/app/analysis_results
+      - ./logs:/app/logs
+    depends_on:
+      - redis
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Redis for caching (optional but recommended)
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+    command: redis-server --appendonly yes
+
+  # Nginx reverse proxy (optional)
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./ssl:/etc/nginx/ssl:ro
+    depends_on:
+      - sentiment-backend
+    restart: unless-stopped
+
+volumes:
+  redis_data:
+
+networks:
+  default:
+    driver: bridge

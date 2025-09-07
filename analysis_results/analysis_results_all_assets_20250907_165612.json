@@ -1,0 +1,444 @@
+{
+  "analysis_results": {
+    "NIFTY50": {
+      "asset_type": "NIFTY50",
+      "sentiment": 0.0,
+      "confidence": 0.5,
+      "execution_time": 0.0,
+      "component_details": {},
+      "market_context": {},
+      "status": "success",
+      "timestamp": "2025-09-07T16:56:12.890930",
+      "data_source": "Multiple_Indian_APIs"
+    },
+    "GOLD": {
+      "asset_type": "GOLD",
+      "sentiment": 0.0,
+      "confidence": 0.3,
+      "status": "error",
+      "error": "Gold analysis returned no result",
+      "timestamp": "2025-09-07T16:55:54.587780"
+    },
+    "BITCOIN": {
+      "asset_type": "BITCOIN",
+      "sentiment": 0.20953558456107474,
+      "confidence": 0.5432302887067086,
+      "execution_time": 6.519628,
+      "component_details": {
+        "micro_momentum": {
+          "component_name": "micro_momentum",
+          "sentiment": 0.24493627124776007,
+          "confidence": 0.7166666666666667,
+          "framework_weight": 0.3,
+          "weighted_contribution": 0.07348088137432802,
+          "description": "Bitcoin Micro Momentum Analysis",
+          "source": "Bitcoin_micro_momentum",
+          "metadata": {
+            "roc_features": {
+              "f_roc1": 0.0,
+              "f_roc5": 0.045,
+              "roc1_pct": 0.0,
+              "roc5_pct": 0.0049
+            },
+            "momentum_indicators": {
+              "f_macd_hist": -0.055,
+              "f_rsi_distance": 1.0,
+              "rsi_value": 94.51,
+              "macd_hist_z": -0.499
+            },
+            "price_analysis": {
+              "f_vwap_distance": 0.497,
+              "current_price": 111199.9,
+              "intraday_vwap": 111022.6,
+              "volatility_1h": 0.0054
+            }
+          },
+          "market_context": {
+            "data_source": "Kraken_OHLC_1min",
+            "data_quality": "high",
+            "data_points": 401,
+            "last_update": "2025-09-07T11:25:00+00:00",
+            "price_currency": "USD"
+          },
+          "status": "success",
+          "execution_time": 1.457658
+        },
+        "funding_basis": {
+          "component_name": "funding_basis",
+          "sentiment": -0.2067372982246599,
+          "confidence": 0.47786986046584223,
+          "framework_weight": 0.3,
+          "weighted_contribution": -0.062021189467397965,
+          "description": "Bitcoin Funding Basis Analysis",
+          "source": "Bitcoin_funding_basis",
+          "metadata": {
+            "funding_analysis": {
+              "funding_rate_8h": 0.0,
+              "funding_rate_annual_pct": 0.0,
+              "f_funding_contrarian": -0.0,
+              "funding_interpretation": "Neutral - balanced positioning"
+            },
+            "basis_analysis": {
+              "spot_price": 111199.9,
+              "mark_price": 111294.01,
+              "basis_bps": 8.46,
+              "f_basis_stretch": -0.689,
+              "basis_interpretation": "Slight premium - mild futures premium"
+            },
+            "oi_analysis": {
+              "current_oi": 7553698.0,
+              "oi_change_5m": 0.0,
+              "oi_z_score": 0.0,
+              "f_oi_momentum": 0.0
+            }
+          },
+          "market_context": {
+            "data_source": "Kraken_Spot_Futures",
+            "data_quality": "high",
+            "oi_history_length": 1,
+            "funding_frequency": "8_hours",
+            "price_currency": "USD"
+          },
+          "status": "success",
+          "execution_time": 3.372455
+        },
+        "liquidity": {
+          "component_name": "liquidity",
+          "sentiment": 0.03521413638227668,
+          "confidence": 0.7016666666666667,
+          "framework_weight": 0.2,
+          "weighted_contribution": 0.007042827276455337,
+          "description": "Bitcoin Liquidity Analysis",
+          "source": "Bitcoin_liquidity",
+          "metadata": {
+            "spread_analysis": {
+              "current_spread_bps": 0.01,
+              "median_spread_bps": 0.01,
+              "relative_spread": -0.0,
+              "f_spread_improvement": 0.0,
+              "spread_interpretation": "Very tight - excellent liquidity"
+            },
+            "slippage_analysis": {
+              "buy_slippage_bps": 0.04,
+              "sell_slippage_bps": 0.0,
+              "average_impact_bps": 0.02,
+              "median_impact_bps": 0.02,
+              "f_impact_improvement": 0.0,
+              "standard_trade_size": 250000
+            },
+            "depth_analysis": {
+              "bid_notional": 6160137.35,
+              "ask_notional": 5153642.97,
+              "depth_imbalance": 0.089,
+              "f_imbalance": 0.176,
+              "band_bps": 25
+            }
+          },
+          "market_context": {
+            "data_source": "Kraken_OrderBook",
+            "data_quality": "high",
+            "mid_price": 111199.95,
+            "depth_levels_analyzed": 400,
+            "spread_history_length": 1,
+            "impact_history_length": 1,
+            "price_currency": "USD"
+          },
+          "status": "success",
+          "execution_time": 0.823593
+        },
+        "orderflow": {
+          "component_name": "orderflow",
+          "sentiment": 0.7866534758074153,
+          "confidence": 0.6333333333333333,
+          "framework_weight": 0.2,
+          "weighted_contribution": 0.15733069516148307,
+          "description": "Bitcoin Orderflow Analysis",
+          "source": "Bitcoin_orderflow",
+          "metadata": {
+            "imbalance_analysis": {
+              "imbalance_5m": 0.915,
+              "buy_notional_5m": 11405.83,
+              "sell_notional_5m": 508.88,
+              "total_notional_5m": 11914.7,
+              "f_imb5": 0.863,
+              "imbalance_interpretation": "Strong buy pressure - bullish flow"
+            },
+            "cvd_analysis": {
+              "cvd_slope_15m": 13287.55,
+              "cvd_scale": 292.68,
+              "f_cvd15": 0.995,
+              "cvd_current": -2611683.32,
+              "cvd_interpretation": "Moderate cumulative buying"
+            },
+            "intensity_analysis": {
+              "imbalance_1m": 0.0,
+              "trades_1m": 0,
+              "trade_rate_z": 0.0,
+              "f_intensity": 0.0,
+              "mean_trade_rate": 0.0
+            }
+          },
+          "market_context": {
+            "data_source": "Kraken_Trades",
+            "data_quality": "high",
+            "minute_buckets": 108,
+            "trade_rate_history_length": 1,
+            "data_timespan_minutes": 120,
+            "price_currency": "USD"
+          },
+          "status": "success",
+          "execution_time": 0.865114
+        }
+      },
+      "executive_summary": {
+        "overall_sentiment": 0.20953558456107474,
+        "confidence_level": 0.5432302887067086,
+        "interpretation": "\ud83d\udfe1 MILDLY BULLISH - Slight positive bias",
+        "risk_assessment": "HIGH RISK - Low confidence signals",
+        "components_analyzed": 4,
+        "recommendation": "Confidence Level: 54% - HIGH RISK - Low confidence signals"
+      },
+      "market_context": {
+        "asset_type": "cryptocurrency",
+        "data_source": "Kraken_Multi_API",
+        "data_freshness": "real_time",
+        "update_frequency": "1_minute",
+        "price_currency": "USD"
+      },
+      "status": "success",
+      "timestamp": "2025-09-07T16:56:01.119125",
+      "data_source": "Kraken_Multi_API"
+    },
+    "REIT": {
+      "asset_type": "REIT",
+      "sentiment": -0.5986358454716348,
+      "confidence": 0.8,
+      "execution_time": 4.872425,
+      "component_details": {
+        "technical_momentum": {
+          "component_name": "technical_momentum",
+          "sentiment": -0.3297148620585736,
+          "confidence": 0.8,
+          "framework_weight": 0.35,
+          "weighted_contribution": -0.11540020172050075,
+          "description": "REIT Technical Momentum Analysis - Original Logic",
+          "source": "REIT_technical_momentum_Original",
+          "metadata": {
+            "original_diagnostics": {
+              "score": -0.33,
+              "features": {
+                "f_roc20": -0.062,
+                "f_rsi14": -0.254,
+                "f_emaAlignSlope": -0.762
+              },
+              "metrics": {
+                "price": 755.55,
+                "roc20": -0.0054,
+                "rsi14": 43.64
+              }
+            },
+            "technical_features": {
+              "f_roc20": -0.062,
+              "f_rsi14": -0.254,
+              "f_emaAlignSlope": -0.762
+            },
+            "price_metrics": {
+              "price": 755.55,
+              "roc20": -0.0054,
+              "rsi14": 43.64
+            }
+          },
+          "market_context": {
+            "symbol": "DLF.NS",
+            "data_source": "Yahoo_Finance_Original_Logic",
+            "data_quality": "high",
+            "price_currency": "INR"
+          },
+          "status": "success",
+          "execution_time": 0.800105
+        },
+        "yield_spread": {
+          "component_name": "yield_spread",
+          "sentiment": -0.999999999755146,
+          "confidence": 0.8,
+          "framework_weight": 0.3,
+          "weighted_contribution": -0.2999999999265438,
+          "description": "REIT Yield Spread Analysis - Original Logic",
+          "source": "REIT_yield_spread_Original",
+          "metadata": {
+            "original_diagnostics": {
+              "score": -1.0,
+              "features": {
+                "spread_frac": -0.0571,
+                "reit_yield_ttm": 0.0079,
+                "gsec10y_yield": 0.065
+              },
+              "metrics": {
+                "div_ttm": 6.0,
+                "price": 755.55,
+                "scale_proxy": 0.001
+              }
+            },
+            "yield_features": {
+              "spread_frac": -0.0571,
+              "reit_yield_ttm": 0.0079,
+              "gsec10y_yield": 0.065
+            },
+            "yield_metrics": {
+              "div_ttm": 6.0,
+              "price": 755.55,
+              "scale_proxy": 0.001
+            }
+          },
+          "market_context": {
+            "symbol": "DLF.NS",
+            "data_source": "Yahoo_Finance_TradingEconomics_Original_Logic",
+            "yield_anchor": "assumed_6.5%",
+            "data_quality": "high",
+            "price_currency": "INR"
+          },
+          "status": "success",
+          "execution_time": 3.398768
+        },
+        "accumulation_flow": {
+          "component_name": "accumulation_flow",
+          "sentiment": -0.3699822583188548,
+          "confidence": 0.8,
+          "framework_weight": 0.2,
+          "weighted_contribution": -0.07399645166377096,
+          "description": "REIT Accumulation Flow Analysis - Original Logic",
+          "source": "REIT_accumulation_flow_Original",
+          "metadata": {
+            "original_diagnostics": {
+              "score": -0.37,
+              "features": {
+                "f_updown": -0.542,
+                "f_ad_slope": -0.314,
+                "f_obv_slope": -0.082
+              },
+              "metrics": {
+                "up_down_ratio_20d": 0.818,
+                "ad_slope_20d": -7074231.32,
+                "obv_slope_20d": -3922487.0
+              }
+            },
+            "flow_features": {
+              "f_updown": -0.542,
+              "f_ad_slope": -0.314,
+              "f_obv_slope": -0.082
+            },
+            "flow_metrics": {
+              "up_down_ratio_20d": 0.818,
+              "ad_slope_20d": -7074231.32,
+              "obv_slope_20d": -3922487.0
+            }
+          },
+          "market_context": {
+            "symbol": "DLF.NS",
+            "data_source": "Yahoo_Finance_Original_Logic",
+            "data_quality": "high",
+            "price_currency": "INR"
+          },
+          "status": "success",
+          "execution_time": 0.420691
+        },
+        "liquidity_risk": {
+          "component_name": "liquidity_risk",
+          "sentiment": -0.7282612810721287,
+          "confidence": 0.8,
+          "framework_weight": 0.15,
+          "weighted_contribution": -0.1092391921608193,
+          "description": "REIT Liquidity Risk Analysis - Original Logic",
+          "source": "REIT_liquidity_risk_Original",
+          "metadata": {
+            "original_diagnostics": {
+              "score": -0.728,
+              "features": {
+                "f_spread_proxy": -0.978,
+                "f_amihud": -0.478
+              },
+              "metrics": {
+                "range_today": 0.03349,
+                "median_range_60d": 0.0214,
+                "amihud_20d": 0.0
+              }
+            },
+            "liquidity_features": {
+              "f_spread_proxy": -0.978,
+              "f_amihud": -0.478
+            },
+            "liquidity_metrics": {
+              "range_today": 0.03349,
+              "median_range_60d": 0.0214,
+              "amihud_20d": 0.0
+            }
+          },
+          "market_context": {
+            "symbol": "DLF.NS",
+            "data_source": "Yahoo_Finance_Original_Logic",
+            "data_quality": "high",
+            "price_currency": "INR"
+          },
+          "status": "success",
+          "execution_time": 0.252431
+        }
+      },
+      "executive_summary": {
+        "overall_sentiment": -0.5986358454716348,
+        "confidence_level": 0.8,
+        "interpretation": "Bearish \u2014 strong",
+        "components_analyzed": 4,
+        "original_logic_preserved": true
+      },
+      "market_context": {
+        "asset_type": "real_estate_investment_trust",
+        "data_source": "Yahoo_Finance_TradingEconomics_Original_Logic",
+        "data_freshness": "daily",
+        "update_frequency": "daily",
+        "price_currency": "INR",
+        "logic_source": "friend_original_mindspace_code"
+      },
+      "symbol": "MINDSPACE",
+      "status": "success",
+      "timestamp": "2025-09-07T16:56:06.000306",
+      "data_source": "Yahoo_Finance_TradingEconomics"
+    }
+  },
+  "portfolio_summary": {
+    "portfolio_sentiment": -0.13,
+    "portfolio_confidence": 0.614,
+    "successful_assets": 3,
+    "failed_assets": 1,
+    "total_assets": 4,
+    "execution_time_seconds": 18.930399,
+    "status": "success",
+    "risk_assessment": "MODERATE RISK",
+    "investment_recommendation": "HOLD",
+    "asset_breakdown": {
+      "NIFTY50": {
+        "sentiment": 0.0,
+        "confidence": 0.5,
+        "status": "success"
+      },
+      "GOLD": {
+        "sentiment": 0.0,
+        "confidence": 0.3,
+        "status": "error"
+      },
+      "BITCOIN": {
+        "sentiment": 0.21,
+        "confidence": 0.543,
+        "status": "success"
+      },
+      "REIT": {
+        "sentiment": -0.599,
+        "confidence": 0.8,
+        "status": "success"
+      }
+    }
+  },
+  "execution_time_seconds": 18.930399,
+  "timestamp": "2025-09-07T16:56:12.891320",
+  "assets_analyzed": 4,
+  "total_assets_available": 4
+}

@@ -608,7 +608,7 @@ async def test_sentiment_analyzer():
         print(f"Interpretation: {result.get('interpretation', 'N/A')}")
         
         # Save detailed JSON
-        with open('market_sentiment_analysis.json', 'w') as f:
+        with open('outputs/market_sentiment_analysis.json', 'w') as f:
             json.dump(result, f, indent=2, default=str)
         print("\n✅ Detailed results saved to: market_sentiment_analysis.json")
     

@@ -1,0 +1,7 @@
+metric_type,metric_name,value,confidence,timestamp
+portfolio,portfolio_sentiment,-0.109,0.648,2025-09-07T18:01:14.678340
+portfolio,successful_assets,4,1,2025-09-07T18:01:14.678340
+asset_contribution,nifty50_sentiment,0,0.5,2025-09-07T18:01:14.678340
+asset_contribution,gold_sentiment,0.32,0.77,2025-09-07T18:01:14.678340
+asset_contribution,bitcoin_sentiment,-0.159,0.521,2025-09-07T18:01:14.678340
+asset_contribution,reit_sentiment,-0.599,0.8,2025-09-07T18:01:14.678340

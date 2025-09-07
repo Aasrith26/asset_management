@@ -1,0 +1,15 @@
+metric_type,metric_name,value,confidence,timestamp
+asset_info,asset_type,GOLD,1.0,2025-09-07T18:01:12.543750
+sentiment,overall_sentiment,0.3200927955141441,0.769904761904762,2025-09-07T18:01:12.543750
+component_sentiment,technical_analysis_sentiment,1.0,0.715,2025-09-07T18:01:12.543750
+component_sentiment,real_interest_rates_sentiment,0.40285655414444405,0.75,2025-09-07T18:01:12.543750
+component_sentiment,central_bank_sentiment_sentiment,0.30399714214635176,0.5678571428571428,2025-09-07T18:01:12.543750
+component_sentiment,professional_positioning_sentiment,-0.02427152026703755,0.5,2025-09-07T18:01:12.543750
+component_metric,professional_positioning_estimated_position,-1.6192776678227652,0.5,2025-09-07T18:01:12.543750
+component_metric,professional_positioning_recent_return,0.009141279116626478,0.5,2025-09-07T18:01:12.543750
+component_metric,professional_positioning_volume_factor,1.7713906852243098,0.5,2025-09-07T18:01:12.543750
+component_sentiment,currency_debasement_sentiment,0.04927980855971892,0.8166666666666668,2025-09-07T18:01:12.543750
+component_metric,currency_debasement_components_analyzed,3,0.8166666666666668,2025-09-07T18:01:12.543750
+component_metric,currency_debasement_component_weights_dxy,0.4,0.8166666666666668,2025-09-07T18:01:12.543750
+component_metric,currency_debasement_component_weights_em_stress,0.3,0.8166666666666668,2025-09-07T18:01:12.543750
+component_metric,currency_debasement_component_weights_cb_expansion,0.3,0.8166666666666668,2025-09-07T18:01:12.543750

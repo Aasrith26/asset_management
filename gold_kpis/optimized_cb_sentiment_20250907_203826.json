@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-09-06T15:31:29.141335",
+  "timestamp": "2025-09-07T20:38:26.974889",
   "analysis_version": "4.0_optimized_enterprise",
   "optimization_features": {
     "smart_caching": true,
@@ -9,14 +9,14 @@
     "multi_timeframe_analysis": true
   },
   "performance_metrics": {
-    "execution_time_seconds": 3.830643,
+    "execution_time_seconds": 3.60679,
     "performance_grade": "HIGH",
     "cache_hits": 0,
     "sources_optimized": 7
   },
   "sentiment_analysis": {
-    "sentiment_score": 0.33171827141360677,
-    "confidence": 0.58,
+    "sentiment_score": 0.30399714214635176,
+    "confidence": 0.5678571428571428,
     "interpretation": "\ud83d\udfe2 BULLISH - CB buying activity (OPTIMIZED SIGNALS)",
     "recommendation": "LOW CONVICTION - OPTIMIZED FALLBACKS: Limited high-quality data"
   },
@@ -35,14 +35,14 @@
       }
     },
     {
-      "source": "RBI_Policy_Proxy_Fast",
-      "sentiment": 0.35,
-      "confidence": 0.45499999999999996,
-      "weight": 0.2,
-      "description": "RBI policy proxy: continued accumulation trend",
+      "source": "RBI_Trading_Economics_Fast",
+      "sentiment": 0.197375320224904,
+      "confidence": 0.5599999999999999,
+      "weight": 0.25,
+      "description": "RBI reserves: 880 tonnes (fast fetch)",
       "metadata": {
-        "method": "proxy",
-        "response_time": "instant",
+        "method": "fast",
+        "response_time": "low",
         "reliability_score": 0.7,
         "confidence_adjusted": true
       }
@@ -60,13 +60,14 @@
       }
     },
     {
-      "source": "Mumbai_Premium_Optimized",
-      "sentiment": 0.197375320224904,
-      "confidence": 0.48999999999999994,
-      "weight": 0.18,
-      "description": "Intl gold $3613, estimated premium",
+      "source": "Mumbai_Premium_Error",
+      "sentiment": 0.05,
+      "confidence": 0.3,
+      "weight": 0.08,
+      "description": "Premium calculation failed",
       "metadata": {
-        "method": "international_comparison",
+        "error": true,
+        "optimized_fallback": true,
         "reliability_score": 0.7,
         "confidence_adjusted": true
       }
@@ -110,8 +111,8 @@
     }
   ],
   "aggregation_details": {
-    "sentiment_score": 0.33171827141360677,
-    "confidence": 0.58,
+    "sentiment_score": 0.30399714214635176,
+    "confidence": 0.5678571428571428,
     "signal_count": 7,
     "optimization_level": "v4.0",
     "cross_validation_bonus": 0.08,
@@ -119,16 +120,16 @@
   },
   "integration": {
     "recommended_weight": 0.132,
-    "contribution_to_composite": 0.0437868118265961,
+    "contribution_to_composite": 0.04012762276331844,
     "use_in_composite": true,
-    "quality_grade": "B+",
+    "quality_grade": "B",
     "optimization_bonus": 0.10000000000000009
   },
   "data_quality": {
     "sources_available": 7,
     "sources_total": 7,
     "coverage_pct": 100.0,
-    "avg_confidence": 0.49999999999999994,
+    "avg_confidence": 0.4878571428571428,
     "cross_validation_bonus": 0.08,
     "adaptive_weights_applied": true
   }

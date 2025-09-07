@@ -9,6 +9,7 @@ from datetime import datetime
 from typing import Dict, Any, Optional
 from statistics import pstdev
 import numpy as np
+import os
 
 # Import all Bitcoin KPI components
 try:
@@ -379,9 +380,9 @@ class BitcoinSentimentAnalyzer:
         """Save Bitcoin analysis results"""
         try:
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-            
+            os.makedirs('outputs', exist_ok=True)
             # Main detailed report
-            filename = f'bitcoin_sentiment_analysis_{timestamp}.json'
+            filename = f'outputs/bitcoin_sentiment_analysis_{timestamp}.json'
             with open(filename, 'w') as f:
                 json.dump(report, f, indent=2, default=str)
             
@@ -400,8 +401,8 @@ class BitcoinSentimentAnalyzer:
                     'orderflow': report['component_analysis'].get('orderflow', {}).get('sentiment', 0)
                 }
             }
-            
-            with open('bitcoin_sentiment_integration_ready.json', 'w') as f:
+
+            with open('outputs/bitcoin_sentiment_integration_ready.json', 'w') as f:
                 json.dump(integration_summary, f, indent=2, default=str)
             
             print(f"\nBitcoin results saved:")

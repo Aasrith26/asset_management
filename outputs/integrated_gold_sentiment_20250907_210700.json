@@ -1,10 +1,10 @@
 {
-  "timestamp": "2025-09-06T15:31:35.699822",
+  "timestamp": "2025-09-07T21:07:00.707334",
   "system_version": "5.0_integrated_enterprise",
   "framework_coverage": 0.95,
   "executive_summary": {
-    "overall_sentiment": 0.3293664289604867,
-    "confidence_level": 0.7713333333333333,
+    "overall_sentiment": 0.3197715298488702,
+    "confidence_level": 0.769904761904762,
     "interpretation": "\ud83d\udfe2 BULLISH - Net positive signals across components",
     "risk_assessment": "MODERATE RISK - Good signal quality",
     "components_analyzed": 5,
@@ -14,7 +14,7 @@
     "technical_analysis": {
       "component_name": "Technical_Analysis",
       "sentiment": 1.0,
-      "confidence": 0.71,
+      "confidence": 0.715,
       "framework_weight": 0.25,
       "weighted_contribution": 0.25,
       "description": "Technical_Analysis analysis",
@@ -35,10 +35,10 @@
     },
     "central_bank_sentiment": {
       "component_name": "Central_Bank_Sentiment",
-      "sentiment": 0.33171827141360677,
-      "confidence": 0.58,
+      "sentiment": 0.30399714214635176,
+      "confidence": 0.5678571428571428,
       "framework_weight": 0.2,
-      "weighted_contribution": 0.06634365428272136,
+      "weighted_contribution": 0.06079942842927036,
       "description": "\ud83d\udfe2 BULLISH - CB buying activity (OPTIMIZED SIGNALS)",
       "source": "Central_Bank_Sentiment",
       "metadata": {},
@@ -46,16 +46,16 @@
     },
     "professional_positioning": {
       "component_name": "Professional_Positioning_COT",
-      "sentiment": -0.0017914081560351247,
+      "sentiment": -0.02427152026703755,
       "confidence": 0.5,
       "framework_weight": 0.15,
-      "weighted_contribution": -0.0002687112234052687,
-      "description": "COT proxy: Est. commercial position -0.1%",
+      "weighted_contribution": -0.003640728040055632,
+      "description": "COT proxy: Est. commercial position -1.6%",
       "source": "COT_Price_Proxy",
       "metadata": {
-        "estimated_position": -0.11942768356049827,
-        "recent_return": 0.008016704067348867,
-        "volume_factor": 0.14897354643152386,
+        "estimated_position": -1.6192776678227652,
+        "recent_return": 0.009141279116626478,
+        "volume_factor": 1.7713906852243098,
         "method": "price_proxy",
         "note": "Estimated from price action - lower confidence"
       },
@@ -63,10 +63,10 @@
     },
     "currency_debasement": {
       "component_name": "Currency_Debasement_Risk",
-      "sentiment": 0.0491677628859051,
+      "sentiment": 0.0475813752076276,
       "confidence": 0.8166666666666668,
       "framework_weight": 0.1,
-      "weighted_contribution": 0.00491677628859051,
+      "weighted_contribution": 0.00475813752076276,
       "description": "Currency debasement risk from 3 components",
       "source": "Currency_Debasement_Risk_Multi",
       "metadata": {
@@ -81,10 +81,10 @@
           },
           {
             "name": "EM_Currency_Stress",
-            "sentiment": 0.2663483976108902,
+            "sentiment": 0.26124707252780177,
             "confidence": 0.85,
             "weight": 0.3,
-            "contribution": 0.067918841390777
+            "contribution": 0.06661800349458945
           },
           {
             "name": "CB_Balance_Sheet_Expansion",
@@ -105,21 +105,21 @@
     }
   },
   "composite_metrics": {
-    "weighted_sentiment_score": 0.3293664289604867,
-    "confidence_score": 0.7713333333333333,
+    "weighted_sentiment_score": 0.3197715298488702,
+    "confidence_score": 0.769904761904762,
     "framework_coverage_pct": 95.0,
     "components_successful": 5,
     "components_total": 5
   },
   "performance_metrics": {
-    "execution_time_seconds": 13.622698,
-    "performance_grade": "GOOD",
+    "execution_time_seconds": 44.425728,
+    "performance_grade": "ACCEPTABLE",
     "system_status": "operational",
     "optimization_level": "enterprise_v5.0"
   },
   "integration_ready": {
-    "composite_sentiment": 0.3293664289604867,
-    "confidence": 0.7713333333333333,
+    "composite_sentiment": 0.3197715298488702,
+    "confidence": 0.769904761904762,
     "framework_version": "5.0",
     "coverage": 0.95,
     "quality_grade": "B"

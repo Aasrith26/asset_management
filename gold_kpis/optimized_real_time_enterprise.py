@@ -124,10 +124,10 @@ class OptimizedRealTimeGoldSentimentAnalyzer:
         cache_key = self._get_cache_key("rbi_sentiment")
         cached_result = self._get_cached_data(cache_key)
         if cached_result:
-            print("📊 RBI data: Using cached result (performance optimization)")
+            print("RBI data: Using cached result (performance optimization)")
             return cached_result
 
-        print("📊 Fetching optimized RBI data with parallel methods...")
+        print("Fetching optimized RBI data with parallel methods...")
 
         # Parallel execution of multiple methods with fast-fail
         methods = [
@@ -231,10 +231,10 @@ class OptimizedRealTimeGoldSentimentAnalyzer:
         cache_key = self._get_cache_key("global_etf")
         cached_result = self._get_cached_data(cache_key)
         if cached_result:
-            print("📊 Global ETF: Using cached result")
+            print("Global ETF: Using cached result")
             return cached_result
 
-        print("📊 Fetching optimized global ETF with enhanced analysis...")
+        print("Fetching optimized global ETF with enhanced analysis...")
 
         try:
             # Multi-ETF analysis for better signal
@@ -330,10 +330,10 @@ class OptimizedRealTimeGoldSentimentAnalyzer:
         cache_key = self._get_cache_key("policy_sentiment")
         cached_result = self._get_cached_data(cache_key)
         if cached_result:
-            print("📊 Policy: Using cached result")
+            print("Policy: Using cached result")
             return cached_result
 
-        print("📊 Fetching optimized policy sentiment...")
+        print("Fetching optimized policy sentiment...")
 
         try:
             # Multi-source policy analysis
@@ -435,8 +435,8 @@ class OptimizedRealTimeGoldSentimentAnalyzer:
 
     async def run_optimized_comprehensive_analysis(self) -> Dict:
         """Run optimized comprehensive analysis with performance enhancements"""
-        print("🚀 Running OPTIMIZED Real-Time Enterprise Analysis...")
-        print("⚡ Performance, reliability, and intelligence optimizations active")
+        print("Running OPTIMIZED Real-Time Enterprise Analysis...")
+        print("Performance, reliability, and intelligence optimizations active")
         print("=" * 75)
 
         start_time = datetime.now()
@@ -474,8 +474,8 @@ class OptimizedRealTimeGoldSentimentAnalyzer:
 
             execution_time = (datetime.now() - start_time).total_seconds()
 
-            print(f"⚡ Data collection completed in {execution_time:.1f} seconds")
-            print(f"✅ Collected {len(valid_signals)} optimized signals")
+            print(f"Data collection completed in {execution_time:.1f} seconds")
+            print(f"Collected {len(valid_signals)} optimized signals")
 
             # Enhanced signal aggregation
             final_sentiment = self._aggregate_optimized_signals(valid_signals)
@@ -489,7 +489,7 @@ class OptimizedRealTimeGoldSentimentAnalyzer:
             return analysis_report
 
         except Exception as e:
-            print(f"❌ Optimized analysis failed: {e}")
+            print(f"Optimized analysis failed: {e}")
             return {
                 'error': str(e),
                 'timestamp': datetime.now().isoformat(),
@@ -497,12 +497,10 @@ class OptimizedRealTimeGoldSentimentAnalyzer:
                 'execution_time': (datetime.now() - start_time).total_seconds()
             }
         finally:
-            # Clean up session pool
             if self.session_pool:
                 await self.session_pool.close()
 
     def _apply_reliability_adjustment(self, signal: Dict) -> Dict:
-        """Apply source reliability adjustments"""
         if not self.config['adaptive_weighting']:
             return signal
 
@@ -597,7 +595,7 @@ class OptimizedRealTimeGoldSentimentAnalyzer:
                 filtered_signals.append(signal)
             else:
                 # Log outlier for analysis
-                print(f"⚠️  Outlier removed: {signal['source']} ({signal['sentiment']:.3f})")
+                print(f"Outlier removed: {signal['source']} ({signal['sentiment']:.3f})")
 
         return filtered_signals if len(filtered_signals) >= 2 else signals
 
@@ -802,13 +800,14 @@ class OptimizedRealTimeGoldSentimentAnalyzer:
 
     def _save_optimized_results(self, analysis_report: Dict):
         """Save optimized results with performance data"""
+        os.makedirs('outputs', exist_ok=True)
         try:
             # Clean for JSON serialization
             clean_report = self._make_json_serializable(analysis_report)
 
             # Save with optimization timestamp
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-            filename = f'optimized_cb_sentiment_{timestamp}.json'
+            filename = f'outputs/optimized_cb_sentiment_{timestamp}.json'
 
             with open(filename, 'w') as f:
                 json.dump(clean_report, f, indent=2)
@@ -828,7 +827,7 @@ class OptimizedRealTimeGoldSentimentAnalyzer:
             with open('../cb_sentiment_optimized_integration.json', 'w') as f:
                 json.dump(integration_data, f, indent=2)
 
-            print(f"\n📁 Optimized results saved:")
+            print(f"\n Optimized results saved:")
             print(f"   - {filename}")
             print(f"   - cb_sentiment_optimized_integration.json")
 
@@ -871,14 +870,14 @@ if __name__ == "__main__":
             perf = results['performance_metrics']
             sentiment = results['sentiment_analysis']
 
-            print(f"\n🏆 OPTIMIZATION PERFORMANCE RESULTS")
-            print(f"⚡ Total Execution Time: {total_time:.1f}s")
-            print(f"🎯 Performance Grade: {perf['performance_grade']}")
-            print(f"📊 Sentiment Score: {sentiment['sentiment_score']:.3f}")
-            print(f"🎯 Confidence: {sentiment['confidence']:.1%}")
-            print(f"🏆 Quality Grade: {results['integration']['quality_grade']}")
-            print(f"⚡ Optimization Bonus: +{results['integration']['optimization_bonus']*100:.0f}%")
+            print(f"\nOPTIMIZATION PERFORMANCE RESULTS")
+            print(f"Total Execution Time: {total_time:.1f}s")
+            print(f"Performance Grade: {perf['performance_grade']}")
+            print(f"Sentiment Score: {sentiment['sentiment_score']:.3f}")
+            print(f"Confidence: {sentiment['confidence']:.1%}")
+            print(f"Quality Grade: {results['integration']['quality_grade']}")
+            print(f"Optimization Bonus: +{results['integration']['optimization_bonus']*100:.0f}%")
         else:
-            print(f"❌ Test failed: {results['error']}")
+            print(f"Test failed: {results['error']}")
 
     asyncio.run(performance_test())

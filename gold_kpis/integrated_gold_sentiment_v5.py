@@ -7,7 +7,7 @@ import json
 import numpy as np
 from datetime import datetime
 from typing import Dict
-
+import os
 # Import all analyzers (assumes they're in the same directory or gold_kpis/)
 try:
     from gold_momentum_analyzer import GoldMomentumAnalyzer
@@ -358,11 +358,12 @@ class IntegratedGoldSentimentSystem:
     
     def _save_integrated_results(self, report: Dict):
         """Save integrated analysis results"""
+        os.makedirs('outputs', exist_ok=True)
         try:
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
             
             # Main detailed report
-            filename = f'integrated_gold_sentiment_{timestamp}.json'
+            filename = f'outputs/integrated_gold_sentiment_{timestamp}.json'
             with open(filename, 'w') as f:
                 json.dump(report, f, indent=2, default=str)
             
@@ -384,7 +385,7 @@ class IntegratedGoldSentimentSystem:
                 }
             }
             
-            with open('gold_sentiment_integration_ready.json', 'w') as f:
+            with open('outputs/gold_sentiment_integration_ready.json', 'w') as f:
                 json.dump(integration_summary, f, indent=2, default=str)
             
             print(f"\n💾 Results saved:")

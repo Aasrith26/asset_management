@@ -1,0 +1,53 @@
+{
+  "portfolio_metadata": {
+    "analysis_timestamp": "2025-09-07T18:01:14.678340",
+    "total_assets": 4,
+    "execution_time": 29.810069
+  },
+  "portfolio_sentiment": {
+    "overall_sentiment": -0.109,
+    "confidence_level": 0.648,
+    "risk_assessment": "MODERATE RISK",
+    "investment_recommendation": "HOLD"
+  },
+  "asset_composition": {
+    "NIFTY50": {
+      "sentiment": 0.0,
+      "confidence": 0.5,
+      "status": "success",
+      "data_source": "Multiple_Indian_APIs",
+      "execution_time": 0.0
+    },
+    "GOLD": {
+      "sentiment": 0.3200927955141441,
+      "confidence": 0.769904761904762,
+      "status": "success",
+      "data_source": "Multiple_Global_APIs",
+      "execution_time": 27.321378
+    },
+    "BITCOIN": {
+      "sentiment": -0.15890508162521316,
+      "confidence": 0.521094125824757,
+      "status": "success",
+      "data_source": "Kraken_Multi_API",
+      "execution_time": 7.343279
+    },
+    "REIT": {
+      "sentiment": -0.5986358454716348,
+      "confidence": 0.8,
+      "status": "success",
+      "data_source": "Yahoo_Finance_TradingEconomics",
+      "execution_time": 4.176087
+    }
+  },
+  "performance_metrics": {
+    "successful_assets": 4,
+    "failed_assets": 0,
+    "total_execution_time": 29.810069
+  },
+  "pipeline_metadata": {
+    "generated_at": "2025-09-07T18:01:14.702690",
+    "format_version": "1.0",
+    "downstream_compatible": true
+  }
+}

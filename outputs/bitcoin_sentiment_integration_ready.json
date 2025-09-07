@@ -1,0 +1,14 @@
+{
+  "bitcoin_sentiment_composite": 0.19817345300578745,
+  "confidence": 0.5129069204524002,
+  "interpretation": "\ud83d\udfe1 MILDLY BULLISH - Slight positive bias",
+  "framework_coverage": 1.0,
+  "timestamp": "2025-09-07T21:06:33.546078",
+  "system_version": "Bitcoin_v1.0",
+  "components": {
+    "micro_momentum": 0.23071650046329803,
+    "funding_basis": -0.08208016292180528,
+    "liquidity": -0.03046544287200813,
+    "orderflow": 0.6836060812746736
+  }
+}

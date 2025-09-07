@@ -1,6 +1,8 @@
 
 import asyncio
 import json
+import os
+
 import pandas as pd
 import numpy as np
 from datetime import datetime
@@ -67,7 +69,7 @@ class CompleteNiftySentimentAnalyzer:
             'adaptive_weighting': True,
             'execution_timeout': 45,  # Extended timeout for 5 components
             'save_master_json': True,
-            'master_json_filename': 'nifty50_complete_sentiment_analysis.json',
+            'master_json_filename': 'outputs/nifty50_complete_sentiment_analysis.json',
             'reliability_target': 0.85  # Target 85% reliability
         }
     
@@ -686,9 +688,10 @@ class CompleteNiftySentimentAnalyzer:
             return "pre_market"
     
     def _save_complete_master_json(self):
+        os.makedirs('outputs', exist_ok=True)
         """Save comprehensive master JSON file"""
         filename = self.config['master_json_filename']
-        
+        os.makedirs(os.path.dirname(filename), exist_ok=True)
         try:
             # Make JSON serializable
             clean_result = self._make_json_serializable(self.master_result)
@@ -696,7 +699,7 @@ class CompleteNiftySentimentAnalyzer:
             with open(filename, 'w') as f:
                 json.dump(clean_result, f, indent=2, default=str)
             
-            print(f"📁 Complete analysis saved to: {filename}")
+            print(f"Complete analysis saved to: {filename}")
             
             # Save executive summary
             summary = {
@@ -720,10 +723,10 @@ class CompleteNiftySentimentAnalyzer:
                 }
             }
             
-            with open('nifty50_executive_summary.json', 'w') as f:
+            with open('outputs/nifty50_executive_summary.json', 'w') as f:
                 json.dump(summary, f, indent=2, default=str)
             
-            print(f"📄 Executive summary saved to: nifty50_executive_summary.json")
+            print(f"Executive summary saved to: nifty50_executive_summary.json")
             
         except Exception as e:
             print(f"❌ Error saving complete JSON: {e}")
@@ -751,7 +754,7 @@ async def run_complete_nifty_analysis():
 # Test function with detailed output
 async def test_complete_system():
     """Test the complete Nifty 50 sentiment system with all 5 KPIs"""
-    print("🧪 TESTING COMPLETE NIFTY 50 SENTIMENT SYSTEM")
+    print("TESTING COMPLETE NIFTY 50 SENTIMENT SYSTEM")
     print("=" * 65)
     
     start_time = datetime.now()
@@ -763,25 +766,25 @@ async def test_complete_system():
         trading = results['trading_signals']
         quality = results['data_quality_assessment']
         
-        print(f"\n🏆 COMPLETE ANALYSIS RESULTS")
+        print(f"\nCOMPLETE ANALYSIS RESULTS")
         print("=" * 50)
-        print(f"✅ Total Execution Time: {execution_time:.1f}s")
-        print(f"📊 Framework Coverage: 100% (All 5 KPIs)")
-        print(f"🎯 Overall Sentiment: {composite['overall_sentiment']:.3f}")
-        print(f"📈 Interpretation: {composite['interpretation']}")
-        print(f"💪 Confidence: {composite['overall_confidence']:.1%}")
-        print(f"🏆 Quality Grade: {composite['quality_grade']}")
-        print(f"⚡ Signal Consistency: {composite['signal_consistency']:.1%}")
-        print(f"🎪 Signal Strength: {composite['strength_assessment']}")
+        print(f"Total Execution Time: {execution_time:.1f}s")
+        print(f"Framework Coverage: 100% (All 5 KPIs)")
+        print(f"Overall Sentiment: {composite['overall_sentiment']:.3f}")
+        print(f"Interpretation: {composite['interpretation']}")
+        print(f"Confidence: {composite['overall_confidence']:.1%}")
+        print(f"Quality Grade: {composite['quality_grade']}")
+        print(f"Signal Consistency: {composite['signal_consistency']:.1%}")
+        print(f"Signal Strength: {composite['strength_assessment']}")
         
-        print(f"\n📊 TRADING SIGNALS:")
+        print(f"\n TRADING SIGNALS:")
         print(f"   Primary Signal: {trading['primary_signal']}")
         print(f"   Signal Strength: {trading['signal_strength']}")
         print(f"   Risk Level: {trading['risk_level']}")
         print(f"   Position Size: {trading['position_size_suggestion']}")
         print(f"   Timeframe: {trading['recommended_timeframe']}")
         
-        print(f"\n📋 COMPLETE COMPONENT BREAKDOWN:")
+        print(f"\nCOMPLETE COMPONENT BREAKDOWN:")
         for comp_name, signals in composite['component_signals'].items():
             print(f"   {comp_name.replace('_', ' ').title()}:")
             print(f"      Sentiment: {signals['sentiment']:+.3f}")
@@ -789,14 +792,14 @@ async def test_complete_system():
             print(f"      Weight: {signals['weight']:.0%}")
             print(f"      Status: {signals['interpretation']}")
         
-        print(f"\n📊 DATA QUALITY ASSESSMENT:")
+        print(f"\n DATA QUALITY ASSESSMENT:")
         print(f"   Overall Grade: {quality['overall_data_grade']}")
         print(f"   Success Rate: {quality['high_quality_sources_pct']:.0f}%")
         print(f"   Avg Reliability: {quality['average_source_reliability']:.1%}")
         print(f"   Data Freshness: {quality['average_data_freshness']:.1%}")
         
         reliability_score = composite['overall_confidence'] * 100
-        print(f"\n🎯 SYSTEM RELIABILITY: {reliability_score:.0f}%")
+        print(f"\nSYSTEM RELIABILITY: {reliability_score:.0f}%")
         
         if reliability_score >= 85:
             print("🟢 INVESTMENT GRADE - Suitable for live trading decisions!")
@@ -808,7 +811,7 @@ async def test_complete_system():
             print("🔴 DEVELOP FURTHER - Not ready for investment decisions")
         
     else:
-        print(f"❌ Analysis failed: {results['error']}")
+        print(f"Analysis failed: {results['error']}")
     
     return results
 

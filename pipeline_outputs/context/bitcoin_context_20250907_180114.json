@@ -1,0 +1,122 @@
+{
+  "asset_metadata": {
+    "asset_name": "BITCOIN",
+    "asset_type": "BITCOIN",
+    "analysis_timestamp": "2025-09-07T18:00:56.080027",
+    "data_source": "Kraken_Multi_API",
+    "execution_time": 7.343279
+  },
+  "sentiment_analysis": {
+    "overall_sentiment": -0.15890508162521316,
+    "confidence_level": 0.521094125824757,
+    "sentiment_interpretation": "MILD_BEARISH",
+    "confidence_grade": "C"
+  },
+  "component_breakdown": {
+    "micro_momentum": {
+      "sentiment": -0.1762834142944218,
+      "confidence": 0.7166666666666667,
+      "weight": 0.3,
+      "contribution": -0.05288502428832654,
+      "key_metrics": {
+        "roc_features_f_roc1": 0.0,
+        "roc_features_f_roc5": 0.0,
+        "roc_features_roc1_pct": 0.0,
+        "roc_features_roc5_pct": 0.0,
+        "momentum_indicators_f_macd_hist": 0.041,
+        "momentum_indicators_f_rsi_distance": -1.0,
+        "momentum_indicators_rsi_value": 9.76,
+        "momentum_indicators_macd_hist_z": 0.369,
+        "price_analysis_f_vwap_distance": 0.135,
+        "price_analysis_current_price": 111089.8,
+        "price_analysis_intraday_vwap": 111056.27,
+        "price_analysis_volatility_1h": 0.0119
+      },
+      "status": "success"
+    },
+    "funding_basis": {
+      "sentiment": -0.12192971544783747,
+      "confidence": 0.457122066687145,
+      "weight": 0.3,
+      "contribution": -0.03657891463435124,
+      "key_metrics": {
+        "funding_analysis_funding_rate_8h": 0.0,
+        "funding_analysis_funding_rate_annual_pct": 0.0,
+        "funding_analysis_f_funding_contrarian": -0.0,
+        "basis_analysis_spot_price": 111089.8,
+        "basis_analysis_mark_price": 111137.72,
+        "basis_analysis_basis_bps": 4.31,
+        "basis_analysis_f_basis_stretch": -0.406,
+        "oi_analysis_current_oi": 7563543.0,
+        "oi_analysis_oi_change_5m": 0.0,
+        "oi_analysis_oi_z_score": 0.0,
+        "oi_analysis_f_oi_momentum": 0.0
+      },
+      "status": "success"
+    },
+    "liquidity": {
+      "sentiment": 0.04210126215916055,
+      "confidence": 0.7516666666666667,
+      "weight": 0.2,
+      "contribution": 0.008420252431832111,
+      "key_metrics": {
+        "spread_analysis_current_spread_bps": 0.01,
+        "spread_analysis_median_spread_bps": 0.01,
+        "spread_analysis_relative_spread": -0.0,
+        "spread_analysis_f_spread_improvement": 0.0,
+        "slippage_analysis_buy_slippage_bps": 2.43,
+        "slippage_analysis_sell_slippage_bps": 0.0,
+        "slippage_analysis_average_impact_bps": 1.22,
+        "slippage_analysis_median_impact_bps": 1.22,
+        "slippage_analysis_f_impact_improvement": 0.0,
+        "slippage_analysis_standard_trade_size": 250000,
+        "depth_analysis_bid_notional": 15749360.06,
+        "depth_analysis_ask_notional": 12708621.15,
+        "depth_analysis_depth_imbalance": 0.107,
+        "depth_analysis_f_imbalance": 0.211,
+        "depth_analysis_band_bps": 25
+      },
+      "status": "success"
+    },
+    "orderflow": {
+      "sentiment": -0.6791861394031427,
+      "confidence": 0.7666666666666666,
+      "weight": 0.2,
+      "contribution": -0.13583722788062855,
+      "key_metrics": {
+        "imbalance_analysis_imbalance_5m": -0.992,
+        "imbalance_analysis_buy_notional_5m": 698.54,
+        "imbalance_analysis_sell_notional_5m": 171474.71,
+        "imbalance_analysis_total_notional_5m": 172173.25,
+        "imbalance_analysis_f_imb5": -0.889,
+        "cvd_analysis_cvd_slope_15m": -259395.29,
+        "cvd_analysis_cvd_scale": 20034.77,
+        "cvd_analysis_f_cvd15": -0.698,
+        "cvd_analysis_cvd_current": -328746.96,
+        "intensity_analysis_imbalance_1m": -0.986,
+        "intensity_analysis_trades_1m": 8,
+        "intensity_analysis_trade_rate_z": 0.0,
+        "intensity_analysis_f_intensity": -0.0,
+        "intensity_analysis_mean_trade_rate": 8.0
+      },
+      "status": "success"
+    }
+  },
+  "market_indicators": {
+    "asset_type": "cryptocurrency",
+    "data_source": "Kraken_Multi_API",
+    "data_freshness": "real_time",
+    "update_frequency": "1_minute",
+    "price_currency": "USD"
+  },
+  "risk_metrics": {
+    "data_quality": "success",
+    "confidence_score": 0.521094125824757,
+    "execution_success": true
+  },
+  "pipeline_metadata": {
+    "generated_at": "2025-09-07T18:01:14.698134",
+    "format_version": "1.0",
+    "downstream_compatible": true
+  }
+}

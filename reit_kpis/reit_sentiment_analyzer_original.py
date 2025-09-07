@@ -5,6 +5,7 @@
 
 import asyncio
 import json
+import os
 from datetime import datetime
 from typing import Dict, Any, Optional
 
@@ -341,11 +342,12 @@ class REITSentimentAnalyzer:
     
     def _save_results(self, report: Dict):
         """Save REIT analysis results"""
+        os.makedirs('outputs', exist_ok=True)
         try:
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
             
             # Main detailed report
-            filename = f'reit_sentiment_analysis_original_{timestamp}.json'
+            filename = f'outputs/reit_sentiment_analysis_original_{timestamp}.json'
             with open(filename, 'w') as f:
                 json.dump(report, f, indent=2, default=str)
             
@@ -361,7 +363,7 @@ class REITSentimentAnalyzer:
                 'original_logic_preserved': True
             }
             
-            with open('reit_sentiment_integration_ready.json', 'w') as f:
+            with open('outputs/reit_sentiment_integration_ready.json', 'w') as f:
                 json.dump(integration_summary, f, indent=2, default=str)
             
             print(f"\nREIT results saved (original logic):")

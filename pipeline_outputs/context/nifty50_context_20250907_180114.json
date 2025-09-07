@@ -1,0 +1,27 @@
+{
+  "asset_metadata": {
+    "asset_name": "NIFTY50",
+    "asset_type": "NIFTY50",
+    "analysis_timestamp": "2025-09-07T18:01:14.678146",
+    "data_source": "Multiple_Indian_APIs",
+    "execution_time": 0.0
+  },
+  "sentiment_analysis": {
+    "overall_sentiment": 0.0,
+    "confidence_level": 0.5,
+    "sentiment_interpretation": "NEUTRAL",
+    "confidence_grade": "C"
+  },
+  "component_breakdown": {},
+  "market_indicators": {},
+  "risk_metrics": {
+    "data_quality": "success",
+    "confidence_score": 0.5,
+    "execution_success": true
+  },
+  "pipeline_metadata": {
+    "generated_at": "2025-09-07T18:01:14.691738",
+    "format_version": "1.0",
+    "downstream_compatible": true
+  }
+}

@@ -47,7 +47,7 @@ class MarketSentimentAnalyzer:
         }
         
         print("Market Sentiment (VIX) Analyzer v1.0 initialized")
-        print("😱 Real-time fear/greed sentiment tracking enabled")
+        print("Real-time fear/greed sentiment tracking enabled")
     
     def _default_config(self) -> Dict:
         return {
@@ -93,7 +93,7 @@ class MarketSentimentAnalyzer:
             return cached
         
         try:
-            print("😰 Fetching India VIX fear gauge...")
+            print("Fetching India VIX fear gauge...")
             
             vix_ticker = yf.Ticker(self.sentiment_tickers['india_vix'])
             vix_hist = vix_ticker.history(period="1mo")
@@ -176,7 +176,7 @@ class MarketSentimentAnalyzer:
     async def _estimate_vix_from_nifty_volatility(self) -> Dict:
         """Estimate VIX-like measure from Nifty volatility"""
         try:
-            print("📊 Estimating fear gauge from Nifty volatility...")
+            print("Estimating fear gauge from Nifty volatility...")
             
             nifty_ticker = yf.Ticker(self.sentiment_tickers['nifty'])
             nifty_hist = nifty_ticker.history(period="1mo")
@@ -230,7 +230,7 @@ class MarketSentimentAnalyzer:
             return cached
         
         try:
-            print("📊 Analyzing put/call ratio sentiment...")
+            print("Analyzing put/call ratio sentiment...")
             
             # Try to fetch options data from NSE (would need actual API)
             # For now, estimate from VIX and market movement
@@ -300,7 +300,7 @@ class MarketSentimentAnalyzer:
             return cached
         
         try:
-            print("📈 Analyzing market breadth...")
+            print("Analyzing market breadth...")
             
             # Use sector indices as proxy for breadth
             sector_tickers = [
@@ -376,7 +376,7 @@ class MarketSentimentAnalyzer:
             return cached
         
         try:
-            print("📊 Analyzing new highs vs lows...")
+            print("Analyzing new highs vs lows...")
             
             # Use Nifty components performance as proxy
             nifty_ticker = yf.Ticker(self.sentiment_tickers['nifty'])
@@ -549,14 +549,14 @@ class MarketSentimentAnalyzer:
             
             result['interpretation'] = interpretation
             
-            print(f"✅ Market Sentiment Analysis completed in {execution_time:.1f}s")
-            print(f"📊 Sentiment: {composite_sentiment:.3f} ({interpretation})")
-            print(f"🎯 Confidence: {avg_confidence:.1%}")
+            print(f"Market Sentiment Analysis completed in {execution_time:.1f}s")
+            print(f"Sentiment: {composite_sentiment:.3f} ({interpretation})")
+            print(f"Confidence: {avg_confidence:.1%}")
             
             return result
             
         except Exception as e:
-            print(f"❌ Market sentiment analysis failed: {e}")
+            print(f"Market sentiment analysis failed: {e}")
             return self._create_error_result(f"Analysis exception: {e}")
     
     def _determine_market_regime(self, sentiment: float, vix_level: float) -> str:

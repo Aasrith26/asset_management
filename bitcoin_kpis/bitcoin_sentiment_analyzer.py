@@ -17,7 +17,7 @@ try:
     from btc_liquidity import BitcoinLiquidityAnalyzer
     from btc_orderflow import BitcoinOrderflowAnalyzer
 except ImportError as e:
-    print(f"❌ Bitcoin component import error: {e}")
+    print(f"Bitcoin component import error: {e}")
     print("Make sure all Bitcoin KPI files are in the bitcoin_kpis/ directory")
 
 class BitcoinSentimentAnalyzer:
@@ -56,14 +56,14 @@ class BitcoinSentimentAnalyzer:
             print("🚀 BITCOIN SENTIMENT ANALYZER v1.0")
             print("=" * 50)
             print("Framework: 4-KPI Real-time Analysis System")
-            print("✅ Micro-Momentum: 30% weight")
-            print("✅ Funding/Basis: 30% weight")
-            print("✅ Liquidity: 20% weight")
-            print("✅ Orderflow: 20% weight")
-            print("🎯 Total Coverage: 100%")
+            print("Micro-Momentum: 30% weight")
+            print("Funding/Basis: 30% weight")
+            print("Liquidity: 20% weight")
+            print("Orderflow: 20% weight")
+            print("Total Coverage: 100%")
             
         except Exception as e:
-            print(f"❌ Failed to initialize Bitcoin analyzers: {e}")
+            print(f"Failed to initialize Bitcoin analyzers: {e}")
             raise
     
     def _default_config(self) -> Dict:
@@ -83,8 +83,8 @@ class BitcoinSentimentAnalyzer:
         start_time = datetime.now()
         
         try:
-            print(f"\n₿ BITCOIN COMPREHENSIVE SENTIMENT ANALYSIS")
-            print(f"⏰ Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+            print(f"\nBITCOIN COMPREHENSIVE SENTIMENT ANALYSIS")
+            print(f"Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
             print("=" * 60)
             
             # Run all 4 components in parallel
@@ -102,16 +102,16 @@ class BitcoinSentimentAnalyzer:
             # Save results
             self._save_results(final_report)
             
-            print(f"\n✅ BITCOIN ANALYSIS COMPLETE")
-            print(f"⏱️ Total Execution Time: {execution_time:.1f}s")
-            print(f"₿ Composite Sentiment: {composite_result['sentiment']:.3f}")
-            print(f"📊 Overall Confidence: {composite_result['confidence']:.1%}")
-            print(f"🏆 Components Success: {composite_result['components_used']}/4")
+            print(f"\nBITCOIN ANALYSIS COMPLETE")
+            print(f"Total Execution Time: {execution_time:.1f}s")
+            print(f"Composite Sentiment: {composite_result['sentiment']:.3f}")
+            print(f"Overall Confidence: {composite_result['confidence']:.1%}")
+            print(f"Components Success: {composite_result['components_used']}/4")
             
             return final_report
             
         except Exception as e:
-            print(f"❌ Bitcoin sentiment analysis failed: {e}")
+            print(f"Bitcoin sentiment analysis failed: {e}")
             import traceback
             traceback.print_exc()
             
@@ -129,7 +129,7 @@ class BitcoinSentimentAnalyzer:
             ("orderflow", self.orderflow_analyzer.analyze_orderflow())
         ]
         
-        print("🔄 Running 4 Bitcoin KPIs in parallel...")
+        print("Running 4 Bitcoin KPIs in parallel...")
         
         # Execute all tasks
         for component_name, task in tasks:
@@ -141,21 +141,21 @@ class BitcoinSentimentAnalyzer:
                     component_results[component_name] = self._standardize_component_result(
                         result, component_name, self.framework_weights[component_name]
                     )
-                    print(f"    ✅ Complete: {result['component_sentiment']:.3f}")
+                    print(f"Complete: {result['component_sentiment']:.3f}")
                 else:
-                    print(f"    ⚠️ Invalid result format")
+                    print(f"Invalid result format")
                     component_results[component_name] = self._create_error_component(
                         component_name, self.framework_weights[component_name]
                     )
                     
             except asyncio.TimeoutError:
-                print(f"    ⏰ Timeout after {self.config['execution_timeout']}s")
+                print(f"Timeout after {self.config['execution_timeout']}s")
                 component_results[component_name] = self._create_timeout_component(
                     component_name, self.framework_weights[component_name]
                 )
                 
             except Exception as e:
-                print(f"    ❌ Error: {str(e)}")
+                print(f"Error: {str(e)}")
                 component_results[component_name] = self._create_error_component(
                     component_name, self.framework_weights[component_name]
                 )
@@ -404,12 +404,12 @@ class BitcoinSentimentAnalyzer:
             with open('bitcoin_sentiment_integration_ready.json', 'w') as f:
                 json.dump(integration_summary, f, indent=2, default=str)
             
-            print(f"\n💾 Bitcoin results saved:")
-            print(f" 📄 Detailed: {filename}")
-            print(f" 🔗 Integration: bitcoin_sentiment_integration_ready.json")
+            print(f"\nBitcoin results saved:")
+            print(f" Detailed: {filename}")
+            print(f" Integration: bitcoin_sentiment_integration_ready.json")
             
         except Exception as e:
-            print(f"❌ Error saving Bitcoin results: {e}")
+            print(f"Error saving Bitcoin results: {e}")
     
     def _create_error_result(self, error_message: str) -> Dict:
         """Create error result in standardized format"""
@@ -442,15 +442,15 @@ async def bitcoin_performance_test():
     total_time = (datetime.now() - start_time).total_seconds()
     
     if 'error' not in result:
-        print(f"\n🏆 BITCOIN INTEGRATION TEST RESULTS")
+        print(f"\nBITCOIN INTEGRATION TEST RESULTS")
         print(f"⚡ Total System Time: {total_time:.1f}s")
         print(f"₿ Composite Sentiment: {result['component_sentiment']:.3f}")
-        print(f"📊 Confidence: {result['component_confidence']:.1%}")
-        print(f"📈 Framework Coverage: {result.get('framework_coverage', 0)*100:.0f}%")
-        print(f"✅ Components Success: {result.get('composite_metrics', {}).get('components_successful', 0)}/4")
-        print(f"🏆 Performance: {result.get('performance_metrics', {}).get('performance_grade', 'N/A')}")
+        print(f"Confidence: {result['component_confidence']:.1%}")
+        print(f"Framework Coverage: {result.get('framework_coverage', 0)*100:.0f}%")
+        print(f"Components Success: {result.get('composite_metrics', {}).get('components_successful', 0)}/4")
+        print(f"Performance: {result.get('performance_metrics', {}).get('performance_grade', 'N/A')}")
     else:
-        print(f"❌ Bitcoin integration test failed: {result['error']}")
+        print(f"Bitcoin integration test failed: {result['error']}")
 
 if __name__ == "__main__":
     asyncio.run(bitcoin_performance_test())

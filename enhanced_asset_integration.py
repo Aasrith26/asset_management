@@ -62,7 +62,7 @@ class NiftyIntegrationAdapter:
             print("📈 Starting Nifty 50 analysis...")
             
             # Import the complete Nifty analyzer
-            from complete_nifty_analyzer import run_complete_nifty_analysis
+            from nifty_50_kpis.complete_nifty_analyzer import run_complete_nifty_analysis
             
             # Run analysis
             result = await run_complete_nifty_analysis()
@@ -107,7 +107,7 @@ class GoldIntegrationAdapter:
             print("🥇 Starting Gold analysis...")
             
             # Import the integrated gold analyzer
-            from integrated_gold_sentiment_v5 import run_integrated_gold_analysis
+            from gold_kpis.integrated_gold_sentiment_v5 import run_integrated_gold_analysis
             
             # Run analysis
             result = await run_integrated_gold_analysis()
@@ -161,7 +161,7 @@ class BitcoinIntegrationAdapter:
             print("₿ Starting Bitcoin analysis...")
             
             # Import the Bitcoin sentiment analyzer
-            from bitcoin_sentiment_analyzer import run_bitcoin_analysis
+            from bitcoin_kpis.bitcoin_sentiment_analyzer import run_bitcoin_analysis
             
             # Run analysis
             result = await run_bitcoin_analysis()
@@ -208,7 +208,7 @@ class REITIntegrationAdapter:
             print("🏢 Starting REIT analysis...")
             
             # Import the REIT sentiment analyzer
-            from reit_sentiment_analyzer import run_reit_analysis
+            from reit_kpis.reit_sentiment_analyzer_original import run_reit_analysis
             
             # Run analysis
             result = await run_reit_analysis()

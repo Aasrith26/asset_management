@@ -1,0 +1,145 @@
+{
+  "job_metadata": {
+    "job_id": "9c806ba8-de5c-4acf-8d7e-4665a0bcca94",
+    "asset_name": "BITCOIN",
+    "generated_at": "2025-09-08T20:06:19.860561",
+    "belongs_to_analysis": "2025-09-08T20:06:19.838366"
+  },
+  "asset_metadata": {
+    "asset_name": "BITCOIN",
+    "asset_type": "BITCOIN",
+    "analysis_timestamp": "2025-09-08T20:06:10.430947",
+    "data_source": "Kraken_Multi_API",
+    "execution_time": 10.729518,
+    "status": "success"
+  },
+  "sentiment_analysis": {
+    "overall_sentiment": 0.22584446617895554,
+    "confidence_level": 0.5430531292888118,
+    "sentiment_interpretation": "MILD_BULLISH",
+    "confidence_grade": "C",
+    "analysis_quality": "success"
+  },
+  "component_breakdown": {
+    "micro_momentum": {
+      "sentiment": 0.3564140788890699,
+      "confidence": 0.7166666666666667,
+      "weight": 0.3,
+      "contribution": 0.10692422366672097,
+      "description": "Bitcoin Micro Momentum Analysis",
+      "key_metrics": {
+        "roc_features_f_roc1": 0.0,
+        "roc_features_f_roc5": 0.242,
+        "roc_features_roc1_pct": 0.0,
+        "roc_features_roc5_pct": 0.3563,
+        "momentum_indicators_f_macd_hist": 0.238,
+        "momentum_indicators_f_rsi_distance": 1.0,
+        "momentum_indicators_rsi_value": 86.09,
+        "momentum_indicators_macd_hist_z": 2.679,
+        "price_analysis_f_vwap_distance": 0.486,
+        "price_analysis_current_price": 112680.0,
+        "price_analysis_intraday_vwap": 111955.02,
+        "price_analysis_volatility_1h": 0.0577
+      },
+      "status": "success"
+    },
+    "funding_basis": {
+      "sentiment": -0.20386823443593896,
+      "confidence": 0.47697042237808934,
+      "weight": 0.3,
+      "contribution": -0.06116047033078169,
+      "description": "Bitcoin Funding Basis Analysis",
+      "key_metrics": {
+        "funding_analysis_funding_rate_8h": 0.0,
+        "funding_analysis_funding_rate_annual_pct": 0.0,
+        "funding_analysis_f_funding_contrarian": -0.0,
+        "basis_analysis_spot_price": 112680.0,
+        "basis_analysis_mark_price": 112773.33,
+        "basis_analysis_basis_bps": 8.28,
+        "basis_analysis_f_basis_stretch": -0.68,
+        "oi_analysis_current_oi": 7603959.0,
+        "oi_analysis_oi_change_5m": 0.0,
+        "oi_analysis_oi_z_score": 0.0,
+        "oi_analysis_f_oi_momentum": 0.0
+      },
+      "status": "success"
+    },
+    "liquidity": {
+      "sentiment": 0.03444659365404914,
+      "confidence": 0.7516666666666667,
+      "weight": 0.2,
+      "contribution": 0.006889318730809828,
+      "description": "Bitcoin Liquidity Analysis",
+      "key_metrics": {
+        "spread_analysis_current_spread_bps": 0.01,
+        "spread_analysis_median_spread_bps": 0.01,
+        "spread_analysis_relative_spread": -0.0,
+        "spread_analysis_f_spread_improvement": 0.0,
+        "slippage_analysis_buy_slippage_bps": 4.47,
+        "slippage_analysis_sell_slippage_bps": 0.0,
+        "slippage_analysis_average_impact_bps": 2.24,
+        "slippage_analysis_median_impact_bps": 2.24,
+        "slippage_analysis_f_impact_improvement": 0.0,
+        "slippage_analysis_standard_trade_size": 250000,
+        "depth_analysis_bid_notional": 12426037.32,
+        "depth_analysis_ask_notional": 10437312.59,
+        "depth_analysis_depth_imbalance": 0.087,
+        "depth_analysis_f_imbalance": 0.172,
+        "depth_analysis_band_bps": 25
+      },
+      "status": "success"
+    },
+    "orderflow": {
+      "sentiment": 0.6755187233735918,
+      "confidence": 0.7666666666666666,
+      "weight": 0.2,
+      "contribution": 0.13510374467471836,
+      "description": "Bitcoin Orderflow Analysis",
+      "key_metrics": {
+        "imbalance_analysis_imbalance_5m": 0.499,
+        "imbalance_analysis_buy_notional_5m": 1029094.28,
+        "imbalance_analysis_sell_notional_5m": 344153.55,
+        "imbalance_analysis_total_notional_5m": 1373247.82,
+        "imbalance_analysis_f_imb5": 0.612,
+        "cvd_analysis_cvd_slope_15m": 1089602.52,
+        "cvd_analysis_cvd_scale": 1.0,
+        "cvd_analysis_f_cvd15": 1.0,
+        "cvd_analysis_cvd_current": 1165542.88,
+        "intensity_analysis_imbalance_1m": 1.0,
+        "intensity_analysis_trades_1m": 2,
+        "intensity_analysis_trade_rate_z": 0.0,
+        "intensity_analysis_f_intensity": 0.0,
+        "intensity_analysis_mean_trade_rate": 2.0
+      },
+      "status": "success"
+    }
+  },
+  "market_context": {
+    "asset_type": "cryptocurrency",
+    "data_source": "Kraken_Multi_API",
+    "data_freshness": "real_time",
+    "update_frequency": "1_minute",
+    "price_currency": "USD"
+  },
+  "executive_summary": {
+    "overall_sentiment": 0.22584446617895554,
+    "confidence_level": 0.5430531292888118,
+    "interpretation": "\ud83d\udfe1 MILDLY BULLISH - Slight positive bias",
+    "risk_assessment": "HIGH RISK - Low confidence signals",
+    "components_analyzed": 4,
+    "recommendation": "Confidence Level: 54% - HIGH RISK - Low confidence signals"
+  },
+  "risk_assessment": {
+    "data_quality": "success",
+    "confidence_score": 0.5430531292888118,
+    "execution_success": true,
+    "error_message": null
+  },
+  "pipeline_metadata": {
+    "job_id": "9c806ba8-de5c-4acf-8d7e-4665a0bcca94",
+    "format_version": "2.0",
+    "downstream_compatible": true,
+    "context_file_type": "asset_specific",
+    "related_csv": "assets_data_9c806ba8-de5c-4acf-8d7e-4665a0bcca94.csv"
+  }
+}

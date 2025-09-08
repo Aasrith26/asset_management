@@ -1,0 +1,122 @@
+{
+  "job_metadata": {
+    "job_id": "9c806ba8-de5c-4acf-8d7e-4665a0bcca94",
+    "asset_name": "NIFTY50",
+    "generated_at": "2025-09-08T20:06:19.851536",
+    "belongs_to_analysis": "2025-09-08T20:06:19.838366"
+  },
+  "asset_metadata": {
+    "asset_name": "NIFTY50",
+    "asset_type": "NIFTY50",
+    "analysis_timestamp": "2025-09-08T20:05:38.355329",
+    "data_source": "Multiple_Indian_APIs",
+    "execution_time": 13.932356,
+    "status": "success"
+  },
+  "sentiment_analysis": {
+    "overall_sentiment": -0.012391501042263707,
+    "confidence_level": 0.511261797898391,
+    "sentiment_interpretation": "NEUTRAL",
+    "confidence_grade": "C",
+    "analysis_quality": "success"
+  },
+  "component_breakdown": {
+    "fii_dii_flows": {
+      "sentiment": 0.0,
+      "confidence": 0.5,
+      "weight": 0.35,
+      "contribution": 0.0,
+      "description": "",
+      "key_metrics": {},
+      "status": "unknown"
+    },
+    "technical_analysis": {
+      "sentiment": 0.0,
+      "confidence": 0.5,
+      "weight": 0.3,
+      "contribution": 0.022331745569714914,
+      "description": "",
+      "key_metrics": {},
+      "status": "unknown"
+    },
+    "market_sentiment_vix": {
+      "sentiment": 0.0,
+      "confidence": 0.5,
+      "weight": 0.2,
+      "contribution": -0.05541860438351103,
+      "description": "",
+      "key_metrics": {},
+      "status": "unknown"
+    },
+    "rbi_interest_rates": {
+      "sentiment": 0.0,
+      "confidence": 0.5,
+      "weight": 0.1,
+      "contribution": 0.030435150589064805,
+      "description": "",
+      "key_metrics": {},
+      "status": "unknown"
+    },
+    "global_factors": {
+      "sentiment": 0.0,
+      "confidence": 0.5,
+      "weight": 0.05,
+      "contribution": 0.010527219933734178,
+      "description": "",
+      "key_metrics": {},
+      "status": "unknown"
+    }
+  },
+  "market_context": {
+    "analysis_date": "2025-09-08",
+    "analysis_time": "20:05:38 IST",
+    "market_session": "after_market",
+    "nifty_snapshot": {
+      "current_level": 24773.150390625,
+      "daily_change_pct": 0.12994782193524917,
+      "trend_status": "bearish",
+      "volatility_regime": "normal",
+      "momentum_status": "neutral"
+    },
+    "institutional_activity": {
+      "net_institutional_flow": null,
+      "flow_dominance": null,
+      "flow_momentum": null,
+      "flow_interpretation": "\u26aa NEUTRAL - Balanced institutional activity"
+    },
+    "technical_summary": {},
+    "sentiment_readings": {
+      "vix_level": 10.837499618530273,
+      "fear_greed_status": "greed",
+      "market_regime": "complacency",
+      "sentiment_interpretation": "\ud83d\udfe1 CAUTIOUS - Complacency emerging"
+    },
+    "policy_environment": {
+      "current_repo_rate": 4.0,
+      "policy_stance": "accommodative",
+      "policy_interpretation": "\ud83c\udfdb\ufe0f ACCOMMODATIVE - RBI policy HIGH_CONFIDENCE"
+    },
+    "global_backdrop": {
+      "us_overnight_performance": 0.34247840924446726,
+      "global_risk_sentiment": "\ud83d\udfe1 MILDLY POSITIVE - Slight global tailwinds",
+      "global_session": "european_asian_overlap"
+    },
+    "key_highlights": [],
+    "risk_alerts": [],
+    "opportunities": []
+  },
+  "executive_summary": {},
+  "risk_assessment": {
+    "data_quality": "success",
+    "confidence_score": 0.511261797898391,
+    "execution_success": true,
+    "error_message": null
+  },
+  "pipeline_metadata": {
+    "job_id": "9c806ba8-de5c-4acf-8d7e-4665a0bcca94",
+    "format_version": "2.0",
+    "downstream_compatible": true,
+    "context_file_type": "asset_specific",
+    "related_csv": "assets_data_9c806ba8-de5c-4acf-8d7e-4665a0bcca94.csv"
+  }
+}

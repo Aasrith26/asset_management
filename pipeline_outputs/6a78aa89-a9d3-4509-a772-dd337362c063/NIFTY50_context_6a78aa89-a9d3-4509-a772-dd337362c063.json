@@ -1,0 +1,39 @@
+{
+  "job_metadata": {
+    "job_id": "6a78aa89-a9d3-4509-a772-dd337362c063",
+    "asset_name": "NIFTY50",
+    "generated_at": "2025-09-08T19:39:15.140101",
+    "belongs_to_analysis": "2025-09-08T19:39:15.123982"
+  },
+  "asset_metadata": {
+    "asset_name": "NIFTY50",
+    "asset_type": "NIFTY50",
+    "analysis_timestamp": "2025-09-08T19:39:10.175478",
+    "data_source": "Multiple_Indian_APIs",
+    "execution_time": 0.0,
+    "status": "success"
+  },
+  "sentiment_analysis": {
+    "overall_sentiment": 0.0,
+    "confidence_level": 0.5,
+    "sentiment_interpretation": "NEUTRAL",
+    "confidence_grade": "C",
+    "analysis_quality": "success"
+  },
+  "component_breakdown": {},
+  "market_context": {},
+  "executive_summary": {},
+  "risk_assessment": {
+    "data_quality": "success",
+    "confidence_score": 0.5,
+    "execution_success": true,
+    "error_message": null
+  },
+  "pipeline_metadata": {
+    "job_id": "6a78aa89-a9d3-4509-a772-dd337362c063",
+    "format_version": "2.0",
+    "downstream_compatible": true,
+    "context_file_type": "asset_specific",
+    "related_csv": "assets_data_6a78aa89-a9d3-4509-a772-dd337362c063.csv"
+  }
+}

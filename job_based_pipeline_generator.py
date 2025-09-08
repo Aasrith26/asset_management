@@ -29,9 +29,9 @@ class JobBasedPipelineGenerator:
         job_dir = f"{self.base_output_dir}/{job_id}"
         os.makedirs(job_dir, exist_ok=True)
         
-        print(f"\n🔄 GENERATING JOB-BASED PIPELINE OUTPUTS")
-        print(f"📋 Job ID: {job_id}")
-        print(f"📁 Directory: {job_dir}")
+        print(f"\nGENERATING JOB-BASED PIPELINE OUTPUTS")
+        print(f"Job ID: {job_id}")
+        print(f"Directory: {job_dir}")
         print("=" * 60)
         
         # Generate consolidated CSV (all 4 assets in one file)
@@ -176,7 +176,7 @@ class JobBasedPipelineGenerator:
         df = pd.DataFrame(csv_rows)
         df.to_csv(csv_filename, index=False)
         
-        print(f"📊 Generated consolidated CSV: {csv_filename}")
+        print(f"  Generated consolidated CSV: {csv_filename}")
         print(f"   Rows: {len(csv_rows)}, Assets: {len(analysis_results) + 1} (including portfolio)")
         
         return csv_filename
@@ -244,26 +244,27 @@ class JobBasedPipelineGenerator:
             }
             
             # Process component details
+            # FIXED: Process component details with correct field names
             component_details = asset_data.get('component_details', {})
             for component_name, component_data in component_details.items():
                 if isinstance(component_data, dict):
                     context_data['component_breakdown'][component_name] = {
-                        'sentiment': component_data.get('sentiment', 0.0),
-                        'confidence': component_data.get('confidence', 0.5),
-                        'weight': component_data.get('framework_weight', 0.0),
+                        'sentiment': component_data.get('component_sentiment', 0.0),  # ← FIXED
+                        'confidence': component_data.get('component_confidence', 0.5),  # ← FIXED
+                        'weight': component_data.get('component_weight', component_data.get('framework_weight', 0.0)),
                         'contribution': component_data.get('weighted_contribution', 0.0),
-                        'description': component_data.get('description', ''),
+                        'description': component_data.get('interpretation', component_data.get('description', '')),
                         'key_metrics': self._extract_key_metrics(component_data.get('metadata', {})),
-                        'status': component_data.get('status', 'unknown')
+                        'status': component_data.get('status', 'success')
                     }
-            
+
             # Save context JSON
             with open(context_filename, 'w') as f:
                 json.dump(context_data, f, indent=2, default=str)
             
             context_files.append(context_filename)
             
-            print(f"📁 Generated {asset_name} context: {context_filename}")
+            print(f"Generated {asset_name} context: {context_filename}")
         
         return context_files
     

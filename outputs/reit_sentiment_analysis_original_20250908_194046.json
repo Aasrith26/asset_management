@@ -1,0 +1,218 @@
+{
+  "timestamp": "2025-09-08T19:40:46.186016",
+  "system_version": "REIT_Original_Logic_v1.0",
+  "asset_name": "REIT",
+  "asset_type": "real_estate_investment_trust",
+  "framework_coverage": 1.0,
+  "symbol": "MINDSPACE",
+  "component_sentiment": -0.266613007876114,
+  "component_confidence": 0.8,
+  "component_weight": 0.25,
+  "weighted_contribution": -0.0666532519690285,
+  "executive_summary": {
+    "overall_sentiment": -0.266613007876114,
+    "confidence_level": 0.8,
+    "interpretation": "Bearish \u2014 mild",
+    "components_analyzed": 4,
+    "original_logic_preserved": true
+  },
+  "component_analysis": {
+    "technical_momentum": {
+      "component_name": "technical_momentum",
+      "sentiment": -0.229307811680927,
+      "confidence": 0.8,
+      "framework_weight": 0.35,
+      "weighted_contribution": -0.08025773408832444,
+      "description": "REIT Technical Momentum Analysis - Original Logic",
+      "source": "REIT_technical_momentum_Original",
+      "metadata": {
+        "original_diagnostics": {
+          "score": -0.229,
+          "features": {
+            "f_roc20": 0.158,
+            "f_rsi14": -0.214,
+            "f_emaAlignSlope": -0.762
+          },
+          "metrics": {
+            "price": 757.5,
+            "roc20": 0.0138,
+            "rsi14": 44.65
+          }
+        },
+        "technical_features": {
+          "f_roc20": 0.158,
+          "f_rsi14": -0.214,
+          "f_emaAlignSlope": -0.762
+        },
+        "price_metrics": {
+          "price": 757.5,
+          "roc20": 0.0138,
+          "rsi14": 44.65
+        }
+      },
+      "market_context": {
+        "symbol": "DLF.NS",
+        "data_source": "Yahoo_Finance_Original_Logic",
+        "data_quality": "high",
+        "price_currency": "INR"
+      },
+      "status": "success",
+      "execution_time": 0.460292
+    },
+    "yield_spread": {
+      "component_name": "yield_spread",
+      "sentiment": -0.99999999975714,
+      "confidence": 0.8,
+      "framework_weight": 0.3,
+      "weighted_contribution": -0.299999999927142,
+      "description": "REIT Yield Spread Analysis - Original Logic",
+      "source": "REIT_yield_spread_Original",
+      "metadata": {
+        "original_diagnostics": {
+          "score": -1.0,
+          "features": {
+            "spread_frac": -0.0571,
+            "reit_yield_ttm": 0.0079,
+            "gsec10y_yield": 0.065
+          },
+          "metrics": {
+            "div_ttm": 6.0,
+            "price": 757.5,
+            "scale_proxy": 0.001
+          }
+        },
+        "yield_features": {
+          "spread_frac": -0.0571,
+          "reit_yield_ttm": 0.0079,
+          "gsec10y_yield": 0.065
+        },
+        "yield_metrics": {
+          "div_ttm": 6.0,
+          "price": 757.5,
+          "scale_proxy": 0.001
+        }
+      },
+      "market_context": {
+        "symbol": "DLF.NS",
+        "data_source": "Yahoo_Finance_TradingEconomics_Original_Logic",
+        "yield_anchor": "assumed_6.5%",
+        "data_quality": "high",
+        "price_currency": "INR"
+      },
+      "status": "success",
+      "execution_time": 7.041159
+    },
+    "accumulation_flow": {
+      "component_name": "accumulation_flow",
+      "sentiment": 0.37410323707662996,
+      "confidence": 0.8,
+      "framework_weight": 0.2,
+      "weighted_contribution": 0.074820647415326,
+      "description": "REIT Accumulation Flow Analysis - Original Logic",
+      "source": "REIT_accumulation_flow_Original",
+      "metadata": {
+        "original_diagnostics": {
+          "score": 0.374,
+          "features": {
+            "f_updown": 0.974,
+            "f_ad_slope": -0.323,
+            "f_obv_slope": 0.243
+          },
+          "metrics": {
+            "up_down_ratio_20d": 1.652,
+            "ad_slope_20d": -2666093.32,
+            "obv_slope_20d": 3543741.0
+          }
+        },
+        "flow_features": {
+          "f_updown": 0.974,
+          "f_ad_slope": -0.323,
+          "f_obv_slope": 0.243
+        },
+        "flow_metrics": {
+          "up_down_ratio_20d": 1.652,
+          "ad_slope_20d": -2666093.32,
+          "obv_slope_20d": 3543741.0
+        }
+      },
+      "market_context": {
+        "symbol": "GODREJPROP.NS",
+        "data_source": "Yahoo_Finance_Original_Logic",
+        "data_quality": "high",
+        "price_currency": "INR"
+      },
+      "status": "success",
+      "execution_time": 18.986118
+    },
+    "liquidity_risk": {
+      "component_name": "liquidity_risk",
+      "sentiment": 0.2588271914935093,
+      "confidence": 0.8,
+      "framework_weight": 0.15,
+      "weighted_contribution": 0.03882407872402639,
+      "description": "REIT Liquidity Risk Analysis - Original Logic",
+      "source": "REIT_liquidity_risk_Original",
+      "metadata": {
+        "original_diagnostics": {
+          "score": 0.259,
+          "features": {
+            "f_spread_proxy": 0.911,
+            "f_amihud": -0.394
+          },
+          "metrics": {
+            "range_today": 0.01281,
+            "median_range_60d": 0.02078,
+            "amihud_20d": 0.0
+          }
+        },
+        "liquidity_features": {
+          "f_spread_proxy": 0.911,
+          "f_amihud": -0.394
+        },
+        "liquidity_metrics": {
+          "range_today": 0.01281,
+          "median_range_60d": 0.02078,
+          "amihud_20d": 0.0
+        }
+      },
+      "market_context": {
+        "symbol": "DLF.NS",
+        "data_source": "Yahoo_Finance_Original_Logic",
+        "data_quality": "high",
+        "price_currency": "INR"
+      },
+      "status": "success",
+      "execution_time": 0.758277
+    }
+  },
+  "composite_metrics": {
+    "weighted_sentiment_score": -0.266613007876114,
+    "confidence_score": 0.8,
+    "framework_coverage_pct": 100.0,
+    "components_successful": 4,
+    "components_total": 4,
+    "original_weights_used": {
+      "tech": 0.35,
+      "yield": 0.3,
+      "flow": 0.2,
+      "liq": 0.15
+    },
+    "raw_score_before_clipping": -0.266613007876114
+  },
+  "performance_metrics": {
+    "execution_time_seconds": 27.246761,
+    "system_status": "operational_original_logic",
+    "optimization_level": "reit_original_v1.0"
+  },
+  "market_context": {
+    "asset_type": "real_estate_investment_trust",
+    "data_source": "Yahoo_Finance_TradingEconomics_Original_Logic",
+    "data_freshness": "daily",
+    "update_frequency": "daily",
+    "price_currency": "INR",
+    "logic_source": "friend_original_mindspace_code"
+  },
+  "kpi_name": "REIT_Multi_Factor_Original",
+  "framework_weight": 0.25,
+  "analysis_timestamp": "2025-09-08T19:40:46.186032"
+}

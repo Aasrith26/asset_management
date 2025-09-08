@@ -1,0 +1,52 @@
+{
+  "job_metadata": {
+    "job_id": "5cdea478-9902-44c2-9d20-f937b6fbca8b",
+    "asset_name": "BITCOIN",
+    "generated_at": "2025-09-08T20:18:46.945328",
+    "belongs_to_analysis": "2025-09-08T20:18:46.917196"
+  },
+  "asset_metadata": {
+    "asset_name": "BITCOIN",
+    "asset_type": "BITCOIN",
+    "analysis_timestamp": "2025-09-08T20:18:36.365335",
+    "data_source": "Kraken_Multi_API",
+    "execution_time": 13.302425,
+    "status": "success"
+  },
+  "sentiment_analysis": {
+    "overall_sentiment": 0.09097914794375395,
+    "confidence_level": 0.4984360644482704,
+    "sentiment_interpretation": "NEUTRAL",
+    "confidence_grade": "C",
+    "analysis_quality": "success"
+  },
+  "component_breakdown": {},
+  "market_context": {
+    "asset_type": "cryptocurrency",
+    "data_source": "Kraken_Multi_API",
+    "data_freshness": "real_time",
+    "update_frequency": "1_minute",
+    "price_currency": "USD"
+  },
+  "executive_summary": {
+    "overall_sentiment": 0.09097914794375395,
+    "confidence_level": 0.4984360644482704,
+    "interpretation": "\u26aa NEUTRAL - Balanced crypto signals",
+    "risk_assessment": "HIGH RISK - Low confidence signals",
+    "components_analyzed": 4,
+    "recommendation": "Confidence Level: 50% - HIGH RISK - Low confidence signals"
+  },
+  "risk_assessment": {
+    "data_quality": "success",
+    "confidence_score": 0.4984360644482704,
+    "execution_success": true,
+    "error_message": null
+  },
+  "pipeline_metadata": {
+    "job_id": "5cdea478-9902-44c2-9d20-f937b6fbca8b",
+    "format_version": "2.0",
+    "downstream_compatible": true,
+    "context_file_type": "asset_specific",
+    "related_csv": "assets_data_5cdea478-9902-44c2-9d20-f937b6fbca8b.csv"
+  }
+}

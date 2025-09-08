@@ -17,6 +17,25 @@ import uuid
 from datetime import datetime, timedelta
 from enum import Enum
 from pathlib import Path
+import math
+import numpy as np
+
+def clean_nan_values(obj):
+    """Recursively clean NaN values from nested dictionaries and lists"""
+    if isinstance(obj, dict):
+        return {key: clean_nan_values(value) for key, value in obj.items()}
+    elif isinstance(obj, list):
+        return [clean_nan_values(item) for item in obj]
+    elif isinstance(obj, float):
+        if math.isnan(obj) or math.isinf(obj):
+            return 0.0  # Replace NaN/Inf with 0.0
+        return obj
+    elif isinstance(obj, (np.floating, np.integer)):
+        if np.isnan(obj) or np.isinf(obj):
+            return 0.0  # Replace NaN/Inf with 0.0
+        return float(obj)
+    else:
+        return obj
 
 # Add paths for all asset KPIs
 sys.path.append(str(Path(__file__).parent / "nifty_50_kpis"))
@@ -24,7 +43,6 @@ sys.path.append(str(Path(__file__).parent / "gold_kpis"))
 sys.path.append(str(Path(__file__).parent / "bitcoin_kpis"))
 sys.path.append(str(Path(__file__).parent / "reit_kpis"))
 
-# JOB-BASED PIPELINE INTEGRATION
 from job_based_pipeline_generator import generate_job_based_outputs
 
 # Configure logging
@@ -53,14 +71,13 @@ class AssetCategory(str, Enum):
     CRYPTOCURRENCY = "crypto"
     REAL_ESTATE = "real_estate"
 
-# Updated Pydantic Models with job tracking
 class AnalysisRequest(BaseModel):
     assets: List[AssetType]
     timeout_minutes: Optional[int] = 15
     include_portfolio_view: Optional[bool] = True
     save_results: Optional[bool] = True
     generate_pipeline_outputs: Optional[bool] = True
-    custom_job_id: Optional[str] = None  # Allow custom job ID
+    custom_job_id: Optional[str] = None
 
 class CategoryAnalysisRequest(BaseModel):
     timeout_minutes: Optional[int] = 15
@@ -68,9 +85,6 @@ class CategoryAnalysisRequest(BaseModel):
     generate_pipeline_outputs: Optional[bool] = True
     custom_job_id: Optional[str] = None
 
-# ================================================================
-# ASSET INTEGRATION ADAPTERS (same as before)
-# ================================================================
 app = FastAPI(
     title="4-Asset Sentiment Analysis Backend with Job-Based Pipeline v2.0",
     description="Job-tracked sentiment analysis with consolidated CSV + asset-specific JSON outputs",
@@ -86,6 +100,8 @@ app.add_middleware(
     allow_headers=["*"],
     expose_headers=["X-Job-ID", "X-Request-ID"]  # visible to browsers
 )
+
+
 class NiftyIntegrationAdapter:
     @staticmethod
     async def run_analysis() -> Dict[str, Any]:
@@ -93,17 +109,44 @@ class NiftyIntegrationAdapter:
             logger.info("Starting Nifty 50 analysis...")
             from nifty_50_kpis.complete_nifty_analyzer import run_complete_nifty_analysis
             result = await run_complete_nifty_analysis()
-            return {
-                'asset_type': AssetType.NIFTY50,
-                'sentiment': result.get('composite_sentiment', 0.0),
-                'confidence': result.get('composite_confidence', 0.5),
-                'execution_time': result.get('execution_time_seconds', 0.0),
-                'component_details': result.get('component_analysis', {}),
-                'market_context': result.get('market_context', {}),
-                'status': 'success',
-                'timestamp': datetime.now().isoformat(),
-                'data_source': 'Multiple_Indian_APIs'
-            }
+
+            # FIXED: Read from correct nested structure
+            if result and isinstance(result, dict):
+                composite_results = result.get('composite_results', {})
+                analysis_metadata = result.get('analysis_metadata', {})
+
+                # Extract data from correct nested paths
+                sentiment = composite_results.get('overall_sentiment', 0.0)
+                confidence = composite_results.get('overall_confidence', 0.5)
+                exec_time = analysis_metadata.get('execution_time_seconds', 0.0)
+
+                # Ensure we have valid numbers
+                sentiment = float(sentiment) if sentiment is not None else 0.0
+                confidence = float(confidence) if confidence is not None else 0.5
+                exec_time = float(exec_time) if exec_time is not None else 0.0
+
+                logger.info(
+                    f"NIFTY50 extracted: sentiment={sentiment:.3f}, confidence={confidence:.1%}, time={exec_time:.1f}s")
+
+                return {
+                    'asset_type': AssetType.NIFTY50,
+                    'sentiment': sentiment,
+                    'confidence': confidence,
+                    'execution_time': exec_time,
+                    'component_details': result.get('component_details', {}),
+                    'market_context': result.get('market_overview', {}),
+                    'status': 'success',
+                    'timestamp': datetime.now().isoformat(),
+                    'data_source': 'Multiple_Indian_APIs'
+                }
+            else:
+                logger.error("NIFTY50 result is not a valid dict")
+                return {
+                    'asset_type': AssetType.NIFTY50,
+                    'sentiment': 0.0, 'confidence': 0.3, 'status': 'error',
+                    'error': 'Invalid result structure', 'timestamp': datetime.now().isoformat()
+                }
+
         except Exception as e:
             logger.error(f"Nifty 50 analysis failed: {e}")
             return {
@@ -111,6 +154,7 @@ class NiftyIntegrationAdapter:
                 'sentiment': 0.0, 'confidence': 0.3, 'status': 'error',
                 'error': str(e), 'timestamp': datetime.now().isoformat()
             }
+
 
 class GoldIntegrationAdapter:
     @staticmethod
@@ -232,39 +276,54 @@ class MultiAssetOrchestrator:
         AssetCategory.CRYPTOCURRENCY: [AssetType.BITCOIN],
         AssetCategory.REAL_ESTATE: [AssetType.REIT]
     }
-    
+
     @classmethod
-    async def analyze_assets_with_job_id(cls, job_id: str, assets: List[AssetType], timeout_minutes: int = 15) -> Dict[str, Any]:
-        """Enhanced analysis with job ID tracking"""
+    async def analyze_assets_with_job_id(cls, job_id: str, assets: List[AssetType], timeout_minutes: int = 15) -> Dict[
+        str, Any]:
+        """SEQUENTIAL: One asset at a time for cleaner logs"""
         start_time = datetime.now()
         results = {}
-        
-        logger.info(f"Starting job {job_id} - analyzing {len(assets)} assets: {[a.value for a in assets]}")
-        
+        logger.info(f"Starting SEQUENTIAL job {job_id} - analyzing {len(assets)} assets: {[a.value for a in assets]}")
+
         timeout_seconds = timeout_minutes * 60
-        tasks = []
-        
-        for asset in assets:
+
+        # SEQUENTIAL EXECUTION - ONE AT A TIME
+        for i, asset in enumerate(assets, 1):
+            logger.info(f"🔄 [{i}/{len(assets)}] Starting {asset.value} analysis...")
+
             adapter = cls.ASSET_ADAPTERS[asset]
-            task = cls._run_with_timeout(asset, adapter.run_analysis(), timeout_seconds)
-            tasks.append(task)
-        
-        asset_results = await asyncio.gather(*tasks, return_exceptions=True)
-        
-        for i, asset in enumerate(assets):
-            result = asset_results[i]
-            if isinstance(result, Exception):
-                logger.error(f"Job {job_id} - {asset.value} failed with exception: {result}")
+
+            try:
+                # Run one asset at a time - wait for completion
+                result = await cls._run_with_timeout(asset, adapter.run_analysis(), timeout_seconds)
+                results[asset.value] = result
+
+                # Log completion with details
+                if result.get('status') == 'success':
+                    sentiment = result.get('sentiment', 0)
+                    confidence = result.get('confidence', 0)
+                    exec_time = result.get('execution_time', 0)
+                    logger.info(
+                        f"✅ [{i}/{len(assets)}] {asset.value} completed: sentiment={sentiment:.3f}, confidence={confidence:.1%}, time={exec_time:.1f}s")
+                else:
+                    logger.error(f"❌ [{i}/{len(assets)}] {asset.value} failed: {result.get('error', 'Unknown error')}")
+
+            except Exception as e:
+                logger.error(f"❌ [{i}/{len(assets)}] {asset.value} exception: {e}")
                 results[asset.value] = {
                     'asset_type': asset.value, 'status': 'exception',
-                    'error': str(result), 'sentiment': 0.0, 'confidence': 0.3
+                    'error': str(e), 'sentiment': 0.0, 'confidence': 0.3
                 }
-            else:
-                results[asset.value] = result
-        
+
+            # Small pause between analyses for cleaner logs
+            if i < len(assets):
+                await asyncio.sleep(1)
+
         execution_time = (datetime.now() - start_time).total_seconds()
         portfolio_summary = cls._generate_portfolio_summary(results, execution_time)
-        
+
+        logger.info(f"🏁 SEQUENTIAL job {job_id} completed in {execution_time:.1f}s")
+
         return {
             'job_id': job_id,
             'analysis_results': results,
@@ -272,9 +331,10 @@ class MultiAssetOrchestrator:
             'execution_time_seconds': execution_time,
             'timestamp': datetime.now().isoformat(),
             'assets_analyzed': len(assets),
-            'total_assets_available': len(AssetType)
+            'total_assets_available': len(AssetType),
+            'execution_mode': 'SEQUENTIAL'
         }
-    
+
     @classmethod
     async def analyze_category_with_job_id(cls, job_id: str, category: AssetCategory, timeout_minutes: int = 15) -> Dict[str, Any]:
         """Enhanced category analysis with job ID"""
@@ -456,10 +516,11 @@ async def analyze_all_assets(request: AnalysisRequest):
             result['pipeline_outputs'] = pipeline_outputs
 
         # Add job tracking to response headers
-        response = JSONResponse(content=result)
+        clean_result = clean_nan_values(result)
+        # Add job tracking to response headers
+        response = JSONResponse(content=clean_result)  # Use clean_result instead of result
         response.headers["X-Job-ID"] = job_id
         return response
-
     except Exception as e:
         logger.error(f"All-assets analysis failed: {e}")
         raise HTTPException(status_code=500, detail=f"Analysis failed: {str(e)}")

@@ -1,0 +1,16 @@
+{
+  "gold_sentiment_composite": 0.31925844141123355,
+  "confidence": 0.7743333333333333,
+  "interpretation": "\ud83d\udfe2 BULLISH - Net positive signals across components",
+  "framework_coverage": 0.95,
+  "quality_grade": "B",
+  "timestamp": "2025-09-08T15:50:29.339991",
+  "system_version": "5.0_integrated",
+  "components": {
+    "technical_analysis": 1.0,
+    "real_interest_rates": 0.40285655414444405,
+    "central_bank_sentiment": 0.29865415049334487,
+    "professional_positioning": -0.013755100494839786,
+    "currency_debasement": 0.047045396516967264
+  }
+}

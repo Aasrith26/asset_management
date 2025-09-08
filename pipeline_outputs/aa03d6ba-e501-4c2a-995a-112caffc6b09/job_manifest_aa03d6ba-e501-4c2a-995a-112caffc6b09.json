@@ -1,0 +1,78 @@
+{
+  "job_id": "aa03d6ba-e501-4c2a-995a-112caffc6b09",
+  "generated_at": "2025-09-08T20:33:23.511124",
+  "analysis_timestamp": "2025-09-08T20:33:23.492917",
+  "files": {
+    "consolidated_csv": {
+      "filename": "assets_data_aa03d6ba-e501-4c2a-995a-112caffc6b09.csv",
+      "full_path": "pipeline_outputs/aa03d6ba-e501-4c2a-995a-112caffc6b09/assets_data_aa03d6ba-e501-4c2a-995a-112caffc6b09.csv",
+      "type": "consolidated_data",
+      "description": "Tidy CSV with all 4 assets for Backend Model A",
+      "format": "CSV",
+      "columns": [
+        "job_id",
+        "asset",
+        "metric_type",
+        "metric_name",
+        "value",
+        "confidence",
+        "status",
+        "timestamp"
+      ]
+    },
+    "asset_contexts": [
+      {
+        "asset": "NIFTY50",
+        "filename": "NIFTY50_context_aa03d6ba-e501-4c2a-995a-112caffc6b09.json",
+        "full_path": "pipeline_outputs/aa03d6ba-e501-4c2a-995a-112caffc6b09/NIFTY50_context_aa03d6ba-e501-4c2a-995a-112caffc6b09.json",
+        "type": "asset_context",
+        "description": "NIFTY50 context data for Backend Model B"
+      },
+      {
+        "asset": "GOLD",
+        "filename": "GOLD_context_aa03d6ba-e501-4c2a-995a-112caffc6b09.json",
+        "full_path": "pipeline_outputs/aa03d6ba-e501-4c2a-995a-112caffc6b09/GOLD_context_aa03d6ba-e501-4c2a-995a-112caffc6b09.json",
+        "type": "asset_context",
+        "description": "GOLD context data for Backend Model B"
+      },
+      {
+        "asset": "BITCOIN",
+        "filename": "BITCOIN_context_aa03d6ba-e501-4c2a-995a-112caffc6b09.json",
+        "full_path": "pipeline_outputs/aa03d6ba-e501-4c2a-995a-112caffc6b09/BITCOIN_context_aa03d6ba-e501-4c2a-995a-112caffc6b09.json",
+        "type": "asset_context",
+        "description": "BITCOIN context data for Backend Model B"
+      },
+      {
+        "asset": "REIT",
+        "filename": "REIT_context_aa03d6ba-e501-4c2a-995a-112caffc6b09.json",
+        "full_path": "pipeline_outputs/aa03d6ba-e501-4c2a-995a-112caffc6b09/REIT_context_aa03d6ba-e501-4c2a-995a-112caffc6b09.json",
+        "type": "asset_context",
+        "description": "REIT context data for Backend Model B"
+      }
+    ]
+  },
+  "analysis_summary": {
+    "total_assets": 4,
+    "successful_assets": 4,
+    "portfolio_sentiment": -0.057,
+    "portfolio_confidence": 0.655,
+    "execution_time": 44.678857
+  },
+  "downstream_access": {
+    "backend_model_a": {
+      "file_type": "CSV",
+      "access_method": "GET /pipeline-outputs/aa03d6ba-e501-4c2a-995a-112caffc6b09/csv",
+      "file": "assets_data_aa03d6ba-e501-4c2a-995a-112caffc6b09.csv"
+    },
+    "backend_model_b": {
+      "file_type": "Context JSON",
+      "access_method": "GET /pipeline-outputs/aa03d6ba-e501-4c2a-995a-112caffc6b09/context/{asset}",
+      "available_assets": [
+        "NIFTY50",
+        "GOLD",
+        "BITCOIN",
+        "REIT"
+      ]
+    }
+  }
+}

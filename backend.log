@@ -1586,3 +1586,490 @@ client_session: <aiohttp.client.ClientSession object at 0x0000020AA626BB60>
 2025-09-08 00:41:08,384 - watchfiles.main - INFO - 1 change detected
 2025-09-08 00:41:09,004 - watchfiles.main - INFO - 1 change detected
 2025-09-08 00:41:11,035 - watchfiles.main - INFO - 5 changes detected
+2025-09-08 15:51:11,172 - main_4asset_backend_job_based - INFO - 4-Asset Sentiment Analysis Backend v2.0 starting up...
+2025-09-08 15:51:11,172 - main_4asset_backend_job_based - INFO - Job-based pipeline system enabled for downstream backend models
+2025-09-08 15:51:11,172 - main_4asset_backend_job_based - INFO - Direct API access available for file retrieval
+2025-09-08 15:51:16,025 - main_4asset_backend_job_based - INFO - Starting job 0055c161-54b9-4458-935b-c374bc08ed70 - analyzing 4 assets: ['NIFTY50', 'GOLD', 'BITCOIN', 'REIT']
+2025-09-08 15:51:16,026 - main_4asset_backend_job_based - INFO - Starting Nifty 50 analysis...
+2025-09-08 15:51:16,485 - main_4asset_backend_job_based - INFO - Starting Gold analysis...
+2025-09-08 15:51:22,533 - main_4asset_backend_job_based - INFO - Starting Bitcoin analysis...
+2025-09-08 15:51:32,756 - main_4asset_backend_job_based - INFO - Starting REIT analysis...
+2025-09-08 15:51:32,808 - watchfiles.main - INFO - 3 changes detected
+2025-09-08 15:51:40,131 - watchfiles.main - INFO - 3 changes detected
+2025-09-08 15:51:41,206 - asyncio - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000028116D27CB0>
+2025-09-08 15:51:48,260 - watchfiles.main - INFO - 1 change detected
+2025-09-08 15:51:50,678 - watchfiles.main - INFO - 3 changes detected
+2025-09-08 15:51:56,368 - main_4asset_backend_job_based - INFO - Gold analysis: Used run_integrated_analysis function
+2025-09-08 15:51:56,370 - main_4asset_backend_job_based - INFO - Analysis results saved to analysis_results_all_assets_0055c161-54b9-4458-935b-c374bc08ed70_20250908_155156.json
+2025-09-08 15:51:56,446 - watchfiles.main - INFO - 11 changes detected
+2025-09-08 15:52:08,368 - watchfiles.main - INFO - 1 change detected
+2025-09-08 15:53:47,060 - main_4asset_backend_job_based - INFO - Backend shutting down...
+2025-09-08 18:51:02,824 - main_4asset_backend_job_based - INFO - 4-Asset Sentiment Analysis Backend v2.0 starting up...
+2025-09-08 18:51:02,824 - main_4asset_backend_job_based - INFO - Job-based pipeline system enabled for downstream backend models
+2025-09-08 18:51:02,824 - main_4asset_backend_job_based - INFO - Direct API access available for file retrieval
+2025-09-08 18:51:15,872 - watchfiles.main - INFO - 4 changes detected
+2025-09-08 18:51:18,463 - main_4asset_backend_job_based - INFO - Starting job ea0cbe25-7464-4b59-bb62-4ad6406f34ee - analyzing 4 assets: ['NIFTY50', 'GOLD', 'BITCOIN', 'REIT']
+2025-09-08 18:51:18,464 - main_4asset_backend_job_based - INFO - Starting Nifty 50 analysis...
+2025-09-08 18:51:18,998 - main_4asset_backend_job_based - INFO - Starting Gold analysis...
+2025-09-08 18:51:23,374 - main_4asset_backend_job_based - INFO - Starting Bitcoin analysis...
+2025-09-08 18:51:30,550 - watchfiles.main - INFO - 1 change detected
+2025-09-08 18:51:33,210 - main_4asset_backend_job_based - INFO - Starting REIT analysis...
+2025-09-08 18:51:33,282 - watchfiles.main - INFO - 3 changes detected
+2025-09-08 18:51:39,450 - watchfiles.main - INFO - 3 changes detected
+2025-09-08 18:51:40,076 - asyncio - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001F0B4DB7CB0>
+2025-09-08 18:51:49,295 - watchfiles.main - INFO - 1 change detected
+2025-09-08 18:51:52,688 - watchfiles.main - INFO - 3 changes detected
+2025-09-08 18:51:57,011 - main_4asset_backend_job_based - INFO - Gold analysis: Used run_integrated_analysis function
+2025-09-08 18:51:57,017 - main_4asset_backend_job_based - INFO - Analysis results saved to analysis_results_all_assets_ea0cbe25-7464-4b59-bb62-4ad6406f34ee_20250908_185157.json
+2025-09-08 18:51:57,114 - watchfiles.main - INFO - 11 changes detected
+2025-09-08 18:52:00,809 - watchfiles.main - INFO - 3 changes detected
+2025-09-08 19:00:28,492 - watchfiles.main - INFO - 4 changes detected
+2025-09-08 19:00:29,816 - watchfiles.main - INFO - 2 changes detected
+2025-09-08 19:01:07,817 - watchfiles.main - INFO - 4 changes detected
+2025-09-08 19:01:08,868 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:12:22,075 - watchfiles.main - INFO - 8 changes detected
+2025-09-08 19:12:25,158 - main_4asset_backend_job_based - INFO - Starting job 5a74a5aa-3ab1-451c-bca8-a9dba8b4c21a - analyzing 4 assets: ['NIFTY50', 'GOLD', 'BITCOIN', 'REIT']
+2025-09-08 19:12:25,158 - main_4asset_backend_job_based - INFO - Starting Nifty 50 analysis...
+2025-09-08 19:12:25,159 - main_4asset_backend_job_based - INFO - Starting Gold analysis...
+2025-09-08 19:12:28,334 - main_4asset_backend_job_based - INFO - Starting Bitcoin analysis...
+2025-09-08 19:12:37,754 - main_4asset_backend_job_based - INFO - Starting REIT analysis...
+2025-09-08 19:12:44,435 - asyncio - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001F0B60479D0>
+2025-09-08 19:12:59,958 - main_4asset_backend_job_based - INFO - Gold analysis: Used run_integrated_analysis function
+2025-09-08 19:12:59,962 - main_4asset_backend_job_based - INFO - Analysis results saved to analysis_results_all_assets_5a74a5aa-3ab1-451c-bca8-a9dba8b4c21a_20250908_191259.json
+2025-09-08 19:13:00,058 - main_4asset_backend_job_based - INFO - Backend shutting down...
+2025-09-08 19:13:00,721 - watchfiles.main - INFO - 21 changes detected
+2025-09-08 19:13:01,681 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:13:01,689 - main_4asset_backend_job_based - INFO - 4-Asset Sentiment Analysis Backend v2.0 starting up...
+2025-09-08 19:13:01,689 - main_4asset_backend_job_based - INFO - Job-based pipeline system enabled for downstream backend models
+2025-09-08 19:13:01,689 - main_4asset_backend_job_based - INFO - Direct API access available for file retrieval
+2025-09-08 19:13:02,034 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:13:21,146 - watchfiles.main - INFO - 3 changes detected
+2025-09-08 19:13:21,667 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:13:22,186 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:13:44,687 - watchfiles.main - INFO - 5 changes detected
+2025-09-08 19:13:45,960 - watchfiles.main - INFO - 2 changes detected
+2025-09-08 19:13:47,081 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:13:51,171 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:14:11,203 - watchfiles.main - INFO - 2 changes detected
+2025-09-08 19:14:11,562 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:14:12,922 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:14:13,282 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:14:42,843 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:14:47,944 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:15:58,737 - watchfiles.main - INFO - 4 changes detected
+2025-09-08 19:16:13,358 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:16:13,722 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:16:14,397 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:19:37,698 - watchfiles.main - INFO - 4 changes detected
+2025-09-08 19:23:00,584 - main_4asset_backend_job_based - INFO - Backend shutting down...
+2025-09-08 19:23:01,261 - watchfiles.main - INFO - 16 changes detected
+2025-09-08 19:23:03,917 - main_4asset_backend_job_based - INFO - 4-Asset Sentiment Analysis Backend v2.0 starting up...
+2025-09-08 19:23:03,917 - main_4asset_backend_job_based - INFO - Job-based pipeline system enabled for downstream backend models
+2025-09-08 19:23:03,917 - main_4asset_backend_job_based - INFO - Direct API access available for file retrieval
+2025-09-08 19:23:03,961 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:28:11,065 - watchfiles.main - INFO - 7 changes detected
+2025-09-08 19:29:24,203 - main_4asset_backend_job_based - INFO - Starting job 81bf6dc2-ae58-462c-9eb0-9f340eff3762 - analyzing 4 assets: ['NIFTY50', 'GOLD', 'BITCOIN', 'REIT']
+2025-09-08 19:29:24,204 - main_4asset_backend_job_based - INFO - Starting Nifty 50 analysis...
+2025-09-08 19:29:25,440 - main_4asset_backend_job_based - INFO - Starting Gold analysis...
+2025-09-08 19:29:32,490 - main_4asset_backend_job_based - INFO - Starting Bitcoin analysis...
+2025-09-08 19:29:46,419 - main_4asset_backend_job_based - INFO - Starting REIT analysis...
+2025-09-08 19:29:53,304 - asyncio - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x00000217ED92BB60>
+2025-09-08 19:30:07,845 - main_4asset_backend_job_based - INFO - Gold analysis: Used run_integrated_analysis function
+2025-09-08 19:30:07,848 - main_4asset_backend_job_based - INFO - Analysis results saved to analysis_results_all_assets_81bf6dc2-ae58-462c-9eb0-9f340eff3762_20250908_193007.json
+2025-09-08 19:30:07,952 - main_4asset_backend_job_based - INFO - Backend shutting down...
+2025-09-08 19:30:08,672 - watchfiles.main - INFO - 38 changes detected
+2025-09-08 19:30:10,483 - main_4asset_backend_job_based - INFO - 4-Asset Sentiment Analysis Backend v2.0 starting up...
+2025-09-08 19:30:10,483 - main_4asset_backend_job_based - INFO - Job-based pipeline system enabled for downstream backend models
+2025-09-08 19:30:10,483 - main_4asset_backend_job_based - INFO - Direct API access available for file retrieval
+2025-09-08 19:30:10,551 - watchfiles.main - INFO - 6 changes detected
+2025-09-08 19:30:23,281 - watchfiles.main - INFO - 3 changes detected
+2025-09-08 19:30:24,081 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:30:24,461 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:30:32,935 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:30:46,520 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:31:23,063 - watchfiles.main - INFO - 4 changes detected
+2025-09-08 19:32:53,902 - main_4asset_backend_job_based - INFO - Starting job 7dd615bc-a934-4afb-b4d3-0430cc66cc43 - analyzing 4 assets: ['NIFTY50', 'GOLD', 'BITCOIN', 'REIT']
+2025-09-08 19:32:53,902 - main_4asset_backend_job_based - INFO - Starting Nifty 50 analysis...
+2025-09-08 19:32:54,484 - main_4asset_backend_job_based - INFO - Starting Gold analysis...
+2025-09-08 19:32:59,717 - main_4asset_backend_job_based - INFO - Starting Bitcoin analysis...
+2025-09-08 19:33:10,578 - main_4asset_backend_job_based - INFO - Starting REIT analysis...
+2025-09-08 19:33:17,905 - asyncio - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x00000207F89B7A10>
+2025-09-08 19:33:32,588 - main_4asset_backend_job_based - INFO - Gold analysis: Used run_integrated_analysis function
+2025-09-08 19:33:32,599 - main_4asset_backend_job_based - INFO - Analysis results saved to analysis_results_all_assets_7dd615bc-a934-4afb-b4d3-0430cc66cc43_20250908_193332.json
+2025-09-08 19:33:32,688 - main_4asset_backend_job_based - INFO - Backend shutting down...
+2025-09-08 19:33:33,408 - watchfiles.main - INFO - 29 changes detected
+2025-09-08 19:33:35,086 - main_4asset_backend_job_based - INFO - 4-Asset Sentiment Analysis Backend v2.0 starting up...
+2025-09-08 19:33:35,086 - main_4asset_backend_job_based - INFO - Job-based pipeline system enabled for downstream backend models
+2025-09-08 19:33:35,086 - main_4asset_backend_job_based - INFO - Direct API access available for file retrieval
+2025-09-08 19:33:35,176 - watchfiles.main - INFO - 6 changes detected
+2025-09-08 19:33:35,644 - watchfiles.main - INFO - 3 changes detected
+2025-09-08 19:33:36,106 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:33:36,553 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:34:07,566 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:34:15,356 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:34:33,370 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:34:48,344 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:35:03,385 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:35:10,620 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:35:32,811 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:35:49,163 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:36:04,217 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:36:19,185 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:36:34,182 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:36:49,201 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:36:56,818 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:37:02,739 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:37:03,802 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:37:18,946 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:37:26,869 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:37:41,963 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:37:52,002 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:38:01,469 - watchfiles.main - INFO - 4 changes detected
+2025-09-08 19:38:33,972 - main_4asset_backend_job_based - INFO - Backend shutting down...
+2025-09-08 19:38:34,531 - watchfiles.main - INFO - 9 changes detected
+2025-09-08 19:38:35,571 - main_4asset_backend_job_based - INFO - 4-Asset Sentiment Analysis Backend v2.0 starting up...
+2025-09-08 19:38:35,571 - main_4asset_backend_job_based - INFO - Job-based pipeline system enabled for downstream backend models
+2025-09-08 19:38:35,572 - main_4asset_backend_job_based - INFO - Direct API access available for file retrieval
+2025-09-08 19:38:35,607 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:38:37,471 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:38:38,450 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:38:38,801 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:38:39,203 - watchfiles.main - INFO - 4 changes detected
+2025-09-08 19:38:41,341 - main_4asset_backend_job_based - INFO - Starting job 6a78aa89-a9d3-4509-a772-dd337362c063 - analyzing 4 assets: ['NIFTY50', 'GOLD', 'BITCOIN', 'REIT']
+2025-09-08 19:38:41,341 - main_4asset_backend_job_based - INFO - Starting Nifty 50 analysis...
+2025-09-08 19:38:41,422 - watchfiles.main - INFO - 5 changes detected
+2025-09-08 19:38:41,888 - main_4asset_backend_job_based - INFO - Starting Gold analysis...
+2025-09-08 19:38:47,535 - main_4asset_backend_job_based - INFO - Starting Bitcoin analysis...
+2025-09-08 19:38:53,880 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:38:54,235 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:38:55,310 - main_4asset_backend_job_based - INFO - Starting REIT analysis...
+2025-09-08 19:38:55,401 - watchfiles.main - INFO - 3 changes detected
+2025-09-08 19:39:00,584 - watchfiles.main - INFO - 3 changes detected
+2025-09-08 19:39:01,658 - asyncio - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001E9A027BB60>
+2025-09-08 19:39:08,076 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:39:08,942 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:39:09,356 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:39:09,727 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:39:10,265 - watchfiles.main - INFO - 2 changes detected
+2025-09-08 19:39:15,123 - main_4asset_backend_job_based - INFO - Gold analysis: Used run_integrated_analysis function
+2025-09-08 19:39:15,128 - main_4asset_backend_job_based - INFO - Analysis results saved to analysis_results_all_assets_6a78aa89-a9d3-4509-a772-dd337362c063_20250908_193915.json
+2025-09-08 19:39:15,201 - watchfiles.main - INFO - 10 changes detected
+2025-09-08 19:39:16,234 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:39:23,944 - watchfiles.main - INFO - 2 changes detected
+2025-09-08 19:39:24,472 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:39:39,376 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:39:43,558 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:39:56,256 - main_4asset_backend_job_based - INFO - Backend shutting down...
+2025-09-08 19:40:00,781 - main_4asset_backend_job_based - INFO - 4-Asset Sentiment Analysis Backend v2.0 starting up...
+2025-09-08 19:40:00,782 - main_4asset_backend_job_based - INFO - Job-based pipeline system enabled for downstream backend models
+2025-09-08 19:40:00,782 - main_4asset_backend_job_based - INFO - Direct API access available for file retrieval
+2025-09-08 19:40:02,412 - main_4asset_backend_job_based - INFO - Starting job a10bf69a-9831-4db3-b52c-910d48c90358 - analyzing 4 assets: ['NIFTY50', 'GOLD', 'BITCOIN', 'REIT']
+2025-09-08 19:40:02,412 - main_4asset_backend_job_based - INFO - Starting Nifty 50 analysis...
+2025-09-08 19:40:03,077 - main_4asset_backend_job_based - INFO - Starting Gold analysis...
+2025-09-08 19:40:10,546 - main_4asset_backend_job_based - INFO - Starting Bitcoin analysis...
+2025-09-08 19:40:18,929 - main_4asset_backend_job_based - INFO - Starting REIT analysis...
+2025-09-08 19:40:19,011 - watchfiles.main - INFO - 3 changes detected
+2025-09-08 19:40:36,450 - yfinance - ERROR - 
+1 Failed download:
+2025-09-08 19:40:36,451 - yfinance - ERROR - ['DLF.NS']: Timeout('Failed to perform, curl: (28) Connection timed out after 10003 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2025-09-08 19:40:46,252 - watchfiles.main - INFO - 3 changes detected
+2025-09-08 19:40:47,041 - asyncio - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x00000203B6627CB0>
+2025-09-08 19:40:54,261 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:40:55,374 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:40:58,657 - watchfiles.main - INFO - 2 changes detected
+2025-09-08 19:41:01,942 - watchfiles.main - INFO - 3 changes detected
+2025-09-08 19:41:03,763 - watchfiles.main - INFO - 2 changes detected
+2025-09-08 19:41:05,023 - main_4asset_backend_job_based - INFO - Gold analysis: Used run_integrated_analysis function
+2025-09-08 19:41:05,029 - main_4asset_backend_job_based - INFO - Analysis results saved to analysis_results_all_assets_a10bf69a-9831-4db3-b52c-910d48c90358_20250908_194105.json
+2025-09-08 19:41:05,142 - watchfiles.main - INFO - 10 changes detected
+2025-09-08 19:41:07,944 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:41:10,433 - watchfiles.main - INFO - 3 changes detected
+2025-09-08 19:44:21,527 - watchfiles.main - INFO - 3 changes detected
+2025-09-08 19:44:22,799 - main_4asset_backend_job_based - INFO - Starting job 0c2da19d-de6f-4048-9b42-32ad46403e74 - analyzing 4 assets: ['NIFTY50', 'GOLD', 'BITCOIN', 'REIT']
+2025-09-08 19:44:22,799 - main_4asset_backend_job_based - INFO - Starting Nifty 50 analysis...
+2025-09-08 19:44:22,800 - main_4asset_backend_job_based - INFO - Starting Gold analysis...
+2025-09-08 19:44:27,910 - main_4asset_backend_job_based - INFO - Starting Bitcoin analysis...
+2025-09-08 19:44:37,249 - main_4asset_backend_job_based - INFO - Starting REIT analysis...
+2025-09-08 19:44:44,097 - asyncio - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x00000203B78939D0>
+2025-09-08 19:44:59,227 - main_4asset_backend_job_based - INFO - Gold analysis: Used run_integrated_analysis function
+2025-09-08 19:44:59,230 - main_4asset_backend_job_based - INFO - Analysis results saved to analysis_results_all_assets_0c2da19d-de6f-4048-9b42-32ad46403e74_20250908_194459.json
+2025-09-08 19:44:59,327 - main_4asset_backend_job_based - INFO - Backend shutting down...
+2025-09-08 19:44:59,985 - watchfiles.main - INFO - 19 changes detected
+2025-09-08 19:45:00,902 - main_4asset_backend_job_based - INFO - 4-Asset Sentiment Analysis Backend v2.0 starting up...
+2025-09-08 19:45:00,903 - main_4asset_backend_job_based - INFO - Job-based pipeline system enabled for downstream backend models
+2025-09-08 19:45:00,903 - main_4asset_backend_job_based - INFO - Direct API access available for file retrieval
+2025-09-08 19:45:00,948 - watchfiles.main - INFO - 6 changes detected
+2025-09-08 19:45:07,501 - watchfiles.main - INFO - 3 changes detected
+2025-09-08 19:45:08,151 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:45:31,671 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:45:51,245 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:45:52,871 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:45:57,624 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:46:14,800 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:46:16,051 - main_4asset_backend_job_based - INFO - Backend shutting down...
+2025-09-08 19:46:19,964 - main_4asset_backend_job_based - INFO - 4-Asset Sentiment Analysis Backend v2.0 starting up...
+2025-09-08 19:46:19,964 - main_4asset_backend_job_based - INFO - Job-based pipeline system enabled for downstream backend models
+2025-09-08 19:46:19,964 - main_4asset_backend_job_based - INFO - Direct API access available for file retrieval
+2025-09-08 19:46:26,480 - main_4asset_backend_job_based - INFO - Starting SEQUENTIAL job 586eb3a5-e1d6-4071-89c2-1718294f4869 - analyzing 4 assets: ['NIFTY50', 'GOLD', 'BITCOIN', 'REIT']
+2025-09-08 19:46:26,481 - main_4asset_backend_job_based - INFO - 🔄 [1/4] Starting NIFTY50 analysis...
+2025-09-08 19:46:26,481 - main_4asset_backend_job_based - INFO - Starting Nifty 50 analysis...
+2025-09-08 19:46:41,143 - main_4asset_backend_job_based - INFO - ✅ [1/4] NIFTY50 completed: sentiment=0.000, confidence=50.0%, time=0.0s
+2025-09-08 19:46:41,204 - watchfiles.main - INFO - 2 changes detected
+2025-09-08 19:46:42,155 - main_4asset_backend_job_based - INFO - 🔄 [2/4] Starting GOLD analysis...
+2025-09-08 19:46:42,155 - main_4asset_backend_job_based - INFO - Starting Gold analysis...
+2025-09-08 19:47:00,735 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:47:09,549 - main_4asset_backend_job_based - INFO - Gold analysis: Used run_integrated_analysis function
+2025-09-08 19:47:09,550 - main_4asset_backend_job_based - INFO - ✅ [2/4] GOLD completed: sentiment=0.301, confidence=75.5%, time=27.4s
+2025-09-08 19:47:09,644 - watchfiles.main - INFO - 3 changes detected
+2025-09-08 19:47:10,556 - main_4asset_backend_job_based - INFO - 🔄 [3/4] Starting BITCOIN analysis...
+2025-09-08 19:47:10,557 - main_4asset_backend_job_based - INFO - Starting Bitcoin analysis...
+2025-09-08 19:47:21,630 - main_4asset_backend_job_based - INFO - ✅ [3/4] BITCOIN completed: sentiment=0.081, confidence=51.2%, time=11.1s
+2025-09-08 19:47:21,710 - watchfiles.main - INFO - 3 changes detected
+2025-09-08 19:47:22,645 - main_4asset_backend_job_based - INFO - 🔄 [4/4] Starting REIT analysis...
+2025-09-08 19:47:22,645 - main_4asset_backend_job_based - INFO - Starting REIT analysis...
+2025-09-08 19:47:29,010 - main_4asset_backend_job_based - INFO - ✅ [4/4] REIT completed: sentiment=-0.373, confidence=80.0%, time=6.3s
+2025-09-08 19:47:29,010 - main_4asset_backend_job_based - INFO - 🏁 SEQUENTIAL job 586eb3a5-e1d6-4071-89c2-1718294f4869 completed in 62.5s
+2025-09-08 19:47:29,014 - main_4asset_backend_job_based - INFO - Analysis results saved to analysis_results_all_assets_586eb3a5-e1d6-4071-89c2-1718294f4869_20250908_194729.json
+2025-09-08 19:47:29,156 - watchfiles.main - INFO - 11 changes detected
+2025-09-08 19:48:28,345 - watchfiles.main - INFO - 4 changes detected
+2025-09-08 19:51:17,742 - main_4asset_backend_job_based - INFO - Backend shutting down...
+2025-09-08 19:51:18,524 - watchfiles.main - INFO - 5 changes detected
+2025-09-08 19:51:19,375 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:51:19,376 - main_4asset_backend_job_based - INFO - 4-Asset Sentiment Analysis Backend v2.0 starting up...
+2025-09-08 19:51:19,376 - main_4asset_backend_job_based - INFO - Job-based pipeline system enabled for downstream backend models
+2025-09-08 19:51:19,376 - main_4asset_backend_job_based - INFO - Direct API access available for file retrieval
+2025-09-08 19:51:20,451 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:51:22,539 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:51:37,870 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:51:52,905 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:52:07,920 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:52:18,448 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:52:40,251 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:52:55,315 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:53:10,339 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:53:25,353 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:53:40,400 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:53:55,412 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:54:10,464 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:54:45,756 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:55:01,006 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:55:15,670 - watchfiles.main - INFO - 1 change detected
+2025-09-08 19:55:45,254 - main_4asset_backend_job_based - INFO - Backend shutting down...
+2025-09-08 19:55:52,116 - main_4asset_backend_job_based - INFO - 4-Asset Sentiment Analysis Backend v2.0 starting up...
+2025-09-08 19:55:52,117 - main_4asset_backend_job_based - INFO - Job-based pipeline system enabled for downstream backend models
+2025-09-08 19:55:52,117 - main_4asset_backend_job_based - INFO - Direct API access available for file retrieval
+2025-09-08 19:55:52,207 - watchfiles.main - INFO - 5 changes detected
+2025-09-08 19:55:56,035 - main_4asset_backend_job_based - INFO - Starting SEQUENTIAL job 8be02b47-8df3-4ba6-af9c-83933e7a311b - analyzing 4 assets: ['NIFTY50', 'GOLD', 'BITCOIN', 'REIT']
+2025-09-08 19:55:56,036 - main_4asset_backend_job_based - INFO - 🔄 [1/4] Starting NIFTY50 analysis...
+2025-09-08 19:55:56,036 - main_4asset_backend_job_based - INFO - Starting Nifty 50 analysis...
+2025-09-08 19:55:56,111 - watchfiles.main - INFO - 5 changes detected
+2025-09-08 19:56:08,293 - main_4asset_backend_job_based - INFO - ✅ NIFTY50 extracted: sentiment=-0.014, confidence=51.1%, time=11.6s
+2025-09-08 19:56:08,293 - main_4asset_backend_job_based - INFO - ✅ [1/4] NIFTY50 completed: sentiment=-0.014, confidence=51.1%, time=11.6s
+2025-09-08 19:56:08,379 - watchfiles.main - INFO - 2 changes detected
+2025-09-08 19:56:09,296 - main_4asset_backend_job_based - INFO - 🔄 [2/4] Starting GOLD analysis...
+2025-09-08 19:56:09,297 - main_4asset_backend_job_based - INFO - Starting Gold analysis...
+2025-09-08 19:56:17,117 - watchfiles.main - INFO - 2 changes detected
+2025-09-08 19:56:22,969 - main_4asset_backend_job_based - INFO - Gold analysis: Used run_integrated_analysis function
+2025-09-08 19:56:22,969 - main_4asset_backend_job_based - INFO - ✅ [2/4] GOLD completed: sentiment=0.301, confidence=75.5%, time=13.6s
+2025-09-08 19:56:23,025 - watchfiles.main - INFO - 3 changes detected
+2025-09-08 19:56:23,979 - main_4asset_backend_job_based - INFO - 🔄 [3/4] Starting BITCOIN analysis...
+2025-09-08 19:56:23,979 - main_4asset_backend_job_based - INFO - Starting Bitcoin analysis...
+2025-09-08 19:56:34,352 - main_4asset_backend_job_based - INFO - ✅ [3/4] BITCOIN completed: sentiment=0.253, confidence=48.3%, time=10.3s
+2025-09-08 19:56:34,427 - watchfiles.main - INFO - 3 changes detected
+2025-09-08 19:56:35,356 - main_4asset_backend_job_based - INFO - 🔄 [4/4] Starting REIT analysis...
+2025-09-08 19:56:35,356 - main_4asset_backend_job_based - INFO - Starting REIT analysis...
+2025-09-08 19:56:41,070 - main_4asset_backend_job_based - INFO - ✅ [4/4] REIT completed: sentiment=-0.373, confidence=80.0%, time=5.7s
+2025-09-08 19:56:41,070 - main_4asset_backend_job_based - INFO - 🏁 SEQUENTIAL job 8be02b47-8df3-4ba6-af9c-83933e7a311b completed in 45.0s
+2025-09-08 19:56:41,076 - main_4asset_backend_job_based - INFO - Analysis results saved to analysis_results_all_assets_8be02b47-8df3-4ba6-af9c-83933e7a311b_20250908_195641.json
+2025-09-08 19:56:41,095 - main_4asset_backend_job_based - ERROR - All-assets analysis failed: Out of range float values are not JSON compliant: nan
+2025-09-08 19:56:41,176 - watchfiles.main - INFO - 11 changes detected
+2025-09-08 19:56:54,675 - watchfiles.main - INFO - 3 changes detected
+2025-09-08 19:58:24,478 - watchfiles.main - INFO - 7 changes detected
+2025-09-08 20:00:49,798 - main_4asset_backend_job_based - INFO - Backend shutting down...
+2025-09-08 20:00:50,447 - watchfiles.main - INFO - 2 changes detected
+2025-09-08 20:00:51,410 - main_4asset_backend_job_based - INFO - 4-Asset Sentiment Analysis Backend v2.0 starting up...
+2025-09-08 20:00:51,410 - main_4asset_backend_job_based - INFO - Job-based pipeline system enabled for downstream backend models
+2025-09-08 20:00:51,410 - main_4asset_backend_job_based - INFO - Direct API access available for file retrieval
+2025-09-08 20:00:51,458 - watchfiles.main - INFO - 6 changes detected
+2025-09-08 20:00:59,729 - watchfiles.main - INFO - 3 changes detected
+2025-09-08 20:01:35,767 - main_4asset_backend_job_based - INFO - Backend shutting down...
+2025-09-08 20:01:36,288 - watchfiles.main - INFO - 1 change detected
+2025-09-08 20:01:37,062 - main_4asset_backend_job_based - INFO - 4-Asset Sentiment Analysis Backend v2.0 starting up...
+2025-09-08 20:01:37,062 - main_4asset_backend_job_based - INFO - Job-based pipeline system enabled for downstream backend models
+2025-09-08 20:01:37,062 - main_4asset_backend_job_based - INFO - Direct API access available for file retrieval
+2025-09-08 20:01:37,150 - watchfiles.main - INFO - 6 changes detected
+2025-09-08 20:01:49,525 - main_4asset_backend_job_based - INFO - 4-Asset Sentiment Analysis Backend v2.0 starting up...
+2025-09-08 20:01:49,525 - main_4asset_backend_job_based - INFO - Job-based pipeline system enabled for downstream backend models
+2025-09-08 20:01:49,525 - main_4asset_backend_job_based - INFO - Direct API access available for file retrieval
+2025-09-08 20:01:49,585 - watchfiles.main - INFO - 5 changes detected
+2025-09-08 20:01:57,810 - main_4asset_backend_job_based - INFO - Starting SEQUENTIAL job c1f656c1-f848-4dc4-8552-afb15e2e0454 - analyzing 4 assets: ['NIFTY50', 'GOLD', 'BITCOIN', 'REIT']
+2025-09-08 20:01:57,811 - main_4asset_backend_job_based - INFO - 🔄 [1/4] Starting NIFTY50 analysis...
+2025-09-08 20:01:57,811 - main_4asset_backend_job_based - INFO - Starting Nifty 50 analysis...
+2025-09-08 20:01:57,902 - watchfiles.main - INFO - 5 changes detected
+2025-09-08 20:02:13,508 - main_4asset_backend_job_based - INFO - NIFTY50 extracted: sentiment=-0.012, confidence=51.1%, time=15.1s
+2025-09-08 20:02:13,508 - main_4asset_backend_job_based - INFO - ✅ [1/4] NIFTY50 completed: sentiment=-0.012, confidence=51.1%, time=15.1s
+2025-09-08 20:02:13,573 - watchfiles.main - INFO - 2 changes detected
+2025-09-08 20:02:14,522 - main_4asset_backend_job_based - INFO - 🔄 [2/4] Starting GOLD analysis...
+2025-09-08 20:02:14,522 - main_4asset_backend_job_based - INFO - Starting Gold analysis...
+2025-09-08 20:02:21,939 - watchfiles.main - INFO - 1 change detected
+2025-09-08 20:02:28,508 - watchfiles.main - INFO - 1 change detected
+2025-09-08 20:02:29,401 - main_4asset_backend_job_based - INFO - Gold analysis: Used run_integrated_analysis function
+2025-09-08 20:02:29,401 - main_4asset_backend_job_based - INFO - ✅ [2/4] GOLD completed: sentiment=0.301, confidence=75.5%, time=14.8s
+2025-09-08 20:02:29,515 - watchfiles.main - INFO - 2 changes detected
+2025-09-08 20:02:30,407 - main_4asset_backend_job_based - INFO - 🔄 [3/4] Starting BITCOIN analysis...
+2025-09-08 20:02:30,407 - main_4asset_backend_job_based - INFO - Starting Bitcoin analysis...
+2025-09-08 20:02:40,318 - main_4asset_backend_job_based - INFO - ✅ [3/4] BITCOIN completed: sentiment=0.221, confidence=52.8%, time=9.9s
+2025-09-08 20:02:40,414 - watchfiles.main - INFO - 3 changes detected
+2025-09-08 20:02:41,333 - main_4asset_backend_job_based - INFO - 🔄 [4/4] Starting REIT analysis...
+2025-09-08 20:02:41,333 - main_4asset_backend_job_based - INFO - Starting REIT analysis...
+2025-09-08 20:02:48,429 - main_4asset_backend_job_based - INFO - ✅ [4/4] REIT completed: sentiment=-0.373, confidence=80.0%, time=7.1s
+2025-09-08 20:02:48,429 - main_4asset_backend_job_based - INFO - 🏁 SEQUENTIAL job c1f656c1-f848-4dc4-8552-afb15e2e0454 completed in 50.6s
+2025-09-08 20:02:48,435 - main_4asset_backend_job_based - INFO - Analysis results saved to analysis_results_all_assets_c1f656c1-f848-4dc4-8552-afb15e2e0454_20250908_200248.json
+2025-09-08 20:02:48,525 - watchfiles.main - INFO - 11 changes detected
+2025-09-08 20:03:02,721 - watchfiles.main - INFO - 3 changes detected
+2025-09-08 20:04:52,991 - main_4asset_backend_job_based - INFO - Backend shutting down...
+2025-09-08 20:05:16,901 - main_4asset_backend_job_based - INFO - 4-Asset Sentiment Analysis Backend v2.0 starting up...
+2025-09-08 20:05:16,901 - main_4asset_backend_job_based - INFO - Job-based pipeline system enabled for downstream backend models
+2025-09-08 20:05:16,901 - main_4asset_backend_job_based - INFO - Direct API access available for file retrieval
+2025-09-08 20:05:23,810 - main_4asset_backend_job_based - INFO - Starting SEQUENTIAL job 9c806ba8-de5c-4acf-8d7e-4665a0bcca94 - analyzing 4 assets: ['NIFTY50', 'GOLD', 'BITCOIN', 'REIT']
+2025-09-08 20:05:23,810 - main_4asset_backend_job_based - INFO - 🔄 [1/4] Starting NIFTY50 analysis...
+2025-09-08 20:05:23,810 - main_4asset_backend_job_based - INFO - Starting Nifty 50 analysis...
+2025-09-08 20:05:38,355 - main_4asset_backend_job_based - INFO - NIFTY50 extracted: sentiment=-0.012, confidence=51.1%, time=13.9s
+2025-09-08 20:05:38,355 - main_4asset_backend_job_based - INFO - ✅ [1/4] NIFTY50 completed: sentiment=-0.012, confidence=51.1%, time=13.9s
+2025-09-08 20:05:38,450 - watchfiles.main - INFO - 2 changes detected
+2025-09-08 20:05:39,366 - main_4asset_backend_job_based - INFO - 🔄 [2/4] Starting GOLD analysis...
+2025-09-08 20:05:39,366 - main_4asset_backend_job_based - INFO - Starting Gold analysis...
+2025-09-08 20:05:39,428 - watchfiles.main - INFO - 5 changes detected
+2025-09-08 20:05:49,482 - watchfiles.main - INFO - 1 change detected
+2025-09-08 20:05:52,471 - watchfiles.main - INFO - 1 change detected
+2025-09-08 20:05:58,665 - main_4asset_backend_job_based - INFO - Gold analysis: Used run_integrated_analysis function
+2025-09-08 20:05:58,665 - main_4asset_backend_job_based - INFO - ✅ [2/4] GOLD completed: sentiment=0.301, confidence=77.1%, time=19.3s
+2025-09-08 20:05:58,718 - watchfiles.main - INFO - 3 changes detected
+2025-09-08 20:05:59,668 - main_4asset_backend_job_based - INFO - 🔄 [3/4] Starting BITCOIN analysis...
+2025-09-08 20:05:59,668 - main_4asset_backend_job_based - INFO - Starting Bitcoin analysis...
+2025-09-08 20:06:10,431 - main_4asset_backend_job_based - INFO - ✅ [3/4] BITCOIN completed: sentiment=0.226, confidence=54.3%, time=10.7s
+2025-09-08 20:06:10,499 - watchfiles.main - INFO - 3 changes detected
+2025-09-08 20:06:11,436 - main_4asset_backend_job_based - INFO - 🔄 [4/4] Starting REIT analysis...
+2025-09-08 20:06:11,436 - main_4asset_backend_job_based - INFO - Starting REIT analysis...
+2025-09-08 20:06:19,838 - main_4asset_backend_job_based - INFO - ✅ [4/4] REIT completed: sentiment=-0.373, confidence=80.0%, time=8.4s
+2025-09-08 20:06:19,838 - main_4asset_backend_job_based - INFO - 🏁 SEQUENTIAL job 9c806ba8-de5c-4acf-8d7e-4665a0bcca94 completed in 56.0s
+2025-09-08 20:06:19,843 - main_4asset_backend_job_based - INFO - Analysis results saved to analysis_results_all_assets_9c806ba8-de5c-4acf-8d7e-4665a0bcca94_20250908_200619.json
+2025-09-08 20:06:19,917 - watchfiles.main - INFO - 11 changes detected
+2025-09-08 20:06:48,984 - watchfiles.main - INFO - 1 change detected
+2025-09-08 20:06:51,871 - watchfiles.main - INFO - 1 change detected
+2025-09-08 20:06:52,482 - watchfiles.main - INFO - 1 change detected
+2025-09-08 20:16:26,908 - watchfiles.main - INFO - 3 changes detected
+2025-09-08 20:16:28,331 - main_4asset_backend_job_based - INFO - Backend shutting down...
+2025-09-08 20:16:29,004 - watchfiles.main - INFO - 1 change detected
+2025-09-08 20:16:29,567 - watchfiles.main - INFO - 5 changes detected
+2025-09-08 20:16:30,120 - main_4asset_backend_job_based - INFO - 4-Asset Sentiment Analysis Backend v2.0 starting up...
+2025-09-08 20:16:30,120 - main_4asset_backend_job_based - INFO - Job-based pipeline system enabled for downstream backend models
+2025-09-08 20:16:30,120 - main_4asset_backend_job_based - INFO - Direct API access available for file retrieval
+2025-09-08 20:16:30,135 - watchfiles.main - INFO - 1 change detected
+2025-09-08 20:16:42,256 - watchfiles.main - INFO - 1 change detected
+2025-09-08 20:16:57,312 - watchfiles.main - INFO - 1 change detected
+2025-09-08 20:16:57,931 - watchfiles.main - INFO - 1 change detected
+2025-09-08 20:17:13,447 - watchfiles.main - INFO - 3 changes detected
+2025-09-08 20:17:40,302 - main_4asset_backend_job_based - INFO - Backend shutting down...
+2025-09-08 20:17:40,839 - watchfiles.main - INFO - 4 changes detected
+2025-09-08 20:17:41,927 - watchfiles.main - INFO - 5 changes detected
+2025-09-08 20:17:42,312 - main_4asset_backend_job_based - INFO - 4-Asset Sentiment Analysis Backend v2.0 starting up...
+2025-09-08 20:17:42,313 - main_4asset_backend_job_based - INFO - Job-based pipeline system enabled for downstream backend models
+2025-09-08 20:17:42,313 - main_4asset_backend_job_based - INFO - Direct API access available for file retrieval
+2025-09-08 20:17:42,330 - watchfiles.main - INFO - 1 change detected
+2025-09-08 20:17:50,847 - main_4asset_backend_job_based - INFO - 4-Asset Sentiment Analysis Backend v2.0 starting up...
+2025-09-08 20:17:50,847 - main_4asset_backend_job_based - INFO - Job-based pipeline system enabled for downstream backend models
+2025-09-08 20:17:50,847 - main_4asset_backend_job_based - INFO - Direct API access available for file retrieval
+2025-09-08 20:17:52,674 - main_4asset_backend_job_based - INFO - Starting SEQUENTIAL job 5cdea478-9902-44c2-9d20-f937b6fbca8b - analyzing 4 assets: ['NIFTY50', 'GOLD', 'BITCOIN', 'REIT']
+2025-09-08 20:17:52,675 - main_4asset_backend_job_based - INFO - 🔄 [1/4] Starting NIFTY50 analysis...
+2025-09-08 20:17:52,675 - main_4asset_backend_job_based - INFO - Starting Nifty 50 analysis...
+2025-09-08 20:18:05,207 - main_4asset_backend_job_based - INFO - NIFTY50 extracted: sentiment=-0.011, confidence=51.1%, time=12.0s
+2025-09-08 20:18:05,208 - main_4asset_backend_job_based - INFO - ✅ [1/4] NIFTY50 completed: sentiment=-0.011, confidence=51.1%, time=12.0s
+2025-09-08 20:18:05,286 - watchfiles.main - INFO - 2 changes detected
+2025-09-08 20:18:06,221 - main_4asset_backend_job_based - INFO - 🔄 [2/4] Starting GOLD analysis...
+2025-09-08 20:18:06,221 - main_4asset_backend_job_based - INFO - Starting Gold analysis...
+2025-09-08 20:18:16,187 - watchfiles.main - INFO - 1 change detected
+2025-09-08 20:18:21,347 - watchfiles.main - INFO - 1 change detected
+2025-09-08 20:18:21,786 - main_4asset_backend_job_based - INFO - Gold analysis: Used run_integrated_analysis function
+2025-09-08 20:18:21,795 - main_4asset_backend_job_based - INFO - ✅ [2/4] GOLD completed: sentiment=0.301, confidence=75.5%, time=15.5s
+2025-09-08 20:18:21,900 - watchfiles.main - INFO - 3 changes detected
+2025-09-08 20:18:22,800 - main_4asset_backend_job_based - INFO - 🔄 [3/4] Starting BITCOIN analysis...
+2025-09-08 20:18:22,800 - main_4asset_backend_job_based - INFO - Starting Bitcoin analysis...
+2025-09-08 20:18:36,365 - main_4asset_backend_job_based - INFO - ✅ [3/4] BITCOIN completed: sentiment=0.091, confidence=49.8%, time=13.3s
+2025-09-08 20:18:36,453 - watchfiles.main - INFO - 3 changes detected
+2025-09-08 20:18:37,370 - main_4asset_backend_job_based - INFO - 🔄 [4/4] Starting REIT analysis...
+2025-09-08 20:18:37,370 - main_4asset_backend_job_based - INFO - Starting REIT analysis...
+2025-09-08 20:18:46,916 - main_4asset_backend_job_based - INFO - ✅ [4/4] REIT completed: sentiment=-0.373, confidence=80.0%, time=9.4s
+2025-09-08 20:18:46,916 - main_4asset_backend_job_based - INFO - 🏁 SEQUENTIAL job 5cdea478-9902-44c2-9d20-f937b6fbca8b completed in 54.2s
+2025-09-08 20:18:46,927 - main_4asset_backend_job_based - INFO - Analysis results saved to analysis_results_all_assets_5cdea478-9902-44c2-9d20-f937b6fbca8b_20250908_201846.json
+2025-09-08 20:18:47,031 - watchfiles.main - INFO - 11 changes detected
+2025-09-08 20:18:51,394 - watchfiles.main - INFO - 3 changes detected
+2025-09-08 20:20:34,271 - main_4asset_backend_job_based - INFO - Backend shutting down...
+2025-09-08 20:20:44,038 - main_4asset_backend_job_based - INFO - 4-Asset Sentiment Analysis Backend v2.0 starting up...
+2025-09-08 20:20:44,039 - main_4asset_backend_job_based - INFO - Job-based pipeline system enabled for downstream backend models
+2025-09-08 20:20:44,039 - main_4asset_backend_job_based - INFO - Direct API access available for file retrieval
+2025-09-08 20:20:44,589 - watchfiles.main - INFO - 4 changes detected
+2025-09-08 20:20:59,273 - watchfiles.main - INFO - 1 change detected
+2025-09-08 20:21:12,568 - main_4asset_backend_job_based - INFO - Starting SEQUENTIAL job a64ed42c-e06e-4e8d-86c6-ba14bdc61b02 - analyzing 4 assets: ['NIFTY50', 'GOLD', 'BITCOIN', 'REIT']
+2025-09-08 20:21:12,568 - main_4asset_backend_job_based - INFO - 🔄 [1/4] Starting NIFTY50 analysis...
+2025-09-08 20:21:12,568 - main_4asset_backend_job_based - INFO - Starting Nifty 50 analysis...
+2025-09-08 20:21:24,054 - main_4asset_backend_job_based - INFO - NIFTY50 extracted: sentiment=-0.011, confidence=51.1%, time=10.9s
+2025-09-08 20:21:24,054 - main_4asset_backend_job_based - INFO - ✅ [1/4] NIFTY50 completed: sentiment=-0.011, confidence=51.1%, time=10.9s
+2025-09-08 20:21:24,132 - watchfiles.main - INFO - 2 changes detected
+2025-09-08 20:21:25,062 - main_4asset_backend_job_based - INFO - 🔄 [2/4] Starting GOLD analysis...
+2025-09-08 20:21:25,063 - main_4asset_backend_job_based - INFO - Starting Gold analysis...
+2025-09-08 20:21:32,331 - watchfiles.main - INFO - 1 change detected
+2025-09-08 20:21:37,983 - main_4asset_backend_job_based - INFO - Gold analysis: Used run_integrated_analysis function
+2025-09-08 20:21:37,983 - main_4asset_backend_job_based - INFO - ✅ [2/4] GOLD completed: sentiment=0.301, confidence=75.5%, time=12.9s
+2025-09-08 20:21:38,047 - watchfiles.main - INFO - 3 changes detected
+2025-09-08 20:21:38,989 - main_4asset_backend_job_based - INFO - 🔄 [3/4] Starting BITCOIN analysis...
+2025-09-08 20:21:38,990 - main_4asset_backend_job_based - INFO - Starting Bitcoin analysis...
+2025-09-08 20:21:52,932 - main_4asset_backend_job_based - INFO - ✅ [3/4] BITCOIN completed: sentiment=-0.022, confidence=50.4%, time=13.9s
+2025-09-08 20:21:53,001 - watchfiles.main - INFO - 3 changes detected
+2025-09-08 20:21:53,938 - main_4asset_backend_job_based - INFO - 🔄 [4/4] Starting REIT analysis...
+2025-09-08 20:21:53,938 - main_4asset_backend_job_based - INFO - Starting REIT analysis...
+2025-09-08 20:22:00,570 - main_4asset_backend_job_based - INFO - ✅ [4/4] REIT completed: sentiment=-0.373, confidence=80.0%, time=6.6s
+2025-09-08 20:22:00,570 - main_4asset_backend_job_based - INFO - 🏁 SEQUENTIAL job a64ed42c-e06e-4e8d-86c6-ba14bdc61b02 completed in 48.0s
+2025-09-08 20:22:00,576 - main_4asset_backend_job_based - INFO - Analysis results saved to analysis_results_all_assets_a64ed42c-e06e-4e8d-86c6-ba14bdc61b02_20250908_202200.json
+2025-09-08 20:22:00,652 - watchfiles.main - INFO - 11 changes detected
+2025-09-08 20:22:11,555 - watchfiles.main - INFO - 3 changes detected
+2025-09-08 20:26:59,007 - main_4asset_backend_job_based - INFO - Backend shutting down...
+2025-09-08 20:27:09,552 - main_4asset_backend_job_based - INFO - 4-Asset Sentiment Analysis Backend v2.0 starting up...
+2025-09-08 20:27:09,553 - main_4asset_backend_job_based - INFO - Job-based pipeline system enabled for downstream backend models
+2025-09-08 20:27:09,553 - main_4asset_backend_job_based - INFO - Direct API access available for file retrieval
+2025-09-08 20:27:11,518 - main_4asset_backend_job_based - INFO - Starting SEQUENTIAL job e42dd05a-19cc-4ee8-ac16-365b1fe238cb - analyzing 4 assets: ['NIFTY50', 'GOLD', 'BITCOIN', 'REIT']
+2025-09-08 20:27:11,518 - main_4asset_backend_job_based - INFO - 🔄 [1/4] Starting NIFTY50 analysis...
+2025-09-08 20:27:11,518 - main_4asset_backend_job_based - INFO - Starting Nifty 50 analysis...
+2025-09-08 20:27:28,083 - main_4asset_backend_job_based - INFO - NIFTY50 extracted: sentiment=-0.011, confidence=51.1%, time=15.2s
+2025-09-08 20:27:28,084 - main_4asset_backend_job_based - INFO - ✅ [1/4] NIFTY50 completed: sentiment=-0.011, confidence=51.1%, time=15.2s
+2025-09-08 20:27:28,164 - watchfiles.main - INFO - 2 changes detected
+2025-09-08 20:27:29,092 - main_4asset_backend_job_based - INFO - 🔄 [2/4] Starting GOLD analysis...
+2025-09-08 20:27:29,093 - main_4asset_backend_job_based - INFO - Starting Gold analysis...
+2025-09-08 20:27:36,349 - watchfiles.main - INFO - 1 change detected
+2025-09-08 20:27:42,508 - main_4asset_backend_job_based - INFO - Gold analysis: Used run_integrated_analysis function
+2025-09-08 20:27:42,508 - main_4asset_backend_job_based - INFO - ✅ [2/4] GOLD completed: sentiment=0.301, confidence=75.5%, time=13.3s
+2025-09-08 20:27:42,604 - watchfiles.main - INFO - 3 changes detected
+2025-09-08 20:27:43,514 - main_4asset_backend_job_based - INFO - 🔄 [3/4] Starting BITCOIN analysis...
+2025-09-08 20:27:43,514 - main_4asset_backend_job_based - INFO - Starting Bitcoin analysis...
+2025-09-08 20:27:51,000 - main_4asset_backend_job_based - INFO - ✅ [3/4] BITCOIN completed: sentiment=-0.077, confidence=52.2%, time=7.5s
+2025-09-08 20:27:51,073 - watchfiles.main - INFO - 3 changes detected
+2025-09-08 20:27:52,014 - main_4asset_backend_job_based - INFO - 🔄 [4/4] Starting REIT analysis...
+2025-09-08 20:27:52,014 - main_4asset_backend_job_based - INFO - Starting REIT analysis...
+2025-09-08 20:27:57,119 - main_4asset_backend_job_based - INFO - ✅ [4/4] REIT completed: sentiment=-0.373, confidence=80.0%, time=5.1s
+2025-09-08 20:27:57,119 - main_4asset_backend_job_based - INFO - 🏁 SEQUENTIAL job e42dd05a-19cc-4ee8-ac16-365b1fe238cb completed in 45.6s
+2025-09-08 20:27:57,126 - main_4asset_backend_job_based - INFO - Analysis results saved to analysis_results_all_assets_e42dd05a-19cc-4ee8-ac16-365b1fe238cb_20250908_202757.json
+2025-09-08 20:27:57,240 - watchfiles.main - INFO - 11 changes detected
+2025-09-08 20:28:15,050 - watchfiles.main - INFO - 1 change detected
+2025-09-08 20:28:18,700 - watchfiles.main - INFO - 2 changes detected
+2025-09-08 20:29:06,917 - watchfiles.main - INFO - 26 changes detected
+2025-09-08 20:29:29,973 - watchfiles.main - INFO - 42 changes detected
+2025-09-08 20:29:37,754 - watchfiles.main - INFO - 6 changes detected
+2025-09-08 20:30:55,818 - main_4asset_backend_job_based - INFO - Backend shutting down...

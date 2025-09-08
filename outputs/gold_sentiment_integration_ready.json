@@ -1,16 +1,16 @@
 {
-  "gold_sentiment_composite": 0.3197715298488702,
-  "confidence": 0.769904761904762,
-  "interpretation": "\ud83d\udfe2 BULLISH - Net positive signals across components",
+  "gold_sentiment_composite": 0.2950692591308579,
+  "confidence": 0.7733333333333333,
+  "interpretation": "\ud83d\udfe1 MILDLY BULLISH - Slight positive bias",
   "framework_coverage": 0.95,
   "quality_grade": "B",
-  "timestamp": "2025-09-07T21:07:00.707334",
+  "timestamp": "2025-09-08T20:33:05.057606",
   "system_version": "5.0_integrated",
   "components": {
     "technical_analysis": 1.0,
     "real_interest_rates": 0.40285655414444405,
-    "central_bank_sentiment": 0.30399714214635176,
-    "professional_positioning": -0.02427152026703755,
-    "currency_debasement": 0.0475813752076276
+    "central_bank_sentiment": 0.19327259484460407,
+    "professional_positioning": -0.01982095640419107,
+    "currency_debasement": 0.04543134330645168
   }
 }

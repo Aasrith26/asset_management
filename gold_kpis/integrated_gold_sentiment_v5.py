@@ -18,7 +18,7 @@ try:
 except ImportError as e:
     print(f"⚠️ Import Error: {e}")
     print("Make sure all analyzer modules are available")
-
+os.makedirs("outputs",exist_ok=True)
 class IntegratedGoldSentimentSystem:
     """
     Complete Integrated Gold Sentiment Analysis System v5.0
@@ -388,9 +388,9 @@ class IntegratedGoldSentimentSystem:
             with open('outputs/gold_sentiment_integration_ready.json', 'w') as f:
                 json.dump(integration_summary, f, indent=2, default=str)
             
-            print(f"\n💾 Results saved:")
-            print(f"  📄 Detailed: {filename}")
-            print(f"  🔗 Integration: gold_sentiment_integration_ready.json")
+            print(f"\nResults saved:")
+            print(f"  Detailed: {filename}")
+            print(f"  Integration: gold_sentiment_integration_ready.json")
             
         except Exception as e:
             print(f"❌ Error saving results: {e}")

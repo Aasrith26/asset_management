@@ -1,11 +1,11 @@
 {
   "analysis_metadata": {
-    "timestamp": "2025-09-08T20:32:39.171670",
+    "timestamp": "2025-09-08T21:21:08.107404",
     "system_version": "2.0_complete_framework",
     "framework_coverage_pct": 100.0,
     "analysis_type": "nifty_50_complete_sentiment",
     "market_focus": "Indian_equity_nifty_50_comprehensive",
-    "execution_time_seconds": 11.886704,
+    "execution_time_seconds": 8.196707,
     "components_analyzed": 5,
     "successful_components": 5,
     "data_freshness_assessment": "real_time_to_4hours",
@@ -13,7 +13,7 @@
     "reliability_achieved": 0.511261797898391
   },
   "composite_results": {
-    "overall_sentiment": -0.011290950306345719,
+    "overall_sentiment": -0.011752664581060538,
     "overall_confidence": 0.511261797898391,
     "signal_consistency": 0.7051886867564013,
     "interpretation": "NEUTRAL_LOW_CONFIDENCE",
@@ -31,7 +31,7 @@
       "technical_analysis": 0.0267980946836579,
       "market_sentiment_vix": -0.06442412759583158,
       "rbi_interest_rates": 0.038424377618694314,
-      "global_factors": 0.01501017386221571
+      "global_factors": 0.014454385304027746
     },
     "component_signals": {
       "fii_dii_flows": {
@@ -63,7 +63,7 @@
         "interpretation": "\ud83c\udfdb\ufe0f ACCOMMODATIVE - RBI policy HIGH_CONFIDENCE"
       },
       "global_factors": {
-        "sentiment": 0.23092575172639554,
+        "sentiment": 0.22237515852350379,
         "confidence": 0.8,
         "weight": 0.05,
         "adjusted_weight": 0.065,
@@ -83,7 +83,7 @@
       "framework_status": "Complete_Production_Ready"
     },
     "advanced_metrics": {
-      "sentiment_momentum": 0.04726838078633801,
+      "sentiment_momentum": 0.04590028587387533,
       "risk_assessment": "MODERATE_RISK",
       "conviction_level": "VERY_LOW"
     }
@@ -105,7 +105,7 @@
         "data_source": "Moneycontrol_Scraped",
         "confidence_note": "Estimated from web scraping"
       },
-      "execution_time_seconds": 4.471314,
+      "execution_time_seconds": 1.754766,
       "kpi_name": "FII_DII_Flows",
       "framework_weight": 0.35,
       "interpretation": "\u26aa NEUTRAL - Balanced institutional activity"
@@ -270,10 +270,10 @@
         "volume_confirmation": "negative",
         "volatility_regime": "normal"
       },
-      "execution_time_seconds": 1.28881,
+      "execution_time_seconds": 1.11929,
       "kpi_name": "Technical_Analysis",
       "framework_weight": 0.3,
-      "analysis_timestamp": "2025-09-08T20:32:44.931988",
+      "analysis_timestamp": "2025-09-08T21:21:10.982007",
       "data_quality": "high",
       "interpretation": "\u26aa NEUTRAL - Mixed technical signals"
     },
@@ -330,10 +330,10 @@
           "Market_Breadth"
         ]
       },
-      "execution_time_seconds": 1.460687,
+      "execution_time_seconds": 1.327835,
       "kpi_name": "Market_Sentiment_VIX",
       "framework_weight": 0.2,
-      "analysis_timestamp": "2025-09-08T20:32:46.392731",
+      "analysis_timestamp": "2025-09-08T21:21:12.310034",
       "data_quality": "high",
       "interpretation": "\ud83d\udfe1 CAUTIOUS - Complacency emerging"
     },
@@ -350,7 +350,7 @@
           "source": "rbi_website_scraped",
           "interpretation": "Repo rate at 4.0% - accommodative",
           "policy_stance": "accommodative",
-          "last_updated": "2025-09-08T20:32:49.541202"
+          "last_updated": "2025-09-08T21:21:14.927055"
         },
         "banking_yield_proxy": {
           "banking_sector_performance": {
@@ -410,8 +410,8 @@
           "combined_score": -0.0008105920589674895,
           "sentiment": -0.006484645574973113,
           "confidence": 0.78,
-          "us_10y_reference": 4.063000202178955,
-          "us_yield_change": -0.02299976348876953,
+          "us_10y_reference": 4.046999931335449,
+          "us_yield_change": -0.03900003433227539,
           "banks_analyzed": 6,
           "method": "banking_sector_proxy",
           "interpretation": "Banking sector neutral - neutral yield proxy"
@@ -484,52 +484,52 @@
           "enhanced_credit_analysis"
         ]
       },
-      "execution_time_seconds": 3.148495,
+      "execution_time_seconds": 2.617073,
       "kpi_name": "RBI_Interest_Rates_Policy",
       "framework_weight": 0.1,
-      "analysis_timestamp": "2025-09-08T20:32:49.541312",
+      "analysis_timestamp": "2025-09-08T21:21:14.927285",
       "data_quality": "high",
       "version": "1.1_improved",
       "interpretation": "\ud83c\udfdb\ufe0f ACCOMMODATIVE - RBI policy HIGH_CONFIDENCE"
     },
     "global_factors": {
-      "component_sentiment": 0.23092575172639554,
+      "component_sentiment": 0.22237515852350379,
       "component_confidence": 0.8,
       "component_weight": 0.05,
-      "weighted_contribution": 0.011546287586319778,
+      "weighted_contribution": 0.01111875792617519,
       "sub_indicators": {
         "us_overnight": {
-          "sentiment": 0.21014410989684223,
+          "sentiment": 0.17217701936268998,
           "confidence": 0.85,
           "individual_markets": {
             "sp500": {
               "ticker": "^GSPC",
               "previous_close": 6481.5,
-              "current_close": 6505.06005859375,
-              "overnight_change_pct": 0.36349700831211906
+              "current_close": 6499.009765625,
+              "overnight_change_pct": 0.27014989778600634
             },
             "nasdaq": {
               "ticker": "^IXIC",
               "previous_close": 21700.390625,
-              "current_close": 21865.333984375,
-              "overnight_change_pct": 0.7600939643223589
+              "current_close": 21845.736328125,
+              "overnight_change_pct": 0.6697838100552626
             },
             "dow": {
               "ticker": "^DJI",
               "previous_close": 45400.859375,
-              "current_close": 45471.83984375,
-              "overnight_change_pct": 0.15634168543753474
+              "current_close": 45447.859375,
+              "overnight_change_pct": 0.10352226950549877
             }
           },
-          "average_change_pct": 0.4266442193573376,
-          "interpretation": "US markets up 0.43% overnight"
+          "average_change_pct": 0.3478186591155892,
+          "interpretation": "US markets up 0.35% overnight"
         },
         "inr_usd_trend": {
-          "sentiment": 0.49026875551013066,
+          "sentiment": 0.5241410714868961,
           "confidence": 0.8,
-          "current_rate": 0.0113691920414567,
-          "daily_change_pct": 0.2682070350670801,
-          "trend_change_pct": 0.09941574289065555,
+          "current_rate": 0.011371778324246407,
+          "daily_change_pct": 0.2910162142298559,
+          "trend_change_pct": 0.11762701176275649,
           "interpretation": "INR strengthening vs USD"
         },
         "asian_correlation": {
@@ -554,20 +554,20 @@
           "interpretation": "Asian markets positive 0.89%"
         },
         "crude_oil_impact": {
-          "sentiment": -0.14444911125415835,
+          "sentiment": -0.16967092761386857,
           "confidence": 0.85,
-          "current_price": 62.31999969482422,
-          "daily_change_pct": 0.7273327472251576,
-          "trend_change_pct": -0.9378479637878446,
-          "interpretation": "Oil up 0.73% (negative for India)"
+          "current_price": 62.400001525878906,
+          "daily_change_pct": 0.8566390870276923,
+          "trend_change_pct": -0.8422036814344086,
+          "interpretation": "Oil up 0.86% (negative for India)"
         },
         "dxy_influence": {
-          "sentiment": 0.05619292962774974,
+          "sentiment": 0.077237485549635,
           "confidence": 0.75,
-          "current_dxy": 97.6050033569336,
-          "daily_change_pct": -0.16875656315624246,
-          "trend_change_pct": -0.3687454720152117,
-          "interpretation": "DXY weaker 0.17%"
+          "current_dxy": 97.54299926757812,
+          "daily_change_pct": -0.23217488317708695,
+          "trend_change_pct": -0.4162797962285687,
+          "interpretation": "DXY weaker 0.23%"
         }
       },
       "market_context": {
@@ -579,12 +579,12 @@
           "Commodity_Markets"
         ],
         "update_frequency": "30_minutes",
-        "global_session": "european_asian_overlap"
+        "global_session": "us_session"
       },
-      "execution_time_seconds": 1.516974,
+      "execution_time_seconds": 1.376583,
       "kpi_name": "Global_Factors",
       "framework_weight": 0.05,
-      "analysis_timestamp": "2025-09-08T20:32:51.058345",
+      "analysis_timestamp": "2025-09-08T21:21:16.304025",
       "data_quality": "high",
       "interpretation": "\ud83d\udfe1 MILDLY POSITIVE - Slight global tailwinds"
     }
@@ -654,7 +654,7 @@
   },
   "market_overview": {
     "analysis_date": "2025-09-08",
-    "analysis_time": "20:32:51 IST",
+    "analysis_time": "21:21:16 IST",
     "market_session": "after_market",
     "nifty_snapshot": {
       "current_level": 24773.150390625,
@@ -682,9 +682,9 @@
       "policy_interpretation": "\ud83c\udfdb\ufe0f ACCOMMODATIVE - RBI policy HIGH_CONFIDENCE"
     },
     "global_backdrop": {
-      "us_overnight_performance": 0.4266442193573376,
+      "us_overnight_performance": 0.3478186591155892,
       "global_risk_sentiment": "\ud83d\udfe1 MILDLY POSITIVE - Slight global tailwinds",
-      "global_session": "european_asian_overlap"
+      "global_session": "us_session"
     },
     "key_highlights": [],
     "risk_alerts": [],
@@ -703,6 +703,6 @@
       "Global Factors (bullish)"
     ],
     "risk_factors": [],
-    "signal_timestamp": "2025-09-08T20:32:51.058558"
+    "signal_timestamp": "2025-09-08T21:21:16.304968"
   }
 }

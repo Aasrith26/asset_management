@@ -1,0 +1,208 @@
+{
+  "timestamp": "2025-09-08T21:21:43.998745",
+  "system_version": "Bitcoin_v1.0_integrated",
+  "asset_name": "BITCOIN",
+  "asset_type": "cryptocurrency",
+  "framework_coverage": 1.0,
+  "component_sentiment": -0.2402993844296487,
+  "component_confidence": 0.4919454155823034,
+  "component_weight": 0.25,
+  "weighted_contribution": -0.06007484610741218,
+  "executive_summary": {
+    "overall_sentiment": -0.2402993844296487,
+    "confidence_level": 0.4919454155823034,
+    "interpretation": "\ud83d\udfe1 MILDLY BEARISH - Slight negative bias",
+    "risk_assessment": "HIGH RISK - Low confidence signals",
+    "components_analyzed": 4,
+    "recommendation": "Confidence Level: 49% - HIGH RISK - Low confidence signals"
+  },
+  "component_analysis": {
+    "micro_momentum": {
+      "component_name": "micro_momentum",
+      "sentiment": -0.17064670239578028,
+      "confidence": 0.7166666666666667,
+      "framework_weight": 0.3,
+      "weighted_contribution": -0.051194010718734084,
+      "description": "Bitcoin Micro Momentum Analysis",
+      "source": "Bitcoin_micro_momentum",
+      "metadata": {
+        "roc_features": {
+          "f_roc1": -0.0,
+          "f_roc5": -0.034,
+          "roc1_pct": -0.0001,
+          "roc5_pct": -0.0199
+        },
+        "momentum_indicators": {
+          "f_macd_hist": -0.047,
+          "f_rsi_distance": -1.0,
+          "rsi_value": 28.89,
+          "macd_hist_z": -0.425
+        },
+        "price_analysis": {
+          "f_vwap_distance": 0.479,
+          "current_price": 112588.0,
+          "intraday_vwap": 112202.34,
+          "volatility_1h": 0.0291
+        }
+      },
+      "market_context": {
+        "data_source": "Kraken_OHLC_1min",
+        "data_quality": "high",
+        "data_points": 401,
+        "last_update": "2025-09-08T15:51:00+00:00",
+        "price_currency": "USD"
+      },
+      "status": "success",
+      "execution_time": 3.237989
+    },
+    "funding_basis": {
+      "component_name": "funding_basis",
+      "sentiment": 0.06336701557848784,
+      "confidence": 0.4462781469475334,
+      "framework_weight": 0.3,
+      "weighted_contribution": 0.01901010467354635,
+      "description": "Bitcoin Funding Basis Analysis",
+      "source": "Bitcoin_funding_basis",
+      "metadata": {
+        "funding_analysis": {
+          "funding_rate_8h": 0.0,
+          "funding_rate_annual_pct": 0.0,
+          "f_funding_contrarian": -0.0,
+          "funding_interpretation": "Neutral - balanced positioning"
+        },
+        "basis_analysis": {
+          "spot_price": 112588.0,
+          "mark_price": 112563.86,
+          "basis_bps": -2.14,
+          "f_basis_stretch": 0.211,
+          "basis_interpretation": "Fair value - futures aligned with spot"
+        },
+        "oi_analysis": {
+          "current_oi": 7597207.0,
+          "oi_change_5m": 0.0,
+          "oi_z_score": 0.0,
+          "f_oi_momentum": 0.0
+        }
+      },
+      "market_context": {
+        "data_source": "Kraken_Spot_Futures",
+        "data_quality": "high",
+        "oi_history_length": 1,
+        "funding_frequency": "8_hours",
+        "price_currency": "USD"
+      },
+      "status": "success",
+      "execution_time": 4.745118
+    },
+    "liquidity": {
+      "component_name": "liquidity",
+      "sentiment": -0.03778268311098385,
+      "confidence": 0.7016666666666667,
+      "framework_weight": 0.2,
+      "weighted_contribution": -0.007556536622196771,
+      "description": "Bitcoin Liquidity Analysis",
+      "source": "Bitcoin_liquidity",
+      "metadata": {
+        "spread_analysis": {
+          "current_spread_bps": 0.01,
+          "median_spread_bps": 0.01,
+          "relative_spread": -0.0,
+          "f_spread_improvement": 0.0,
+          "spread_interpretation": "Very tight - excellent liquidity"
+        },
+        "slippage_analysis": {
+          "buy_slippage_bps": 0.0,
+          "sell_slippage_bps": 0.99,
+          "average_impact_bps": 0.5,
+          "median_impact_bps": 0.5,
+          "f_impact_improvement": 0.0,
+          "standard_trade_size": 250000
+        },
+        "depth_analysis": {
+          "bid_notional": 13497541.56,
+          "ask_notional": 16351249.62,
+          "depth_imbalance": -0.096,
+          "f_imbalance": -0.189,
+          "band_bps": 25
+        }
+      },
+      "market_context": {
+        "data_source": "Kraken_OrderBook",
+        "data_quality": "high",
+        "mid_price": 112575.85,
+        "depth_levels_analyzed": 400,
+        "spread_history_length": 1,
+        "impact_history_length": 1,
+        "price_currency": "USD"
+      },
+      "status": "success",
+      "execution_time": 4.062903
+    },
+    "orderflow": {
+      "component_name": "orderflow",
+      "sentiment": -0.7800788956280975,
+      "confidence": 0.8333333333333334,
+      "framework_weight": 0.2,
+      "weighted_contribution": -0.1560157791256195,
+      "description": "Bitcoin Orderflow Analysis",
+      "source": "Bitcoin_orderflow",
+      "metadata": {
+        "imbalance_analysis": {
+          "imbalance_5m": -0.866,
+          "buy_notional_5m": 14848.92,
+          "sell_notional_5m": 206700.02,
+          "total_notional_5m": 221548.93,
+          "f_imb5": -0.845,
+          "imbalance_interpretation": "Strong sell pressure - bearish flow"
+        },
+        "cvd_analysis": {
+          "cvd_slope_15m": -936556.75,
+          "cvd_scale": 581.09,
+          "f_cvd15": -1.0,
+          "cvd_current": 1182195.92,
+          "cvd_interpretation": "Strong cumulative selling"
+        },
+        "intensity_analysis": {
+          "imbalance_1m": -0.892,
+          "trades_1m": 35,
+          "trade_rate_z": 0.0,
+          "f_intensity": -0.0,
+          "mean_trade_rate": 35.0
+        }
+      },
+      "market_context": {
+        "data_source": "Kraken_Trades",
+        "data_quality": "high",
+        "minute_buckets": 32,
+        "trade_rate_history_length": 1,
+        "data_timespan_minutes": 120,
+        "price_currency": "USD"
+      },
+      "status": "success",
+      "execution_time": 2.274875
+    }
+  },
+  "composite_metrics": {
+    "weighted_sentiment_score": -0.2402993844296487,
+    "confidence_score": 0.4919454155823034,
+    "framework_coverage_pct": 100.0,
+    "components_successful": 4,
+    "components_total": 4
+  },
+  "performance_metrics": {
+    "execution_time_seconds": 14.322553,
+    "performance_grade": "GOOD",
+    "system_status": "operational",
+    "optimization_level": "bitcoin_v1.0"
+  },
+  "market_context": {
+    "asset_type": "cryptocurrency",
+    "data_source": "Kraken_Multi_API",
+    "data_freshness": "real_time",
+    "update_frequency": "1_minute",
+    "price_currency": "USD"
+  },
+  "kpi_name": "Bitcoin_Multi_Signal",
+  "framework_weight": 0.25,
+  "analysis_timestamp": "2025-09-08T21:21:43.998765"
+}

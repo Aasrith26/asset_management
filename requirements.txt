@@ -13,3 +13,4 @@ matplotlib
 plotly
 python-multipart
 websockets
+fredapi==0.5.1

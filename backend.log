@@ -2131,3 +2131,17 @@ client_session: <aiohttp.client.ClientSession object at 0x00000203B78939D0>
 2025-09-08 20:39:14,424 - watchfiles.main - INFO - 1 change detected
 2025-09-08 20:39:17,050 - watchfiles.main - INFO - 1 change detected
 2025-09-08 20:39:28,170 - watchfiles.main - INFO - 3 changes detected
+2025-09-08 20:42:33,116 - main_4asset_backend_job_based - INFO - Backend shutting down...
+2025-09-08 20:42:33,639 - watchfiles.main - INFO - 21 changes detected
+2025-09-08 20:42:34,002 - main_4asset_backend_job_based - INFO - 4-Asset Sentiment Analysis Backend v2.0 starting up...
+2025-09-08 20:42:34,003 - main_4asset_backend_job_based - INFO - Job-based pipeline system enabled for downstream backend models
+2025-09-08 20:42:34,003 - main_4asset_backend_job_based - INFO - Direct API access available for file retrieval
+2025-09-08 20:42:34,099 - watchfiles.main - INFO - 6 changes detected
+2025-09-08 20:42:34,457 - watchfiles.main - INFO - 29 changes detected
+2025-09-08 20:42:35,368 - watchfiles.main - INFO - 1 change detected
+2025-09-08 20:43:03,027 - watchfiles.main - INFO - 6 changes detected
+2025-09-08 21:05:28,382 - watchfiles.main - INFO - 3 changes detected
+2025-09-08 21:05:46,227 - watchfiles.main - INFO - 1 change detected
+2025-09-08 21:06:08,422 - watchfiles.main - INFO - 1 change detected
+2025-09-08 21:06:25,792 - watchfiles.main - INFO - 1 change detected
+2025-09-08 21:06:31,048 - watchfiles.main - INFO - 1 change detected

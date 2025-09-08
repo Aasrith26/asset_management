@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-09-08T19:00:49.801426",
+  "framework_coverage": "100%",
+  "overall_sentiment": -0.014464800482099577,
+  "overall_confidence": 0.511261797898391,
+  "interpretation": "NEUTRAL_LOW_CONFIDENCE",
+  "quality_grade": "C",
+  "trading_signal": "HOLD",
+  "signal_strength": "NEUTRAL",
+  "risk_level": "MODERATE",
+  "all_components": {
+    "fii_dii_flows": {
+      "sentiment": -0.07,
+      "confidence": 0.7,
+      "interpretation": "\u26aa NEUTRAL - Balanced institutional activity"
+    },
+    "technical_analysis": {
+      "sentiment": 0.07443915189904972,
+      "confidence": 0.7,
+      "interpretation": "\u26aa NEUTRAL - Mixed technical signals"
+    },
+    "market_sentiment_vix": {
+      "sentiment": -0.27709302191755514,
+      "confidence": 0.6625,
+      "interpretation": "\ud83d\udfe1 CAUTIOUS - Complacency emerging"
+    },
+    "rbi_interest_rates": {
+      "sentiment": 0.304351505890648,
+      "confidence": 0.7625,
+      "interpretation": "\ud83c\udfdb\ufe0f ACCOMMODATIVE - RBI policy HIGH_CONFIDENCE"
+    },
+    "global_factors": {
+      "sentiment": 0.17214848789464615,
+      "confidence": 0.8,
+      "interpretation": "\ud83d\udfe1 MILDLY POSITIVE - Slight global tailwinds"
+    }
+  }
+}

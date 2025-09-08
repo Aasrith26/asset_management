@@ -8,7 +8,7 @@ import numpy as np
 from datetime import datetime
 from typing import Dict, List, Optional
 import warnings
-
+os.makedirs("outputs", exist_ok=True)
 # Import all analyzers
 try:
     from fii_dii_flows_analyzer import FIIDIIFlowsAnalyzer
@@ -17,7 +17,7 @@ try:
     from rbi_policy_analyzer import RBIInterestRatesAnalyzer
     from global_factors_analyzer import GlobalFactorsAnalyzer
 except ImportError as e:
-    print(f"⚠️ Import Error: {e}")
+    print(f"Import Error: {e}")
     print("Make sure all analyzer files are in the same directory")
 
 warnings.filterwarnings('ignore')
@@ -39,11 +39,11 @@ class CompleteNiftySentimentAnalyzer:
         
         # Complete framework weights (100% total)
         self.framework_weights = {
-            'fii_dii_flows': 0.35,          # Highest priority - institutional flows
-            'technical_analysis': 0.30,     # Price momentum confirmation
-            'market_sentiment_vix': 0.20,   # Fear/greed behavioral indicators
-            'rbi_interest_rates': 0.10,     # Monetary policy impact
-            'global_factors': 0.05          # External global influences
+            'fii_dii_flows': 0.35,
+            'technical_analysis': 0.30,
+            'market_sentiment_vix': 0.20,
+            'rbi_interest_rates': 0.10,
+            'global_factors': 0.05
         }
         
         # Master result structure
@@ -152,16 +152,16 @@ class CompleteNiftySentimentAnalyzer:
             if self.config['save_master_json']:
                 self._save_complete_master_json()
             
-            print(f"\n✅ Complete Analysis finished in {execution_time:.1f}s")
-            print(f"🎯 Overall Sentiment: {composite_result['overall_sentiment']:.3f}")
-            print(f"📊 Overall Confidence: {composite_result['overall_confidence']:.1%}")
-            print(f"🏆 Framework Coverage: 100% (All 5 KPIs)")
-            print(f"⚡ System Reliability: {composite_result['overall_confidence']:.0%}")
+            print(f"\nComplete Analysis finished in {execution_time:.1f}s")
+            print(f"Overall Sentiment: {composite_result['overall_sentiment']:.3f}")
+            print(f"Overall Confidence: {composite_result['overall_confidence']:.1%}")
+            print(f"Framework Coverage: 100% (All 5 KPIs)")
+            print(f"System Reliability: {composite_result['overall_confidence']:.0%}")
             
             return self.master_result
             
         except Exception as e:
-            print(f"❌ Complete analysis failed: {e}")
+            print(f"Complete analysis failed: {e}")
             return {
                 'error': str(e),
                 'timestamp': datetime.now().isoformat(),
@@ -688,10 +688,12 @@ class CompleteNiftySentimentAnalyzer:
             return "pre_market"
     
     def _save_complete_master_json(self):
-        os.makedirs('outputs', exist_ok=True)
+
         """Save comprehensive master JSON file"""
         filename = self.config['master_json_filename']
-        os.makedirs(os.path.dirname(filename), exist_ok=True)
+        dir_path = os.path.dirname(filename)
+        if dir_path:  # Only create if dir_path is not empty
+            os.makedirs(dir_path, exist_ok=True)
         try:
             # Make JSON serializable
             clean_result = self._make_json_serializable(self.master_result)
@@ -729,7 +731,7 @@ class CompleteNiftySentimentAnalyzer:
             print(f"Executive summary saved to: nifty50_executive_summary.json")
             
         except Exception as e:
-            print(f"❌ Error saving complete JSON: {e}")
+            print(f"Error saving complete JSON: {e}")
     
     def _make_json_serializable(self, obj):
         """Make object JSON serializable"""

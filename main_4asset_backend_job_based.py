@@ -19,6 +19,50 @@ from enum import Enum
 from pathlib import Path
 import math
 import numpy as np
+import logging
+import traceback
+
+
+# Add this debug function
+def debug_imports():
+    """Debug all imports at startup"""
+    logger.info("🔍 DEBUGGING IMPORTS ON RAILWAY...")
+
+    try:
+        from nifty_50_kpis.complete_nifty_analyzer import run_complete_nifty_analysis
+        logger.info("✅ NIFTY50 import successful")
+    except Exception as e:
+        logger.error(f"❌ NIFTY50 import failed: {e}")
+        logger.error(f"Traceback: {traceback.format_exc()}")
+
+    try:
+        from gold_kpis.integrated_gold_sentiment_v5 import run_integrated_analysis
+        logger.info("✅ GOLD import successful")
+    except Exception as e:
+        logger.error(f"❌ GOLD import failed: {e}")
+        logger.error(f"Traceback: {traceback.format_exc()}")
+
+    try:
+        from bitcoin_kpis.bitcoin_sentiment_analyzer import run_bitcoin_analysis
+        logger.info("✅ BITCOIN import successful")
+    except Exception as e:
+        logger.error(f"❌ BITCOIN import failed: {e}")
+
+    try:
+        from reit_kpis.reit_sentiment_analyzer_original import run_reit_analysis
+        logger.info("✅ REIT import successful")
+    except Exception as e:
+        logger.error(f"❌ REIT import failed: {e}")
+
+
+# Call this at startup (add to your lifespan function)
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    logger.info("4-Asset Sentiment Analysis Backend v2.0 starting up...")
+    debug_imports()  # ← ADD THIS LINE
+    yield
+    logger.info("Backend shutting down...")
+
 
 def clean_nan_values(obj):
     """Recursively clean NaN values from nested dictionaries and lists"""

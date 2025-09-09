@@ -30,29 +30,29 @@ def debug_imports():
 
     try:
         from nifty_50_kpis.complete_nifty_analyzer import run_complete_nifty_analysis
-        logger.info("✅ NIFTY50 import successful")
+        logger.info("NIFTY50 import successful")
     except Exception as e:
-        logger.error(f"❌ NIFTY50 import failed: {e}")
+        logger.error(f" NIFTY50 import failed: {e}")
         logger.error(f"Traceback: {traceback.format_exc()}")
 
     try:
         from gold_kpis.integrated_gold_sentiment_v5 import run_integrated_analysis
-        logger.info("✅ GOLD import successful")
+        logger.info("GOLD import successful")
     except Exception as e:
-        logger.error(f"❌ GOLD import failed: {e}")
+        logger.error(f"GOLD import failed: {e}")
         logger.error(f"Traceback: {traceback.format_exc()}")
 
     try:
         from bitcoin_kpis.bitcoin_sentiment_analyzer import run_bitcoin_analysis
-        logger.info("✅ BITCOIN import successful")
+        logger.info("BITCOIN import successful")
     except Exception as e:
-        logger.error(f"❌ BITCOIN import failed: {e}")
+        logger.error(f"BITCOIN import failed: {e}")
 
     try:
         from reit_kpis.reit_sentiment_analyzer_original import run_reit_analysis
-        logger.info("✅ REIT import successful")
+        logger.info("REIT import successful")
     except Exception as e:
-        logger.error(f"❌ REIT import failed: {e}")
+        logger.error(f"REIT import failed: {e}")
 
 
 # Call this at startup (add to your lifespan function)
@@ -333,7 +333,7 @@ class MultiAssetOrchestrator:
 
         # SEQUENTIAL EXECUTION - ONE AT A TIME
         for i, asset in enumerate(assets, 1):
-            logger.info(f"🔄 [{i}/{len(assets)}] Starting {asset.value} analysis...")
+            logger.info(f"[{i}/{len(assets)}] Starting {asset.value} analysis...")
 
             adapter = cls.ASSET_ADAPTERS[asset]
 
@@ -348,12 +348,12 @@ class MultiAssetOrchestrator:
                     confidence = result.get('confidence', 0)
                     exec_time = result.get('execution_time', 0)
                     logger.info(
-                        f"✅ [{i}/{len(assets)}] {asset.value} completed: sentiment={sentiment:.3f}, confidence={confidence:.1%}, time={exec_time:.1f}s")
+                        f"[{i}/{len(assets)}] {asset.value} completed: sentiment={sentiment:.3f}, confidence={confidence:.1%}, time={exec_time:.1f}s")
                 else:
-                    logger.error(f"❌ [{i}/{len(assets)}] {asset.value} failed: {result.get('error', 'Unknown error')}")
+                    logger.error(f"[{i}/{len(assets)}] {asset.value} failed: {result.get('error', 'Unknown error')}")
 
             except Exception as e:
-                logger.error(f"❌ [{i}/{len(assets)}] {asset.value} exception: {e}")
+                logger.error(f"[{i}/{len(assets)}] {asset.value} exception: {e}")
                 results[asset.value] = {
                     'asset_type': asset.value, 'status': 'exception',
                     'error': str(e), 'sentiment': 0.0, 'confidence': 0.3

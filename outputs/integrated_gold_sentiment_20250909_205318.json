@@ -1,0 +1,127 @@
+{
+  "timestamp": "2025-09-09T20:53:18.147240",
+  "system_version": "5.0_integrated_enterprise",
+  "framework_coverage": 0.95,
+  "executive_summary": {
+    "overall_sentiment": 0.40267442271995557,
+    "confidence_level": 0.7871333333333334,
+    "interpretation": "\ud83d\udfe2 BULLISH - Net positive signals across components",
+    "risk_assessment": "MODERATE RISK - Good signal quality",
+    "components_analyzed": 5,
+    "recommendation": "Confidence Level: 79% - MODERATE RISK - Good signal quality"
+  },
+  "component_analysis": {
+    "technical_analysis": {
+      "component_name": "Technical_Analysis",
+      "sentiment": 1.0,
+      "confidence": 0.699,
+      "framework_weight": 0.25,
+      "weighted_contribution": 0.25,
+      "description": "Technical_Analysis analysis",
+      "source": "Technical_Analysis",
+      "metadata": {},
+      "status": "success"
+    },
+    "real_interest_rates": {
+      "component_name": "Real_Interest_Rates",
+      "sentiment": 0.45717249475492117,
+      "confidence": 0.77,
+      "framework_weight": 0.25,
+      "weighted_contribution": 0.11429312368873029,
+      "description": "Bullish",
+      "source": "Real_Interest_Rates",
+      "metadata": {},
+      "status": "success"
+    },
+    "central_bank_sentiment": {
+      "component_name": "Central_Bank_Sentiment",
+      "sentiment": 0.25271539044431945,
+      "confidence": 0.6499999999999999,
+      "framework_weight": 0.2,
+      "weighted_contribution": 0.050543078088863894,
+      "description": "\ud83d\udfe1 MILDLY BULLISH - Some positive signals (ENHANCED DETECTION)",
+      "source": "Central_Bank_Sentiment",
+      "metadata": {},
+      "status": "success"
+    },
+    "professional_positioning": {
+      "component_name": "Professional_Positioning_COT",
+      "sentiment": -0.021952213979270576,
+      "confidence": 0.5,
+      "framework_weight": 0.15,
+      "weighted_contribution": -0.003292832096890586,
+      "description": "COT proxy: Est. commercial position -1.5%",
+      "source": "COT_Price_Proxy",
+      "metadata": {
+        "estimated_position": -1.4643513002876478,
+        "recent_return": 0.00872128608230649,
+        "volume_factor": 1.679054312022265,
+        "method": "price_proxy",
+        "note": "Estimated from price action - lower confidence"
+      },
+      "status": "success"
+    },
+    "currency_debasement": {
+      "component_name": "Currency_Debasement_Risk",
+      "sentiment": 0.05608326208468605,
+      "confidence": 0.8166666666666668,
+      "framework_weight": 0.1,
+      "weighted_contribution": 0.0056083262084686055,
+      "description": "Currency debasement risk from 3 components",
+      "source": "Currency_Debasement_Risk_Multi",
+      "metadata": {
+        "components_analyzed": 3,
+        "component_details": [
+          {
+            "name": "DXY_USD_Index",
+            "sentiment": 0.1274231069890198,
+            "confidence": 0.85,
+            "weight": 0.4,
+            "contribution": 0.043323856376266734
+          },
+          {
+            "name": "EM_Currency_Stress",
+            "sentiment": 0.25813461984726127,
+            "confidence": 0.85,
+            "weight": 0.3,
+            "contribution": 0.06582432806105162
+          },
+          {
+            "name": "CB_Balance_Sheet_Expansion",
+            "sentiment": -0.28071070901278133,
+            "confidence": 0.75,
+            "weight": 0.3,
+            "contribution": -0.0631599095278758
+          }
+        ],
+        "method": "multi_component_analysis",
+        "component_weights": {
+          "dxy": 0.4,
+          "em_stress": 0.3,
+          "cb_expansion": 0.3
+        }
+      },
+      "status": "success"
+    }
+  },
+  "composite_metrics": {
+    "weighted_sentiment_score": 0.40267442271995557,
+    "confidence_score": 0.7871333333333334,
+    "framework_coverage_pct": 95.0,
+    "components_successful": 5,
+    "components_total": 5
+  },
+  "performance_metrics": {
+    "execution_time_seconds": 14.458234,
+    "performance_grade": "GOOD",
+    "system_status": "operational",
+    "optimization_level": "enterprise_v5.0"
+  },
+  "integration_ready": {
+    "composite_sentiment": 0.40267442271995557,
+    "confidence": 0.7871333333333334,
+    "framework_version": "5.0",
+    "coverage": 0.95,
+    "quality_grade": "B"
+  }
+}

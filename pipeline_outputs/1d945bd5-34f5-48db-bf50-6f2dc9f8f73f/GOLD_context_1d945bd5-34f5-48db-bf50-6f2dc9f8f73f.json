@@ -1,0 +1,94 @@
+{
+  "job_metadata": {
+    "job_id": "1d945bd5-34f5-48db-bf50-6f2dc9f8f73f",
+    "asset_name": "GOLD",
+    "generated_at": "2025-09-08T21:30:53.931952",
+    "belongs_to_analysis": "2025-09-08T21:30:53.922953"
+  },
+  "asset_metadata": {
+    "asset_name": "GOLD",
+    "asset_type": "GOLD",
+    "analysis_timestamp": "2025-09-08T21:30:39.771751",
+    "data_source": "Multiple_Global_APIs",
+    "execution_time": 11.471022,
+    "status": "success"
+  },
+  "sentiment_analysis": {
+    "overall_sentiment": 0.29807512999766106,
+    "confidence_level": 0.7733333333333333,
+    "sentiment_interpretation": "MILD_BULLISH",
+    "confidence_grade": "B",
+    "analysis_quality": "success"
+  },
+  "component_breakdown": {
+    "technical_analysis": {
+      "sentiment": 0.0,
+      "confidence": 0.5,
+      "weight": 0.25,
+      "contribution": 0.25,
+      "description": "Technical_Analysis analysis",
+      "key_metrics": {},
+      "status": "success"
+    },
+    "real_interest_rates": {
+      "sentiment": 0.0,
+      "confidence": 0.5,
+      "weight": 0.25,
+      "contribution": 0.10071413853611101,
+      "description": "Bullish",
+      "key_metrics": {},
+      "status": "success"
+    },
+    "central_bank_sentiment": {
+      "sentiment": 0.0,
+      "confidence": 0.5,
+      "weight": 0.2,
+      "contribution": 0.041759973461456476,
+      "description": "\ud83d\udfe1 MILDLY BULLISH - Some positive signals (ENHANCED DETECTION)",
+      "key_metrics": {},
+      "status": "success"
+    },
+    "professional_positioning": {
+      "sentiment": 0.0,
+      "confidence": 0.5,
+      "weight": 0.15,
+      "contribution": -0.0031635002563674894,
+      "description": "COT proxy: Est. commercial position -1.4%",
+      "key_metrics": {
+        "estimated_position": -1.406771923179458,
+        "recent_return": 0.008763826971913557,
+        "volume_factor": 1.605202758666849
+      },
+      "status": "success"
+    },
+    "currency_debasement": {
+      "sentiment": 0.0,
+      "confidence": 0.5,
+      "weight": 0.1,
+      "contribution": 0.004472079297830931,
+      "description": "Currency debasement risk from 3 components",
+      "key_metrics": {
+        "components_analyzed": 3,
+        "component_weights_dxy": 0.4,
+        "component_weights_em_stress": 0.3,
+        "component_weights_cb_expansion": 0.3
+      },
+      "status": "success"
+    }
+  },
+  "market_context": {},
+  "executive_summary": {},
+  "risk_assessment": {
+    "data_quality": "success",
+    "confidence_score": 0.7733333333333333,
+    "execution_success": true,
+    "error_message": null
+  },
+  "pipeline_metadata": {
+    "job_id": "1d945bd5-34f5-48db-bf50-6f2dc9f8f73f",
+    "format_version": "2.0",
+    "downstream_compatible": true,
+    "context_file_type": "asset_specific",
+    "related_csv": "assets_data_1d945bd5-34f5-48db-bf50-6f2dc9f8f73f.csv"
+  }
+}

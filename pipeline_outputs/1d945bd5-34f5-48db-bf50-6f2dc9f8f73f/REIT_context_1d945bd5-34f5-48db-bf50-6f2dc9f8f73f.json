@@ -1,16 +1,16 @@
 {
   "job_metadata": {
-    "job_id": "0c2da19d-de6f-4048-9b42-32ad46403e74",
+    "job_id": "1d945bd5-34f5-48db-bf50-6f2dc9f8f73f",
     "asset_name": "REIT",
-    "generated_at": "2025-09-08T19:44:59.238910",
-    "belongs_to_analysis": "2025-09-08T19:44:59.228147"
+    "generated_at": "2025-09-08T21:30:53.933279",
+    "belongs_to_analysis": "2025-09-08T21:30:53.922953"
   },
   "asset_metadata": {
     "asset_name": "REIT",
     "asset_type": "REIT",
-    "analysis_timestamp": "2025-09-08T19:44:43.316250",
+    "analysis_timestamp": "2025-09-08T21:30:53.922627",
     "data_source": "Yahoo_Finance_TradingEconomics",
-    "execution_time": 6.061677,
+    "execution_time": 4.460784,
     "status": "success"
   },
   "sentiment_analysis": {
@@ -22,11 +22,11 @@
   },
   "component_breakdown": {
     "technical_momentum": {
-      "sentiment": -0.229307811680927,
-      "confidence": 0.8,
+      "sentiment": 0.0,
+      "confidence": 0.5,
       "weight": 0.35,
       "contribution": -0.08025773408832444,
-      "description": "REIT Technical Momentum Analysis",
+      "description": "REIT Technical Momentum Analysis - Original Logic",
       "key_metrics": {
         "original_diagnostics_score": -0.229,
         "original_diagnostics_features_f_roc20": 0.158,
@@ -45,8 +45,8 @@
       "status": "success"
     },
     "yield_spread": {
-      "sentiment": -0.99999999975714,
-      "confidence": 0.8,
+      "sentiment": 0.0,
+      "confidence": 0.5,
       "weight": 0.3,
       "contribution": -0.299999999927142,
       "description": "REIT Yield Spread Analysis - Original Logic",
@@ -68,8 +68,8 @@
       "status": "success"
     },
     "accumulation_flow": {
-      "sentiment": -0.15743742995101792,
-      "confidence": 0.8,
+      "sentiment": 0.0,
+      "confidence": 0.5,
       "weight": 0.2,
       "contribution": -0.03148748599020359,
       "description": "REIT Accumulation Flow Analysis - Original Logic",
@@ -91,8 +91,8 @@
       "status": "success"
     },
     "liquidity_risk": {
-      "sentiment": 0.2588271914935093,
-      "confidence": 0.8,
+      "sentiment": 0.0,
+      "confidence": 0.5,
       "weight": 0.15,
       "contribution": 0.03882407872402639,
       "description": "REIT Liquidity Risk Analysis - Original Logic",
@@ -134,10 +134,10 @@
     "error_message": null
   },
   "pipeline_metadata": {
-    "job_id": "0c2da19d-de6f-4048-9b42-32ad46403e74",
+    "job_id": "1d945bd5-34f5-48db-bf50-6f2dc9f8f73f",
     "format_version": "2.0",
     "downstream_compatible": true,
     "context_file_type": "asset_specific",
-    "related_csv": "assets_data_0c2da19d-de6f-4048-9b42-32ad46403e74.csv"
+    "related_csv": "assets_data_1d945bd5-34f5-48db-bf50-6f2dc9f8f73f.csv"
   }
 }

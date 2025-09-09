@@ -1,0 +1,122 @@
+{
+  "job_metadata": {
+    "job_id": "1d945bd5-34f5-48db-bf50-6f2dc9f8f73f",
+    "asset_name": "NIFTY50",
+    "generated_at": "2025-09-08T21:30:53.930868",
+    "belongs_to_analysis": "2025-09-08T21:30:53.922953"
+  },
+  "asset_metadata": {
+    "asset_name": "NIFTY50",
+    "asset_type": "NIFTY50",
+    "analysis_timestamp": "2025-09-08T21:30:27.291779",
+    "data_source": "Multiple_Indian_APIs",
+    "execution_time": 7.452598,
+    "status": "success"
+  },
+  "sentiment_analysis": {
+    "overall_sentiment": -0.011463599887576245,
+    "confidence_level": 0.511261797898391,
+    "sentiment_interpretation": "NEUTRAL",
+    "confidence_grade": "C",
+    "analysis_quality": "success"
+  },
+  "component_breakdown": {
+    "fii_dii_flows": {
+      "sentiment": -0.07,
+      "confidence": 0.7,
+      "weight": 0.35,
+      "contribution": 0.0,
+      "description": "\u26aa NEUTRAL - Balanced institutional activity",
+      "key_metrics": {},
+      "status": "success"
+    },
+    "technical_analysis": {
+      "sentiment": 0.07443915189904972,
+      "confidence": 0.7,
+      "weight": 0.3,
+      "contribution": 0.022331745569714914,
+      "description": "\u26aa NEUTRAL - Mixed technical signals",
+      "key_metrics": {},
+      "status": "success"
+    },
+    "market_sentiment_vix": {
+      "sentiment": -0.27709302191755514,
+      "confidence": 0.6625,
+      "weight": 0.2,
+      "contribution": -0.05541860438351103,
+      "description": "\ud83d\udfe1 CAUTIOUS - Complacency emerging",
+      "key_metrics": {},
+      "status": "success"
+    },
+    "rbi_interest_rates": {
+      "sentiment": 0.304351505890648,
+      "confidence": 0.7625,
+      "weight": 0.1,
+      "contribution": 0.030435150589064805,
+      "description": "\ud83c\udfdb\ufe0f ACCOMMODATIVE - RBI policy HIGH_CONFIDENCE",
+      "key_metrics": {},
+      "status": "success"
+    },
+    "global_factors": {
+      "sentiment": 0.22772841428937635,
+      "confidence": 0.8,
+      "weight": 0.05,
+      "contribution": 0.011386420714468819,
+      "description": "\ud83d\udfe1 MILDLY POSITIVE - Slight global tailwinds",
+      "key_metrics": {},
+      "status": "success"
+    }
+  },
+  "market_context": {
+    "analysis_date": "2025-09-08",
+    "analysis_time": "21:30:27 IST",
+    "market_session": "after_market",
+    "nifty_snapshot": {
+      "current_level": 24773.150390625,
+      "daily_change_pct": 0.12994782193524917,
+      "trend_status": "bearish",
+      "volatility_regime": "normal",
+      "momentum_status": "neutral"
+    },
+    "institutional_activity": {
+      "net_institutional_flow": null,
+      "flow_dominance": null,
+      "flow_momentum": null,
+      "flow_interpretation": "\u26aa NEUTRAL - Balanced institutional activity"
+    },
+    "technical_summary": {},
+    "sentiment_readings": {
+      "vix_level": 10.837499618530273,
+      "fear_greed_status": "greed",
+      "market_regime": "complacency",
+      "sentiment_interpretation": "\ud83d\udfe1 CAUTIOUS - Complacency emerging"
+    },
+    "policy_environment": {
+      "current_repo_rate": 4.0,
+      "policy_stance": "accommodative",
+      "policy_interpretation": "\ud83c\udfdb\ufe0f ACCOMMODATIVE - RBI policy HIGH_CONFIDENCE"
+    },
+    "global_backdrop": {
+      "us_overnight_performance": 0.40218228146423934,
+      "global_risk_sentiment": "\ud83d\udfe1 MILDLY POSITIVE - Slight global tailwinds",
+      "global_session": "us_session"
+    },
+    "key_highlights": [],
+    "risk_alerts": [],
+    "opportunities": []
+  },
+  "executive_summary": {},
+  "risk_assessment": {
+    "data_quality": "success",
+    "confidence_score": 0.511261797898391,
+    "execution_success": true,
+    "error_message": null
+  },
+  "pipeline_metadata": {
+    "job_id": "1d945bd5-34f5-48db-bf50-6f2dc9f8f73f",
+    "format_version": "2.0",
+    "downstream_compatible": true,
+    "context_file_type": "asset_specific",
+    "related_csv": "assets_data_1d945bd5-34f5-48db-bf50-6f2dc9f8f73f.csv"
+  }
+}

@@ -1,0 +1,1079 @@
+{
+  "job_id": "82125630-9e7d-49f2-aa1b-b8e36ebc7e7b",
+  "analysis_results": {
+    "NIFTY50": {
+      "asset_type": "NIFTY50",
+      "sentiment": -0.003169704010932663,
+      "confidence": 0.511261797898391,
+      "execution_time": 11.820081,
+      "component_details": {
+        "fii_dii_flows": {
+          "component_sentiment": -0.07,
+          "component_confidence": 0.7,
+          "component_weight": 0.35,
+          "sub_indicators": {
+            "estimated_flows": {
+              "fii_flow": -8.0,
+              "dii_flow": 1.0,
+              "net_flow": -7.0,
+              "source": "moneycontrol_estimate"
+            }
+          },
+          "market_context": {
+            "data_source": "Moneycontrol_Scraped",
+            "confidence_note": "Estimated from web scraping"
+          },
+          "execution_time_seconds": 2.038223,
+          "kpi_name": "FII_DII_Flows",
+          "framework_weight": 0.35,
+          "interpretation": "\u26aa NEUTRAL - Balanced institutional activity"
+        },
+        "technical_analysis": {
+          "component_sentiment": 0.07835008431692637,
+          "component_confidence": 0.7,
+          "component_weight": 0.3,
+          "weighted_contribution": 0.023505025295077912,
+          "sub_indicators": {
+            "moving_averages": {
+              "individual_mas": {
+                "ma_20": {
+                  "value": 24741.47021484375,
+                  "price_vs_ma_pct": 0.5138312049660582,
+                  "trend": "above",
+                  "ma_slope": 46.692480468751455
+                },
+                "ma_50": {
+                  "value": 24932.2051953125,
+                  "price_vs_ma_pct": -0.25511416033692635,
+                  "trend": "below",
+                  "ma_slope": -47.1769921874984
+                },
+                "ma_200": {
+                  "value": NaN,
+                  "price_vs_ma_pct": NaN,
+                  "trend": "below",
+                  "ma_slope": NaN
+                }
+              },
+              "trend_score": -0.33333333333333337,
+              "trend_strength": "moderate",
+              "overall_trend": "bearish",
+              "current_price": 24868.599609375
+            },
+            "rsi_analysis": {
+              "individual_rsi": {
+                "rsi_14": {
+                  "value": 46.23473416711296,
+                  "level": "neutral",
+                  "trend": "falling",
+                  "momentum": -9.993204864197452
+                },
+                "rsi_21": {
+                  "value": 55.37703295280034,
+                  "level": "neutral",
+                  "trend": "rising",
+                  "momentum": 2.6127814433120733
+                }
+              },
+              "primary_rsi": 46.23473416711296,
+              "rsi_signal": "neutral",
+              "overbought_oversold": "normal",
+              "rsi_divergence": "no_divergence"
+            },
+            "macd_analysis": {
+              "macd_line": -27.872551801050577,
+              "signal_line": -51.38437800993557,
+              "histogram": 23.51182620888499,
+              "crossover_status": "bullish",
+              "recent_crossover": "none",
+              "histogram_trend": "increasing",
+              "macd_strength": 23.51182620888499,
+              "zero_line_cross": "below"
+            },
+            "volume_analysis": {
+              "current_volume": 0.0,
+              "volume_vs_20d_avg": 0.0,
+              "volume_vs_50d_avg": 0.0,
+              "volume_trend": "low",
+              "price_volume_relationship": "negative",
+              "obv_trend": "rising",
+              "volume_momentum": -1.0
+            },
+            "bollinger_bands": {
+              "upper_band": 25121.902506176943,
+              "middle_band": 24741.47021484375,
+              "lower_band": 24361.037923510557,
+              "current_price": 24868.599609375,
+              "bb_position": 0.6670854412564925,
+              "price_position": "within_bands",
+              "band_width": 3.07526018486121,
+              "squeeze_status": "squeeze"
+            },
+            "support_resistance": {
+              "nearest_resistance": 25548.69921875,
+              "nearest_support": 24598.599609375,
+              "resistance_distance_pct": 2.734772444197522,
+              "support_distance_pct": 1.0857064902770601,
+              "all_resistance_levels": [
+                25548.69921875,
+                25255.30078125,
+                25246.25
+              ],
+              "all_support_levels": [
+                25331.650390625,
+                25001.94921875,
+                24882.30078125
+              ]
+            },
+            "price_patterns": {
+              "trend_pattern": "higher_highs_higher_lows",
+              "latest_candle": {
+                "type": "bullish",
+                "body_size_pct": 0.01809838309328232,
+                "range_size_pct": 0.31290407644870133,
+                "upper_shadow_pct": 0.0933119326237416,
+                "lower_shadow_pct": 0.2014937607316774,
+                "gap_from_prev": 0.3671281904638914
+              },
+              "momentum_5d_pct": 1.1757717969082433,
+              "momentum_10d_pct": 0.6334918518530228,
+              "volatility_10d": 7.825282271566884
+            }
+          },
+          "market_context": {
+            "current_price": 24868.599609375,
+            "previous_close": 24773.150390625,
+            "daily_change_pct": 0.3852930178235273,
+            "data_points": 99,
+            "data_source": "Yahoo_Finance_Nifty",
+            "analysis_period_days": 100,
+            "last_update": "2025-09-09 00:00:00"
+          },
+          "scoring_breakdown": {
+            "trend_mas": {
+              "score": -0.33333333333333337,
+              "weight": 0.25,
+              "contribution": -0.08333333333333334
+            },
+            "momentum_rsi": {
+              "score": 0.0,
+              "weight": 0.2,
+              "contribution": 0.0
+            },
+            "trend_macd": {
+              "score": 0.4,
+              "weight": 0.2,
+              "contribution": 0.08000000000000002
+            },
+            "volume_trend": {
+              "score": 0.3,
+              "weight": 0.15,
+              "contribution": 0.045
+            },
+            "bollinger": {
+              "score": 0.066834176502597,
+              "weight": 0.1,
+              "contribution": 0.006683417650259701
+            },
+            "support_resistance": {
+              "score": 0.3,
+              "weight": 0.1,
+              "contribution": 0.03
+            }
+          },
+          "technical_summary": {
+            "overall_trend": "bearish",
+            "momentum_status": "neutral",
+            "macd_signal": "bullish",
+            "volume_confirmation": "negative",
+            "volatility_regime": "normal"
+          },
+          "execution_time_seconds": 1.172812,
+          "kpi_name": "Technical_Analysis",
+          "framework_weight": 0.3,
+          "analysis_timestamp": "2025-09-09T20:52:53.918157",
+          "data_quality": "high",
+          "interpretation": "\u26aa NEUTRAL - Mixed technical signals"
+        },
+        "market_sentiment_vix": {
+          "component_sentiment": -0.15784273896735262,
+          "component_confidence": 0.6625,
+          "component_weight": 0.2,
+          "weighted_contribution": -0.03156854779347053,
+          "sub_indicators": {
+            "vix_analysis": {
+              "current_vix": 10.6850004196167,
+              "previous_vix": 10.84000015258789,
+              "vix_change": -0.1549997329711914,
+              "vix_5d_ma": 10.817000198364259,
+              "vix_20d_ma": 11.63125,
+              "vix_trend": -0.1319997787475593,
+              "sentiment": -0.48451380405032096,
+              "confidence": 0.85,
+              "vix_regime": "complacency",
+              "interpretation": "VIX at 10.7 - complacency fear level"
+            },
+            "put_call_analysis": {
+              "estimated_put_call_ratio": 1.0081607540544593,
+              "sentiment": 0.0,
+              "confidence": 0.5,
+              "source": "market_volatility_estimate",
+              "interpretation": "Est. PCR ~1.01 - neutral sentiment"
+            },
+            "breadth_analysis": {
+              "positive_sectors": 4,
+              "total_sectors_analyzed": 5,
+              "breadth_ratio": 0.8,
+              "average_sector_return": 0.8444814416527782,
+              "sentiment": 0.4269233711701403,
+              "confidence": 0.7,
+              "interpretation": "4/5 sectors positive - broad market"
+            },
+            "high_low_analysis": {
+              "high_low_signal": 0.0,
+              "sentiment": 0.0,
+              "confidence": 0.6,
+              "indices_analyzed": 2,
+              "interpretation": "Mid-range"
+            }
+          },
+          "market_context": {
+            "market_regime": "complacency",
+            "vix_level": 10.6850004196167,
+            "fear_greed_status": "neutral",
+            "components_analyzed": 4,
+            "data_sources": [
+              "India_VIX",
+              "Options_Data",
+              "Market_Breadth"
+            ]
+          },
+          "execution_time_seconds": 2.114526,
+          "kpi_name": "Market_Sentiment_VIX",
+          "framework_weight": 0.2,
+          "analysis_timestamp": "2025-09-09T20:52:56.032918",
+          "data_quality": "high",
+          "interpretation": "\ud83d\udfe1 CAUTIOUS - Complacency emerging"
+        },
+        "rbi_interest_rates": {
+          "component_sentiment": 0.28711107491760063,
+          "component_confidence": 0.7625,
+          "component_weight": 0.1,
+          "weighted_contribution": 0.028711107491760063,
+          "sub_indicators": {
+            "repo_rate_analysis": {
+              "current_repo_rate": 4.0,
+              "sentiment": 0.8,
+              "confidence": 0.85,
+              "source": "rbi_website_scraped",
+              "interpretation": "Repo rate at 4.0% - accommodative",
+              "policy_stance": "accommodative",
+              "last_updated": "2025-09-09T20:53:00.251588"
+            },
+            "banking_yield_proxy": {
+              "banking_sector_performance": {
+                "bank_nifty": {
+                  "weekly_return": 0.0027475034304959805,
+                  "biweekly_return": -0.00430387002517699,
+                  "monthly_return": -0.0233224814562945,
+                  "volatility": 0.006156429359744343,
+                  "current_price": 54216.1015625,
+                  "ticker": "^NSEBANK"
+                },
+                "sbi": {
+                  "weekly_return": -0.004063348801233945,
+                  "biweekly_return": 0.0012378535993328404,
+                  "monthly_return": -0.017730325344172827,
+                  "volatility": 0.005238504262140324,
+                  "current_price": 808.8499755859375,
+                  "ticker": "SBIN.NS"
+                },
+                "hdfc_bank": {
+                  "weekly_return": 0.011210657520228826,
+                  "biweekly_return": -0.008475446674624939,
+                  "monthly_return": -0.03272195207290453,
+                  "volatility": 0.00734336092606704,
+                  "current_price": 965.1500244140625,
+                  "ticker": "HDFCBANK.NS"
+                },
+                "icici_bank": {
+                  "weekly_return": 0.004795956458035075,
+                  "biweekly_return": -0.009106328276425926,
+                  "monthly_return": -0.015361970250498458,
+                  "volatility": 0.006442884547782105,
+                  "current_price": 1403.699951171875,
+                  "ticker": "ICICIBANK.NS"
+                },
+                "kotak_bank": {
+                  "weekly_return": 0.00010206777225348329,
+                  "biweekly_return": -0.0026962033318731512,
+                  "monthly_return": -0.007844526447939289,
+                  "volatility": 0.0089689311772229,
+                  "current_price": 1960.4000244140625,
+                  "ticker": "KOTAKBANK.NS"
+                },
+                "axis_bank": {
+                  "weekly_return": -0.002370342387161633,
+                  "biweekly_return": 0.0019997863391680876,
+                  "monthly_return": -0.019659085713531824,
+                  "volatility": 0.007142534712148861,
+                  "current_price": 1052.199951171875,
+                  "ticker": "AXISBANK.NS"
+                }
+              },
+              "avg_weekly_return": 0.0020704156654362976,
+              "avg_monthly_return": -0.019440056880890236,
+              "avg_volatility": 0.006882107497517595,
+              "performance_score": -0.006533773353094316,
+              "combined_score": -0.008598405602349594,
+              "sentiment": -0.06867895657588263,
+              "confidence": 0.78,
+              "us_10y_reference": 4.0889997482299805,
+              "us_yield_change": 0.0429997444152832,
+              "banks_analyzed": 6,
+              "method": "banking_sector_proxy",
+              "interpretation": "Banking sector neutral - neutral yield proxy"
+            },
+            "policy_meeting_proximity": {
+              "next_meeting_date": "2025-10-09",
+              "days_to_meeting": 29,
+              "weeks_to_meeting": 4.142857142857143,
+              "proximity_phase": "policy_digestion",
+              "base_proximity_sentiment": 0.05,
+              "last_meeting_effect": 0.05,
+              "sentiment": 0.1,
+              "confidence": 0.7,
+              "interpretation": "Next RBI MPC meeting in 29 days (Oct 09)"
+            },
+            "credit_growth_enhanced": {
+              "banking_sector_monthly_return": -1.7653259073557908,
+              "banking_sector_quarterly_return": -2.194222651656571,
+              "nifty_monthly_return": 1.153338387005696,
+              "nifty_quarterly_return": -0.9345406827659386,
+              "relative_monthly_performance": -2.9186642943614864,
+              "relative_quarterly_performance": -1.2596819688906322,
+              "credit_growth_score": -0.022550713641731446,
+              "sentiment": -0.11227815984234993,
+              "confidence": 0.72,
+              "banks_analyzed": 4,
+              "interpretation": "Banking sector underperforming Nifty - negative credit growth proxy"
+            }
+          },
+          "contribution_breakdown": {
+            "repo_rate": {
+              "sentiment": 0.8,
+              "confidence": 0.85,
+              "weight": 0.35,
+              "contribution": 0.238
+            },
+            "banking_yield_proxy": {
+              "sentiment": -0.06867895657588263,
+              "confidence": 0.78,
+              "weight": 0.3,
+              "contribution": -0.016070875838756535
+            },
+            "policy_proximity": {
+              "sentiment": 0.1,
+              "confidence": 0.7,
+              "weight": 0.2,
+              "contribution": 0.013999999999999999
+            },
+            "credit_growth": {
+              "sentiment": -0.11227815984234993,
+              "confidence": 0.72,
+              "weight": 0.15,
+              "contribution": -0.012126041262973793
+            }
+          },
+          "market_context": {
+            "policy_stance": "accommodative",
+            "components_analyzed": 4,
+            "successful_components": 4,
+            "data_sources": [
+              "RBI_Policy",
+              "Banking_Sector",
+              "Bond_Proxy",
+              "Credit_Markets"
+            ],
+            "update_frequency": "4_hours",
+            "improvements_applied": [
+              "fixed_bond_tickers",
+              "banking_sector_proxy",
+              "enhanced_credit_analysis"
+            ]
+          },
+          "execution_time_seconds": 4.218793,
+          "kpi_name": "RBI_Interest_Rates_Policy",
+          "framework_weight": 0.1,
+          "analysis_timestamp": "2025-09-09T20:53:00.251879",
+          "data_quality": "high",
+          "version": "1.1_improved",
+          "interpretation": "\ud83c\udfdb\ufe0f MILDLY_POSITIVE - RBI policy HIGH_CONFIDENCE"
+        },
+        "global_factors": {
+          "component_sentiment": -0.03339843008755806,
+          "component_confidence": 0.8,
+          "component_weight": 0.05,
+          "weighted_contribution": -0.001669921504377903,
+          "sub_indicators": {
+            "us_overnight": {
+              "sentiment": 0.023742173025996134,
+              "confidence": 0.85,
+              "individual_markets": {
+                "sp500": {
+                  "ticker": "^GSPC",
+                  "previous_close": 6495.14990234375,
+                  "current_close": 6495.10009765625,
+                  "overnight_change_pct": -0.0007667981224271387
+                },
+                "nasdaq": {
+                  "ticker": "^IXIC",
+                  "previous_close": 21798.69921875,
+                  "current_close": 21785.326171875,
+                  "overnight_change_pct": -0.06134791228045968
+                },
+                "dow": {
+                  "ticker": "^DJI",
+                  "previous_close": 45514.94921875,
+                  "current_close": 45608.0703125,
+                  "overnight_change_pct": 0.20459452410338738
+                }
+              },
+              "average_change_pct": 0.04749327123350019,
+              "interpretation": "US markets up 0.05% overnight"
+            },
+            "inr_usd_trend": {
+              "sentiment": 0.04374729152406785,
+              "confidence": 0.8,
+              "current_rate": 0.011342111974954605,
+              "daily_change_pct": 0.021887615921207866,
+              "trend_change_pct": -0.04941515550754929,
+              "interpretation": "INR strengthening vs USD"
+            },
+            "asian_correlation": {
+              "sentiment": 0.028122622363157268,
+              "confidence": 0.75,
+              "individual_markets": {
+                "nikkei": {
+                  "ticker": "^N225",
+                  "change_pct": -0.42278512621931
+                },
+                "hang_seng": {
+                  "ticker": "^HSI",
+                  "change_pct": 1.186790081070896
+                },
+                "shanghai": {
+                  "ticker": "000001.SS",
+                  "change_pct": -0.5108345968842484
+                }
+              },
+              "average_change_pct": 0.08439011932244585,
+              "markets_analyzed": 3,
+              "interpretation": "Asian markets positive 0.08%"
+            },
+            "crude_oil_impact": {
+              "sentiment": -0.34784871948322577,
+              "confidence": 0.85,
+              "current_price": 63.38999938964844,
+              "daily_change_pct": 1.8149712473159718,
+              "trend_change_pct": 1.0199208813537488,
+              "interpretation": "Oil up 1.81% (negative for India)"
+            },
+            "dxy_influence": {
+              "sentiment": -0.07511095590801706,
+              "confidence": 0.75,
+              "current_dxy": 97.66999816894531,
+              "daily_change_pct": 0.22575805807359073,
+              "trend_change_pct": -0.14313402836409428,
+              "interpretation": "DXY stronger 0.23%"
+            }
+          },
+          "market_context": {
+            "components_analyzed": 5,
+            "components_failed": 0,
+            "data_sources": [
+              "Yahoo_Finance_Global",
+              "Currency_Markets",
+              "Commodity_Markets"
+            ],
+            "update_frequency": "30_minutes",
+            "global_session": "european_asian_overlap"
+          },
+          "execution_time_seconds": 2.274147,
+          "kpi_name": "Global_Factors",
+          "framework_weight": 0.05,
+          "analysis_timestamp": "2025-09-09T20:53:02.526203",
+          "data_quality": "high",
+          "interpretation": "\u26aa NEUTRAL - Mixed global signals"
+        }
+      },
+      "market_context": {
+        "analysis_date": "2025-09-09",
+        "analysis_time": "20:53:02 IST",
+        "market_session": "after_market",
+        "nifty_snapshot": {
+          "current_level": 24868.599609375,
+          "daily_change_pct": 0.3852930178235273,
+          "trend_status": "bearish",
+          "volatility_regime": "normal",
+          "momentum_status": "neutral"
+        },
+        "institutional_activity": {
+          "net_institutional_flow": null,
+          "flow_dominance": null,
+          "flow_momentum": null,
+          "flow_interpretation": "\u26aa NEUTRAL - Balanced institutional activity"
+        },
+        "technical_summary": {},
+        "sentiment_readings": {
+          "vix_level": 10.6850004196167,
+          "fear_greed_status": "neutral",
+          "market_regime": "complacency",
+          "sentiment_interpretation": "\ud83d\udfe1 CAUTIOUS - Complacency emerging"
+        },
+        "policy_environment": {
+          "current_repo_rate": 4.0,
+          "policy_stance": "accommodative",
+          "policy_interpretation": "\ud83c\udfdb\ufe0f MILDLY_POSITIVE - RBI policy HIGH_CONFIDENCE"
+        },
+        "global_backdrop": {
+          "us_overnight_performance": 0.04749327123350019,
+          "global_risk_sentiment": "\u26aa NEUTRAL - Mixed global signals",
+          "global_session": "european_asian_overlap"
+        },
+        "key_highlights": [],
+        "risk_alerts": [],
+        "opportunities": []
+      },
+      "status": "success",
+      "timestamp": "2025-09-09T20:53:02.537050",
+      "data_source": "Multiple_Indian_APIs"
+    },
+    "GOLD": {
+      "asset_type": "GOLD",
+      "sentiment": 0.40267442271995557,
+      "confidence": 0.7871333333333334,
+      "execution_time": 14.458234,
+      "component_details": {
+        "technical_analysis": {
+          "component_name": "Technical_Analysis",
+          "sentiment": 1.0,
+          "confidence": 0.699,
+          "framework_weight": 0.25,
+          "weighted_contribution": 0.25,
+          "description": "Technical_Analysis analysis",
+          "source": "Technical_Analysis",
+          "metadata": {},
+          "status": "success"
+        },
+        "real_interest_rates": {
+          "component_name": "Real_Interest_Rates",
+          "sentiment": 0.45717249475492117,
+          "confidence": 0.77,
+          "framework_weight": 0.25,
+          "weighted_contribution": 0.11429312368873029,
+          "description": "Bullish",
+          "source": "Real_Interest_Rates",
+          "metadata": {},
+          "status": "success"
+        },
+        "central_bank_sentiment": {
+          "component_name": "Central_Bank_Sentiment",
+          "sentiment": 0.25271539044431945,
+          "confidence": 0.6499999999999999,
+          "framework_weight": 0.2,
+          "weighted_contribution": 0.050543078088863894,
+          "description": "\ud83d\udfe1 MILDLY BULLISH - Some positive signals (ENHANCED DETECTION)",
+          "source": "Central_Bank_Sentiment",
+          "metadata": {},
+          "status": "success"
+        },
+        "professional_positioning": {
+          "component_name": "Professional_Positioning_COT",
+          "sentiment": -0.021952213979270576,
+          "confidence": 0.5,
+          "framework_weight": 0.15,
+          "weighted_contribution": -0.003292832096890586,
+          "description": "COT proxy: Est. commercial position -1.5%",
+          "source": "COT_Price_Proxy",
+          "metadata": {
+            "estimated_position": -1.4643513002876478,
+            "recent_return": 0.00872128608230649,
+            "volume_factor": 1.679054312022265,
+            "method": "price_proxy",
+            "note": "Estimated from price action - lower confidence"
+          },
+          "status": "success"
+        },
+        "currency_debasement": {
+          "component_name": "Currency_Debasement_Risk",
+          "sentiment": 0.05608326208468605,
+          "confidence": 0.8166666666666668,
+          "framework_weight": 0.1,
+          "weighted_contribution": 0.0056083262084686055,
+          "description": "Currency debasement risk from 3 components",
+          "source": "Currency_Debasement_Risk_Multi",
+          "metadata": {
+            "components_analyzed": 3,
+            "component_details": [
+              {
+                "name": "DXY_USD_Index",
+                "sentiment": 0.1274231069890198,
+                "confidence": 0.85,
+                "weight": 0.4,
+                "contribution": 0.043323856376266734
+              },
+              {
+                "name": "EM_Currency_Stress",
+                "sentiment": 0.25813461984726127,
+                "confidence": 0.85,
+                "weight": 0.3,
+                "contribution": 0.06582432806105162
+              },
+              {
+                "name": "CB_Balance_Sheet_Expansion",
+                "sentiment": -0.28071070901278133,
+                "confidence": 0.75,
+                "weight": 0.3,
+                "contribution": -0.0631599095278758
+              }
+            ],
+            "method": "multi_component_analysis",
+            "component_weights": {
+              "dxy": 0.4,
+              "em_stress": 0.3,
+              "cb_expansion": 0.3
+            }
+          },
+          "status": "success"
+        }
+      },
+      "market_context": {},
+      "status": "success",
+      "timestamp": "2025-09-09T20:53:18.156548",
+      "data_source": "Multiple_Global_APIs"
+    },
+    "BITCOIN": {
+      "asset_type": "BITCOIN",
+      "sentiment": 0.04626979140378493,
+      "confidence": 0.4981425832226384,
+      "execution_time": 10.502368,
+      "component_details": {
+        "micro_momentum": {
+          "component_name": "micro_momentum",
+          "sentiment": -0.06018008114336942,
+          "confidence": 0.7166666666666667,
+          "framework_weight": 0.3,
+          "weighted_contribution": -0.018054024343010823,
+          "description": "Bitcoin Micro Momentum Analysis",
+          "source": "Bitcoin_micro_momentum",
+          "metadata": {
+            "roc_features": {
+              "f_roc1": -0.0,
+              "f_roc5": 0.043,
+              "roc1_pct": -0.0001,
+              "roc5_pct": 0.0524
+            },
+            "momentum_indicators": {
+              "f_macd_hist": 0.072,
+              "f_rsi_distance": -0.197,
+              "rsi_value": 46.06,
+              "macd_hist_z": 0.656
+            },
+            "price_analysis": {
+              "f_vwap_distance": -0.472,
+              "current_price": 111522.0,
+              "intraday_vwap": 112406.4,
+              "volatility_1h": 0.0605
+            }
+          },
+          "market_context": {
+            "data_source": "Kraken_OHLC_1min",
+            "data_quality": "high",
+            "data_points": 401,
+            "last_update": "2025-09-09T15:23:00+00:00",
+            "price_currency": "USD"
+          },
+          "status": "success",
+          "execution_time": 1.997622
+        },
+        "funding_basis": {
+          "component_name": "funding_basis",
+          "sentiment": -0.005066632950515419,
+          "confidence": 0.4364000769580391,
+          "framework_weight": 0.3,
+          "weighted_contribution": -0.0015199898851546256,
+          "description": "Bitcoin Funding Basis Analysis",
+          "source": "Bitcoin_funding_basis",
+          "metadata": {
+            "funding_analysis": {
+              "funding_rate_8h": 0.0,
+              "funding_rate_annual_pct": 0.0,
+              "f_funding_contrarian": -0.0,
+              "funding_interpretation": "Neutral - balanced positioning"
+            },
+            "basis_analysis": {
+              "spot_price": 111522.0,
+              "mark_price": 111523.88,
+              "basis_bps": 0.17,
+              "f_basis_stretch": -0.017,
+              "basis_interpretation": "Fair value - futures aligned with spot"
+            },
+            "oi_analysis": {
+              "current_oi": 7624655.0,
+              "oi_change_5m": 0.0,
+              "oi_z_score": 0.0,
+              "f_oi_momentum": 0.0
+            }
+          },
+          "market_context": {
+            "data_source": "Kraken_Spot_Futures",
+            "data_quality": "high",
+            "oi_history_length": 1,
+            "funding_frequency": "8_hours",
+            "price_currency": "USD"
+          },
+          "status": "success",
+          "execution_time": 4.047556
+        },
+        "liquidity": {
+          "component_name": "liquidity",
+          "sentiment": -0.059935451662846556,
+          "confidence": 0.7516666666666667,
+          "framework_weight": 0.2,
+          "weighted_contribution": -0.011987090332569311,
+          "description": "Bitcoin Liquidity Analysis",
+          "source": "Bitcoin_liquidity",
+          "metadata": {
+            "spread_analysis": {
+              "current_spread_bps": 0.01,
+              "median_spread_bps": 0.01,
+              "relative_spread": -0.0,
+              "f_spread_improvement": 0.0,
+              "spread_interpretation": "Very tight - excellent liquidity"
+            },
+            "slippage_analysis": {
+              "buy_slippage_bps": 0.0,
+              "sell_slippage_bps": 2.22,
+              "average_impact_bps": 1.11,
+              "median_impact_bps": 1.11,
+              "f_impact_improvement": 0.0,
+              "standard_trade_size": 250000
+            },
+            "depth_analysis": {
+              "bid_notional": 11657646.54,
+              "ask_notional": 15920804.04,
+              "depth_imbalance": -0.155,
+              "f_imbalance": -0.3,
+              "band_bps": 25
+            }
+          },
+          "market_context": {
+            "data_source": "Kraken_OrderBook",
+            "data_quality": "high",
+            "mid_price": 111522.05,
+            "depth_levels_analyzed": 400,
+            "spread_history_length": 1,
+            "impact_history_length": 1,
+            "price_currency": "USD"
+          },
+          "status": "success",
+          "execution_time": 2.292464
+        },
+        "orderflow": {
+          "component_name": "orderflow",
+          "sentiment": 0.716285053516799,
+          "confidence": 0.7666666666666666,
+          "framework_weight": 0.2,
+          "weighted_contribution": 0.1432570107033598,
+          "description": "Bitcoin Orderflow Analysis",
+          "source": "Bitcoin_orderflow",
+          "metadata": {
+            "imbalance_analysis": {
+              "imbalance_5m": 0.611,
+              "buy_notional_5m": 335328.0,
+              "sell_notional_5m": 80958.22,
+              "total_notional_5m": 416286.22,
+              "f_imb5": 0.703,
+              "imbalance_interpretation": "Strong buy pressure - bullish flow"
+            },
+            "cvd_analysis": {
+              "cvd_slope_15m": 665223.56,
+              "cvd_scale": 29.81,
+              "f_cvd15": 1.0,
+              "cvd_current": 2909646.07,
+              "cvd_interpretation": "Strong cumulative buying"
+            },
+            "intensity_analysis": {
+              "imbalance_1m": 0.243,
+              "trades_1m": 7,
+              "trade_rate_z": 0.0,
+              "f_intensity": 0.0,
+              "mean_trade_rate": 7.0
+            }
+          },
+          "market_context": {
+            "data_source": "Kraken_Trades",
+            "data_quality": "high",
+            "minute_buckets": 30,
+            "trade_rate_history_length": 1,
+            "data_timespan_minutes": 120,
+            "price_currency": "USD"
+          },
+          "status": "success",
+          "execution_time": 2.162459
+        }
+      },
+      "executive_summary": {
+        "overall_sentiment": 0.04626979140378493,
+        "confidence_level": 0.4981425832226384,
+        "interpretation": "\u26aa NEUTRAL - Balanced crypto signals",
+        "risk_assessment": "HIGH RISK - Low confidence signals",
+        "components_analyzed": 4,
+        "recommendation": "Confidence Level: 50% - HIGH RISK - Low confidence signals"
+      },
+      "market_context": {
+        "asset_type": "cryptocurrency",
+        "data_source": "Kraken_Multi_API",
+        "data_freshness": "real_time",
+        "update_frequency": "1_minute",
+        "price_currency": "USD"
+      },
+      "status": "success",
+      "timestamp": "2025-09-09T20:53:29.740837",
+      "data_source": "Kraken_Multi_API"
+    },
+    "REIT": {
+      "asset_type": "REIT",
+      "sentiment": -0.5051151529658685,
+      "confidence": 0.8,
+      "execution_time": 9.763749,
+      "component_details": {
+        "technical_momentum": {
+          "component_name": "technical_momentum",
+          "sentiment": -0.4072060924670927,
+          "confidence": 0.8,
+          "framework_weight": 0.35,
+          "weighted_contribution": -0.14252213236348243,
+          "description": "REIT Technical Momentum Analysis - Original Logic",
+          "source": "REIT_technical_momentum_Original",
+          "metadata": {
+            "original_diagnostics": {
+              "score": -0.407,
+              "features": {
+                "f_roc20": -0.207,
+                "f_rsi14": -0.32,
+                "f_emaAlignSlope": -0.762
+              },
+              "metrics": {
+                "price": 751.1,
+                "roc20": -0.0181,
+                "rsi14": 41.99
+              }
+            },
+            "technical_features": {
+              "f_roc20": -0.207,
+              "f_rsi14": -0.32,
+              "f_emaAlignSlope": -0.762
+            },
+            "price_metrics": {
+              "price": 751.1,
+              "roc20": -0.0181,
+              "rsi14": 41.99
+            }
+          },
+          "market_context": {
+            "symbol": "DLF.NS",
+            "data_source": "Yahoo_Finance_Original_Logic",
+            "data_quality": "high",
+            "price_currency": "INR"
+          },
+          "status": "success",
+          "execution_time": 0.494974
+        },
+        "yield_spread": {
+          "component_name": "yield_spread",
+          "sentiment": -0.9999999997504943,
+          "confidence": 0.8,
+          "framework_weight": 0.3,
+          "weighted_contribution": -0.29999999992514825,
+          "description": "REIT Yield Spread Analysis - Original Logic",
+          "source": "REIT_yield_spread_Original",
+          "metadata": {
+            "original_diagnostics": {
+              "score": -1.0,
+              "features": {
+                "spread_frac": -0.057,
+                "reit_yield_ttm": 0.008,
+                "gsec10y_yield": 0.065
+              },
+              "metrics": {
+                "div_ttm": 6.0,
+                "price": 751.1,
+                "scale_proxy": 0.001
+              }
+            },
+            "yield_features": {
+              "spread_frac": -0.057,
+              "reit_yield_ttm": 0.008,
+              "gsec10y_yield": 0.065
+            },
+            "yield_metrics": {
+              "div_ttm": 6.0,
+              "price": 751.1,
+              "scale_proxy": 0.001
+            }
+          },
+          "market_context": {
+            "symbol": "DLF.NS",
+            "data_source": "Yahoo_Finance_TradingEconomics_Original_Logic",
+            "yield_anchor": "assumed_6.5%",
+            "data_quality": "high",
+            "price_currency": "INR"
+          },
+          "status": "success",
+          "execution_time": 6.05054
+        },
+        "accumulation_flow": {
+          "component_name": "accumulation_flow",
+          "sentiment": -0.45074170133161623,
+          "confidence": 0.8,
+          "framework_weight": 0.2,
+          "weighted_contribution": -0.09014834026632325,
+          "description": "REIT Accumulation Flow Analysis - Original Logic",
+          "source": "REIT_accumulation_flow_Original",
+          "metadata": {
+            "original_diagnostics": {
+              "score": -0.451,
+              "features": {
+                "f_updown": -0.653,
+                "f_ad_slope": -0.388,
+                "f_obv_slope": -0.105
+              },
+              "metrics": {
+                "up_down_ratio_20d": 0.766,
+                "ad_slope_20d": -8714104.17,
+                "obv_slope_20d": -4987654.0
+              }
+            },
+            "flow_features": {
+              "f_updown": -0.653,
+              "f_ad_slope": -0.388,
+              "f_obv_slope": -0.105
+            },
+            "flow_metrics": {
+              "up_down_ratio_20d": 0.766,
+              "ad_slope_20d": -8714104.17,
+              "obv_slope_20d": -4987654.0
+            }
+          },
+          "market_context": {
+            "symbol": "DLF.NS",
+            "data_source": "Yahoo_Finance_Original_Logic",
+            "data_quality": "high",
+            "price_currency": "INR"
+          },
+          "status": "success",
+          "execution_time": 0.361847
+        },
+        "liquidity_risk": {
+          "component_name": "liquidity_risk",
+          "sentiment": 0.1837021305939026,
+          "confidence": 0.8,
+          "framework_weight": 0.15,
+          "weighted_contribution": 0.02755531958908539,
+          "description": "REIT Liquidity Risk Analysis - Original Logic",
+          "source": "REIT_liquidity_risk_Original",
+          "metadata": {
+            "original_diagnostics": {
+              "score": 0.184,
+              "features": {
+                "f_spread_proxy": 0.611,
+                "f_amihud": -0.243
+              },
+              "metrics": {
+                "range_today": 0.01684,
+                "median_range_60d": 0.02048,
+                "amihud_20d": 0.0
+              }
+            },
+            "liquidity_features": {
+              "f_spread_proxy": 0.611,
+              "f_amihud": -0.243
+            },
+            "liquidity_metrics": {
+              "range_today": 0.01684,
+              "median_range_60d": 0.02048,
+              "amihud_20d": 0.0
+            }
+          },
+          "market_context": {
+            "symbol": "DLF.NS",
+            "data_source": "Yahoo_Finance_Original_Logic",
+            "data_quality": "high",
+            "price_currency": "INR"
+          },
+          "status": "success",
+          "execution_time": 2.85517
+        }
+      },
+      "executive_summary": {
+        "overall_sentiment": -0.5051151529658685,
+        "confidence_level": 0.8,
+        "interpretation": "Bearish \u2014 strong",
+        "components_analyzed": 4,
+        "original_logic_preserved": true
+      },
+      "market_context": {
+        "asset_type": "real_estate_investment_trust",
+        "data_source": "Yahoo_Finance_TradingEconomics_Original_Logic",
+        "data_freshness": "daily",
+        "update_frequency": "daily",
+        "price_currency": "INR",
+        "logic_source": "friend_original_mindspace_code"
+      },
+      "symbol": "MINDSPACE",
+      "status": "success",
+      "timestamp": "2025-09-09T20:53:40.560917",
+      "data_source": "Yahoo_Finance_TradingEconomics"
+    }
+  },
+  "portfolio_summary": {
+    "portfolio_sentiment": -0.015,
+    "portfolio_confidence": 0.649,
+    "successful_assets": 4,
+    "failed_assets": 0,
+    "total_assets": 4,
+    "execution_time_seconds": 51.698989,
+    "status": "success",
+    "risk_assessment": "MODERATE RISK",
+    "investment_recommendation": "HOLD",
+    "asset_breakdown": {
+      "NIFTY50": {
+        "sentiment": -0.003,
+        "confidence": 0.511,
+        "status": "success"
+      },
+      "GOLD": {
+        "sentiment": 0.403,
+        "confidence": 0.787,
+        "status": "success"
+      },
+      "BITCOIN": {
+        "sentiment": 0.046,
+        "confidence": 0.498,
+        "status": "success"
+      },
+      "REIT": {
+        "sentiment": -0.505,
+        "confidence": 0.8,
+        "status": "success"
+      }
+    }
+  },
+  "execution_time_seconds": 51.698989,
+  "timestamp": "2025-09-09T20:53:40.561943",
+  "assets_analyzed": 4,
+  "total_assets_available": 4,
+  "execution_mode": "SEQUENTIAL"
+}

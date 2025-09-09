@@ -1,7 +1,7 @@
 {
-  "timestamp": "2025-09-08T21:21:08.107404",
+  "timestamp": "2025-09-09T21:14:15.215412",
   "framework_coverage": "100%",
-  "overall_sentiment": -0.011752664581060538,
+  "overall_sentiment": -0.003768547315380922,
   "overall_confidence": 0.511261797898391,
   "interpretation": "NEUTRAL_LOW_CONFIDENCE",
   "quality_grade": "C",
@@ -15,24 +15,24 @@
       "interpretation": "\u26aa NEUTRAL - Balanced institutional activity"
     },
     "technical_analysis": {
-      "sentiment": 0.07443915189904972,
+      "sentiment": 0.07835008431692637,
       "confidence": 0.7,
       "interpretation": "\u26aa NEUTRAL - Mixed technical signals"
     },
     "market_sentiment_vix": {
-      "sentiment": -0.27709302191755514,
+      "sentiment": -0.15784273896735262,
       "confidence": 0.6625,
       "interpretation": "\ud83d\udfe1 CAUTIOUS - Complacency emerging"
     },
     "rbi_interest_rates": {
-      "sentiment": 0.304351505890648,
+      "sentiment": 0.28711107491760063,
       "confidence": 0.7625,
-      "interpretation": "\ud83c\udfdb\ufe0f ACCOMMODATIVE - RBI policy HIGH_CONFIDENCE"
+      "interpretation": "\ud83c\udfdb\ufe0f MILDLY_POSITIVE - RBI policy HIGH_CONFIDENCE"
     },
     "global_factors": {
-      "sentiment": 0.22237515852350379,
+      "sentiment": -0.044488547437244085,
       "confidence": 0.8,
-      "interpretation": "\ud83d\udfe1 MILDLY POSITIVE - Slight global tailwinds"
+      "interpretation": "\u26aa NEUTRAL - Mixed global signals"
     }
   }
 }

@@ -245,14 +245,36 @@ class JobBasedPipelineGenerator:
             
             # Process component details
             # FIXED: Process component details with correct field names
+            # Process component details - FIXED FIELD NAMES
             component_details = asset_data.get('component_details', {})
             for component_name, component_data in component_details.items():
                 if isinstance(component_data, dict):
+
+                    raw_sentiment = (
+                            component_data.get('sentiment') or
+                            component_data.get('component_sentiment') or
+                            0.0
+                    )
+
+                    raw_confidence = (
+                            component_data.get('confidence') or
+                            component_data.get('component_confidence') or
+                            0.5
+                    )
+
+                    # Calculate contribution if not present
+                    weight = component_data.get('weight') or component_data.get('framework_weight', 0.0)
+                    contribution = (
+                            component_data.get('contribution') or
+                            component_data.get('weighted_contribution') or
+                            (raw_sentiment * weight)
+                    )
+
                     context_data['component_breakdown'][component_name] = {
-                        'sentiment': component_data.get('component_sentiment', 0.0),  # ← FIXED
-                        'confidence': component_data.get('component_confidence', 0.5),  # ← FIXED
-                        'weight': component_data.get('component_weight', component_data.get('framework_weight', 0.0)),
-                        'contribution': component_data.get('weighted_contribution', 0.0),
+                        'sentiment': float(raw_sentiment),
+                        'confidence': float(raw_confidence),
+                        'weight': float(weight),
+                        'contribution': float(contribution),
                         'description': component_data.get('interpretation', component_data.get('description', '')),
                         'key_metrics': self._extract_key_metrics(component_data.get('metadata', {})),
                         'status': component_data.get('status', 'success')
@@ -385,11 +407,11 @@ async def generate_job_based_outputs(job_id: str, analysis_result: Dict[str, Any
     generator = JobBasedPipelineGenerator()
     pipeline_outputs = generator.generate_job_outputs(job_id, analysis_result)
     
-    print(f"\n✅ JOB-BASED PIPELINE OUTPUTS GENERATED")
-    print(f"📋 Job ID: {job_id}")
-    print(f"📊 Files Generated: {pipeline_outputs['files_generated']}")
-    print(f"📁 Location: {pipeline_outputs['job_directory']}")
-    print(f"🔗 Ready for downstream processing: {pipeline_outputs['ready_for_downstream']}")
+    print(f"\nJOB-BASED PIPELINE OUTPUTS GENERATED")
+    print(f"Job ID: {job_id}")
+    print(f"Files Generated: {pipeline_outputs['files_generated']}")
+    print(f"Location: {pipeline_outputs['job_directory']}")
+    print(f"Ready for downstream processing: {pipeline_outputs['ready_for_downstream']}")
     
     return pipeline_outputs
 
@@ -433,9 +455,9 @@ if __name__ == "__main__":
     
     async def test_job_pipeline():
         result = await generate_job_based_outputs(sample_job_id, sample_result)
-        print(f"\n🧪 Test completed:")
-        print(f"📋 Job ID: {result['job_id']}")
-        print(f"📊 CSV: {result['consolidated_csv']}")
-        print(f"📁 Context files: {len(result['asset_context_files'])}")
+        print(f"\nTest completed:")
+        print(f"Job ID: {result['job_id']}")
+        print(f"CSV: {result['consolidated_csv']}")
+        print(f"Context files: {len(result['asset_context_files'])}")
     
     asyncio.run(test_job_pipeline())

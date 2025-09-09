@@ -1,14 +1,14 @@
 {
-  "bitcoin_sentiment_composite": -0.2402993844296487,
-  "confidence": 0.4919454155823034,
-  "interpretation": "\ud83d\udfe1 MILDLY BEARISH - Slight negative bias",
+  "bitcoin_sentiment_composite": -0.09652485488820628,
+  "confidence": 0.5079716581491631,
+  "interpretation": "\u26aa NEUTRAL - Balanced crypto signals",
   "framework_coverage": 1.0,
-  "timestamp": "2025-09-08T21:21:43.998745",
+  "timestamp": "2025-09-09T21:14:52.879226",
   "system_version": "Bitcoin_v1.0",
   "components": {
-    "micro_momentum": -0.17064670239578028,
-    "funding_basis": 0.06336701557848784,
-    "liquidity": -0.03778268311098385,
-    "orderflow": -0.7800788956280975
+    "micro_momentum": -0.2783443516650297,
+    "funding_basis": 0.1523830796422794,
+    "liquidity": -0.07107296630122917,
+    "orderflow": -0.13976992813874867
   }
 }
